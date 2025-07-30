@@ -40,3 +40,5 @@ Section 02: React-related JavaScript refresher
 15. Destructuring & rest operator
 
 16. Array methods
+
+17. Optional chaining & nullish coalescing operator

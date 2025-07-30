@@ -1,34 +1,28 @@
-const notes = [
-  { title: 'Meeting Notes', content: 'Discuss project roadmap', isPinned: true },
-  { title: 'Grocery List', content: 'Buy milk, eggs, bread', isPinned: false },
-  { title: 'Workout Plan', content: 'Push day: Bench, Shoulder Press', isPinned: false },
-  { title: 'Recipe Ideas', content: 'Pasta, Salad, Tacos', isPinned: false },
-];
+const user = {
+  name: 'John',
+};
 
-// const noteTitles = notes.map((note) => note.title);
-const noteTitles = notes.map((note, index) => `${index + 1}. ${note.title}`);
-console.log(noteTitles);
+console.log(user.address.city);
 
 
-const pinnedNotes = notes.filter((note) => note.isPinned);
-console.log(pinnedNotes);
+const user2 = {
+  name: 'John',
+};
 
-const pinnedNoteTitles = notes
-  .filter((note) => note.isPinned)
-  .map((note) => note.title);
-console.log(pinnedNoteTitles);
+let value = null;
+let result = value ?? 'Default Value';
 
-
-const numbers = [1, 2, 3, 4, 5];
-
-const sum = numbers.reduce((total, number) => total + number, 0);
-console.log(sum);
-
-const totalCharacters = notes.reduce(
-  (total, note) => total + note.content.length,
-  0
-);
-console.log(totalCharacters);
+console.log(result);
 
 
-notes.forEach((note) => console.log(note.title));
+let value2 = 0;
+let result2 = value2 ?? 'Default Value';
+
+console.log(result2);
+
+
+const user3 = {
+  name: 'John',
+};
+
+console.log(user3.address?.city ?? 'Unknown');
