@@ -61,3 +61,7 @@ Section 03: React fundamentals - state, hooks, events, props & more
 -create folder react-test and index.html file
 -run index.html with Live server VS Code extension
 -open route: http://127.0.0.1:5500/react-test/index.html
+
+22. Intro to JSX (JavaScript XML)
+-open link: https://babeljs.io
+-in index.html file add script element for babel

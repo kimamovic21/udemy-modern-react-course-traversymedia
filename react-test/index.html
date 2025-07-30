@@ -6,25 +6,30 @@
     <title>React App</title>
     <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
     <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
   </head>
   <body>
     <div id="root"></div>
 
-    <script>
+    <script type="text/babel">
       function Header() {
-        return React.createElement(
-          "header",
-          null,
-          React.createElement("h2", null, "My App Header")
+        return (
+          <header>
+            <h2>App Header</h2>
+          </header>
         );
       }
 
       function App() {
-        return React.createElement(
-          "div",
-          null,
-          React.createElement(Header),
-          React.createElement("h1", null, "Hello, React")
+        const name = "John";
+        const member = true;
+
+        return (
+          <>
+            <Header />
+            <h1 className="title">Hello, {name}</h1>
+            {member ? <p>Welcome Back</p> : null}
+          </>
         );
       }
 
