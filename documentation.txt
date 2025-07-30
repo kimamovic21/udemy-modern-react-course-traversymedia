@@ -32,3 +32,5 @@ Section 02: React-related JavaScript refresher
 11. Section Intro
 
 12. Arrow functions
+
+13. Template literals
