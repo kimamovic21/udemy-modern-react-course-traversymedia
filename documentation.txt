@@ -34,3 +34,5 @@ Section 02: React-related JavaScript refresher
 12. Arrow functions
 
 13. Template literals
+
+14. Ternary & short circuit rendering

@@ -1,17 +1,37 @@
-const username = 'John';
+// const number = 5;
+// let message;
 
-// const greeting = 'Hello, ' + name;
-const greeting = `Hello, ${username}`;
-
-const formatDate = (timestamp) => {
-  const date = new Date(timestamp);
-  // return date.toLocaleDateString() + ' at ' + date.toLocaleTimeString();
-  return `${date.toLocaleDateString()} at ${date.toLocaleTimeString()}`;
+if (number % 2 === 0) {
+  message = 'Even Number';
+} else {
+  message = 'Odd Number';
 };
+
+console.log(message);
+
+const number = 5;
+const message = number % 2 === 0 ? 'Even Number' : 'Odd Number';
+console.log(message);
+
 
 const note = {
-  title: 'Discuss project roadmap',
+  title: 'Meeting Notes',
+  content: 'Discuss project roadmap...',
   timestamp: Date.now(),
+  isPinned: true,
 };
 
-console.log(`Last edited: ${formatDate(note.timestamp)}`);
+const noteText = `Title: ${note.title}`;
+console.log(noteText);
+
+console.log(false && 'Hello');
+console.log(true && 'Hello');
+
+
+const isLoggedIn = true;
+
+function showWelcome() {
+  return isLoggedIn && 'Welcome, User!';
+};
+
+console.log(showWelcome());
