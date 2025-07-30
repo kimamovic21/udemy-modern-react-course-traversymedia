@@ -1,0 +1,25 @@
+Modern React Course Traversy Media
+
+
+Section 01: Introduction and Getting Started
+
+
+01. Welcome to the course
+
+02. How to take this course
+
+03. Course code repos
+
+04. What is React ?
+
+05. React App Architecture
+
+06. Component-Based Development
+
+07. React vs Vanilla Javascript
+
+08. React Ecosystem
+
+09. How React works under the hood
+
+10. Development environment setup
