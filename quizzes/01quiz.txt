@@ -1,0 +1,51 @@
+Quiz 01: Section Quiz
+
+
+1. What kind of return does this arrow function have?
+
+const getRectangleArea = (width, height) => width * height;
+
+Answer: Implicit
+
+
+2. Which of the following correctly uses a template literal?
+
+Answer: `"Hello, ${name}!"`
+
+
+3. What will the following code output?
+
+const age = 20;
+const message = age >= 18 ? 'Adult' : 'Minor';
+console.log(message);
+
+Answer: Adult
+
+
+4. How would you extract city from this object using destructuring?
+
+const user = {
+  name: 'Alice',
+  address: { city: 'New York', country: 'USA' },
+};
+
+Answer: `const { address: { city } } = user;`
+
+
+5. What will the following code output?
+
+const numbers = [1, 2, 3];
+const newNumbers = [...numbers, 4, 5];
+console.log(newNumbers);
+
+Answer: [1, 2, 3, 4, 5]
+
+
+6. Which method is used for removing items from the UI without mutating it?
+
+Answer: `filter`
+
+
+7. Which of the following correctly adds an item to an array immutably?
+
+Answer: `const newNumbers = [...numbers, 4]`
