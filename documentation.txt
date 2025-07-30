@@ -48,3 +48,9 @@ Section 02: React-related JavaScript refresher
 19. Promises & async await
 
 Quiz 1: Section quiz
+
+
+
+Section 03: React fundamentals - state, hooks, events, props & more
+
+20. Section intro
