@@ -38,3 +38,5 @@ Section 02: React-related JavaScript refresher
 14. Ternary & short circuit rendering
 
 15. Destructuring & rest operator
+
+16. Array methods
