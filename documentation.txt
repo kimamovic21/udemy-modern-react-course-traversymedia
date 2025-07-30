@@ -36,3 +36,5 @@ Section 02: React-related JavaScript refresher
 13. Template literals
 
 14. Ternary & short circuit rendering
+
+15. Destructuring & rest operator
