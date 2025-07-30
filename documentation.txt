@@ -23,3 +23,10 @@ Section 01: Introduction and Getting Started
 09. How React works under the hood
 
 10. Development environment setup
+
+
+
+Section 02: React-related JavaScript refresher
+
+
+11. Section Intro
