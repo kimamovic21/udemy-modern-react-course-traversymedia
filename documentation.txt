@@ -65,3 +65,12 @@ Section 03: React fundamentals - state, hooks, events, props & more
 22. Intro to JSX (JavaScript XML)
 -open link: https://babeljs.io
 -in index.html file add script element for babel
+
+23. Vite build tool setup
+-open link: https://nodejs.org/en
+-open link: https://vite.dev
+-type command: npx create-vite@latest rating-ui
+-type command: cd rating-ui
+-type command: npm i
+-type command: npm run dev
+-open route: http://localhost:5173
