@@ -74,3 +74,7 @@ Section 03: React fundamentals - state, hooks, events, props & more
 -type command: npm i
 -type command: npm run dev
 -open route: http://localhost:5173
+
+24. Creating components
+-create folder components and component Rating.jsx
+-in component App.jsx import component Rating from component Rating.jsx
