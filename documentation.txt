@@ -44,3 +44,5 @@ Section 02: React-related JavaScript refresher
 17. Optional chaining & nullish coalescing operator
 
 18. Immutability & spread operator
+
+19. Promises & async await

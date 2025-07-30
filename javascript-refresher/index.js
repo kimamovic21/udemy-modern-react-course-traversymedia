@@ -1,31 +1,49 @@
-const notes = ['Meeting Notes', 'Grocery List'];
-notes.push('Workout Plan');
-console.log(notes);
+const myPromise = new Promise((resolve, reject) => {
+  setTimeout(() => {
+    resolve('Promise resolved!');
+  }, 2000);
+});
+
+myPromise.then((data) => {
+  console.log(data);
+});
 
 
-const notes2 = ['Meeting Notes', 'Grocery List'];
-const newNotes = [...notes, 'Workout Plan'];
-console.log(notes2);
-console.log(newNotes);
+const myPromise2 = new Promise((resolve, reject) => {
+  setTimeout(() => {
+    reject('Promise rejected!');
+  }, 2000);
+});
+
+myPromise2
+  .then((data) => {
+    console.log(data);
+  })
+  .catch((error) => {
+    console.error(error);
+  });
 
 
-const newNotes2 = notes.map((note) =>
-  note === 'Grocery List' ? 'Shopping List' : note
-);
+fetch('https://jsonplaceholder.typicode.com/posts/1')
+  .then((response) => response.json())
+  .then((data) => {
+    console.log(data);
+  })
+  .catch((error) => {
+    console.error(error);
+  });
 
-const user = {
-  name: 'John Doe',
-  age: 30,
+
+const fetchData = async () => {
+  try {
+    const response = await fetch(
+      'https://jsonplaceholder.typicode.com/posts/1'
+    );
+    const data = await response.json();
+    console.log(data);
+  } catch (error) {
+    console.error(error);
+  };
 };
 
-user.age = 31;
-console.log(user);
-
-const user = {
-  name: 'John Doe',
-  age: 30,
-};
-
-const newUser = { ...user, age: 31 };
-console.log(user);
-console.log(newUser);
+fetchData();
