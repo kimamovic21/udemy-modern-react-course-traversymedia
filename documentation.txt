@@ -135,3 +135,9 @@ open link: https://react.dev/learn/passing-props-to-a-component
 -in jsx add conditional rendering
 -create function closeModal()
 -open route: http://localhost:5173 and click button Submit
+
+35. Modal component composition
+-in folder components create component Modal.jsx
+-in function Modal add condition if (!isOpen)
+-in component Rating.jsx import component Modal from component Modal.jsx
+-open route: http://localhost:5173 and click button Submit
