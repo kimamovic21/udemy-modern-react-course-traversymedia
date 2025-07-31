@@ -108,3 +108,9 @@ Section 03: React fundamentals - state, hooks, events, props & more
 -in jsx add to span element events onMouseEnter and onMouseLeave
 
 30. More on useState hook
+
+31. Conditional rendering & styling
+-open link: https://react.dev/learn/conditional-rendering
+-in component Rating.jsx add to span element dynamic css classes
+-create variable const feedbackMessages
+-in jsx add conditional rendering rating > 0 &&
