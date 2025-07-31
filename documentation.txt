@@ -168,3 +168,11 @@ Section 04: Forms, input & controlled components - Notes app project
 -in index.css file add directive @import 'tailwindcss'
 -in component App.jsx create HTML elements with Tailwind CSS classes
 -type command: npm run dev
+
+39. Controlled inputs
+-open link: https://react.dev/reference/react-dom/components/input
+-create folder components and component NoteForm.jsx
+-in component NoteForm.jsx import and invoke functions useState()
+-create state variables and set functions
+-in jsx create HTML elements with Tailwind CSS classes
+-in component App.jsx import component NoteForm from component NoteForm.jsx
