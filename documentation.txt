@@ -106,3 +106,5 @@ Section 03: React fundamentals - state, hooks, events, props & more
 -in component Rating invoke function useState()
 -create two state variables and two set functions
 -in jsx add to span element events onMouseEnter and onMouseLeave
+
+30. More on useState hook
