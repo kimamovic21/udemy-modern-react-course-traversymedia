@@ -1,0 +1,46 @@
+Quiz 02: Section Quiz
+
+
+1. What does JSX stand for?
+
+Answer: JavaScript XML
+
+
+2. What is the correct way to embed a JavaScript variable in JSX?
+
+Answer: `{ variable }`
+
+
+3. What is the purpose of the useState hook?
+
+Answer: To store and update state in a functional component
+
+
+4.  What will the following code render when the button is clicked?
+
+function App() {
+  const [count, setCount] = useState(0);
+  return <button onClick={() => setCount(count + 1)}>{count}</button>;
+};
+
+Answer: It increases the count by 1 each time the button is clicked
+
+
+5. How are props passed to a component?
+
+Answer: As attributes in the JSX tag
+
+
+6. Which statement is true about props in React?
+
+Answer: Props are used to pass data from parent to child
+
+
+7. What is the best way to render a list of items in React?
+
+Answer: With the .map() method
+
+
+8. What is the purpose of the key prop in a list?
+
+Answer: To uniquely identify each element in the list

@@ -149,3 +149,5 @@ open link: https://react.dev/learn/passing-props-to-a-component
 -in component Rating.jsx import component Button from component Button.jsx
 -in component Modal.jsx import component Button from component Button.jsx
 -open route: http://localhost:5173 and click button Submit
+
+Quiz 2: Section quiz
