@@ -151,3 +151,8 @@ open link: https://react.dev/learn/passing-props-to-a-component
 -open route: http://localhost:5173 and click button Submit
 
 Quiz 2: Section quiz
+
+
+Section 04: Forms, input & controlled components - Notes app project
+
+37. Section intro
