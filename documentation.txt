@@ -85,3 +85,7 @@ Section 03: React fundamentals - state, hooks, events, props & more
 -in component Rating.jsx add inline styles
 -in index.css add css styles for Rating component
 -in component Rating.jsx add to parent div element css class rating-container
+
+26. Lists
+-in component Rating.jsx create variable const stars
+-in jsx invoke function stars.map()
