@@ -1,6 +1,10 @@
 import { useState } from 'react';
 
-const Rating = () => {
+const Rating = ({
+  heading = 'Rate Your Experience',
+  color = 'gold',
+  feedbackMessages = ['Terrible', 'Poor', 'Fair', 'Good', 'Excellent']
+}) => {
   const [rating, setRating] = useState(0);
   console.log('Rating', rating);
 
@@ -9,16 +13,17 @@ const Rating = () => {
 
   const stars = Array.from({ length: 5 }, (_, i) => i + 1);
 
-  const feedbackMessages = ['Terrible', 'Poor', 'Fair', 'Good', 'Excellent'];
-
   return (
     <div className='rating-container'>
-      <h2>Rate Your Experience</h2>
+      <h2>{heading}</h2>
       <div className='stars'>
         {stars.map((star) => (
           <span
             key={star}
-            className={`star ${star <= (hover || rating) ? 'active' : ''}`}
+            className='star'
+            style={{
+              color: star <= (hover || rating) ? color : '#ccc',
+            }}
             onClick={() => setRating(star)}
             onMouseEnter={() => setHover(star)}
             onMouseLeave={() => setHover(0)}

@@ -114,3 +114,8 @@ Section 03: React fundamentals - state, hooks, events, props & more
 -in component Rating.jsx add to span element dynamic css classes
 -create variable const feedbackMessages
 -in jsx add conditional rendering rating > 0 &&
+
+32. Props
+open link: https://react.dev/learn/passing-props-to-a-component
+-in component App.jsx, add to component Rating props
+-in component Rating.jsx, add to function Rating parameters destructed props
