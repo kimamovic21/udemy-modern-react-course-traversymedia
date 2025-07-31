@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import Star from './Star';
 import Modal from './Modal';
+import Button from './Button';
 
 const Rating = ({
   heading = 'Rate Your Experience',
@@ -8,13 +9,8 @@ const Rating = ({
   feedbackMessages = ['Terrible', 'Poor', 'Fair', 'Good', 'Excellent']
 }) => {
   const [rating, setRating] = useState(0);
-  console.log('Rating', rating);
-
   const [hover, setHover] = useState(0);
-  console.log('Hover', hover);
-
   const [submitted, setSubmitted] = useState(false);
-  console.log('Submitted', submitted);
 
   const stars = Array.from({ length: 5 }, (_, i) => i + 1);
 
@@ -58,13 +54,13 @@ const Rating = ({
         </p>
       )}
 
-      <button
+      <Button
         className='submit-btn'
         onClick={handleSubmit}
         disabled={rating === 0}
       >
         Submit
-      </button>
+      </Button>
 
       <Modal
         isOpen={submitted}

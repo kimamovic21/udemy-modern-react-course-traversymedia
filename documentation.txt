@@ -141,3 +141,11 @@ open link: https://react.dev/learn/passing-props-to-a-component
 -in function Modal add condition if (!isOpen)
 -in component Rating.jsx import component Modal from component Modal.jsx
 -open route: http://localhost:5173 and click button Submit
+
+36. Passing data as children
+-open link: https://react.dev/reference/react/Children
+-in folder components create component Button.jsx
+-add to function Button() parameters destructed props
+-in component Rating.jsx import component Button from component Button.jsx
+-in component Modal.jsx import component Button from component Button.jsx
+-open route: http://localhost:5173 and click button Submit
