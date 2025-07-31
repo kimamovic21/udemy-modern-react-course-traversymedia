@@ -126,3 +126,12 @@ open link: https://react.dev/learn/passing-props-to-a-component
 -move span element from component Rating.jsx to component Star.jsx
 -in component Rating.jsx import component Star from component Star.jsx
 -in function map add component Star with props
+
+34. Submit rating
+-in index.css file add styles for Submit button and Modal
+-in component Rating.jsx create button element with props className, onClick and disabled
+-create state variable const submitted and set function setSubmitted
+-create function handleSubmit()
+-in jsx add conditional rendering
+-create function closeModal()
+-open route: http://localhost:5173 and click button Submit
