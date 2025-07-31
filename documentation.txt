@@ -89,3 +89,7 @@ Section 03: React fundamentals - state, hooks, events, props & more
 26. Lists
 -in component Rating.jsx create variable const stars
 -in jsx invoke function stars.map()
+
+27. Handling events
+-in component Rating.jsx create function clicked()
+-in jsx add to span element event onClick
