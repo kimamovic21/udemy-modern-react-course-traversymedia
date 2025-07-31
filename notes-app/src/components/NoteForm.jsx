@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-const NoteForm = () => {
+const NoteForm = ({ notes, setNotes }) => {
   const [formData, setFormData] = useState({
     title: '',
     category: 'Work',
@@ -15,8 +15,27 @@ const NoteForm = () => {
     });
   };
 
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    if (!formData.title || !formData.description) return;
+
+    const newNote = { id: Date.now(), ...formData };
+
+    setNotes([newNote, ...notes]);
+
+    setFormData({
+      title: '',
+      category: 'Work',
+      priority: 'Medium',
+      description: '',
+    });
+
+    console.log(newNote);
+  };
+
   return (
-    <form className='mb-6'>
+    <form className='mb-6' onSubmit={handleSubmit}>
       <div className='mb-4'>
         <label className='block font-semibold'>Title:</label>
         <input
@@ -67,6 +86,13 @@ const NoteForm = () => {
           required
         ></textarea>
       </div>
+
+      <button
+        type='submit'
+        className='w-full bg-purple-500 text-white cursor-pointer py-2 rounded-lg hover:bg-purple-600 transition'
+      >
+        Add Note
+      </button>
     </form>
   );
 };

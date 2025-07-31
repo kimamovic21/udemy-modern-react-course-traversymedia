@@ -182,3 +182,12 @@ Section 04: Forms, input & controlled components - Notes app project
 -create function handleChange()
 -in prop value replace state variables with state variable formData
 -in events onChange replace set functions with set function handleChange 
+
+41. Form submission & global state
+-in component App.jsx import and invoke function useState()
+-create state variable const notes and set function setNotes
+-in jsx, add to component NoteForm props notes and setNotes
+-in component NoteForm.jsx, add to function NoteForm() destructed props
+-create function handleSubmit()
+-in jsx add to form element event onSubmit and pass function handleSubmit
+-create button element with Tailwind CSS classes
