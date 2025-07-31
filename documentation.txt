@@ -156,3 +156,15 @@ Quiz 2: Section quiz
 Section 04: Forms, input & controlled components - Notes app project
 
 37. Section intro
+
+38. App & Tailwind CSS Setup (v4)
+-type command: npx create-vite@latest notes-app
+-type commands: cd notes-app and npm i
+-open link: https://tailwindcss.com
+-open link: https://tailwindcss.com/blog/tailwindcss-v4
+-type command: npm install tailwindcss @tailwindcss/vite
+-in vite.config.js file import function tailwindcss from package tailwindcss/vite
+-in array plugins invoke function tailwindcss()
+-in index.css file add directive @import 'tailwindcss'
+-in component App.jsx create HTML elements with Tailwind CSS classes
+-type command: npm run dev
