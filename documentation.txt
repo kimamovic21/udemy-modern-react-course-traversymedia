@@ -119,3 +119,10 @@ Section 03: React fundamentals - state, hooks, events, props & more
 open link: https://react.dev/learn/passing-props-to-a-component
 -in component App.jsx, add to component Rating props
 -in component Rating.jsx, add to function Rating parameters destructed props
+
+33. Component composition
+-in folder components create component Star.jsx
+-add to function Star parameters destructed props
+-move span element from component Rating.jsx to component Star.jsx
+-in component Rating.jsx import component Star from component Star.jsx
+-in function map add component Star with props
