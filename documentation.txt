@@ -176,3 +176,9 @@ Section 04: Forms, input & controlled components - Notes app project
 -create state variables and set functions
 -in jsx create HTML elements with Tailwind CSS classes
 -in component App.jsx import component NoteForm from component NoteForm.jsx
+
+40. Form data objects
+-in component NoteForm.jsx create state variable const formData and set function setFormData
+-create function handleChange()
+-in prop value replace state variables with state variable formData
+-in events onChange replace set functions with set function handleChange 

@@ -1,10 +1,19 @@
 import { useState } from 'react';
 
 const NoteForm = () => {
-  const [title, setTitle] = useState('');
-  const [category, setCategory] = useState('Work');
-  const [priority, setPriority] = useState('Medium');
-  const [description, setDescription] = useState('');
+  const [formData, setFormData] = useState({
+    title: '',
+    category: 'Work',
+    priority: 'Medium',
+    description: '',
+  });
+
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value,
+    });
+  };
 
   return (
     <form className='mb-6'>
@@ -13,8 +22,8 @@ const NoteForm = () => {
         <input
           type='text'
           name='title'
-          value={title}
-          onChange={(e) => setTitle(e.target.value)}
+          value={formData.title}
+          onChange={handleChange}
           className='w-full p-2 border rounded-lg'
           required
         />
@@ -24,8 +33,8 @@ const NoteForm = () => {
         <label className='block font-semibold'>Priority:</label>
         <select
           name='priority'
-          value={priority}
-          onChange={(e) => setPriority(e.target.value)}
+          value={formData.priority}
+          onChange={handleChange}
           className='w-full p-2 border rounded-lg'
         >
           <option value='High'>🔴 High</option>
@@ -38,8 +47,8 @@ const NoteForm = () => {
         <label className='block font-semibold'>Category:</label>
         <select
           name='category'
-          value={category}
-          onChange={(e) => setCategory(e.target.value)}
+          value={formData.category}
+          onChange={handleChange}
           className='w-full p-2 border rounded-lg'
         >
           <option value='Work'>📂 Work</option>
@@ -52,8 +61,8 @@ const NoteForm = () => {
         <label className='block font-semibold'>Description:</label>
         <textarea
           name='description'
-          value={description}
-          onChange={(e) => setDescription(e.target.value)}
+          value={formData.description}
+          onChange={handleChange}
           className='w-full p-2 border rounded-lg'
           required
         ></textarea>
