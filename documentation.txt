@@ -78,3 +78,10 @@ Section 03: React fundamentals - state, hooks, events, props & more
 24. Creating components
 -create folder components and component Rating.jsx
 -in component App.jsx import component Rating from component Rating.jsx
+
+25. Styling in React
+-in folder public add favicon icon
+-in index.html file add element link for favicon icon
+-in component Rating.jsx add inline styles
+-in index.css add css styles for Rating component
+-in component Rating.jsx add to parent div element css class rating-container
