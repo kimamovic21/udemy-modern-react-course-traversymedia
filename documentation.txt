@@ -224,3 +224,10 @@ Section 04: Forms, input & controlled components - Notes app project
 -create component TextareaInput.jsx
 -in component NoteForm.jsx import component TextareaInput from component TextareaInput.jsx
 -repeat the same procedure with components TextareaInput.jsx and NoteForm.jsx
+-open route: http://localhost:5173
+
+45. Delete notes
+-in component NoteList.jsx, in jsx create button Delete element with Tailwind CSS classes and event onClick
+-in component App.jsx create function deleteNote()
+-in jsx add to component NoteList prop deleteNote
+-in component NoteList.jsx add to function NoteList() destructed parameter prop deleteNote
