@@ -204,3 +204,11 @@ Section 04: Forms, input & controlled components - Notes app project
 -in component App.jsx import component NoteList from component NoteList.jsx
 -in jsx add component NoteList with prop notes
 -open route: http://localhost:5173
+
+43. Make form collapsible
+-in component NoteForm.jsx create state variable const isFormVisible and set function setIsFormVisible
+-in jsx create button element with Tailwind CSS classes and event onClick
+-in button element add ternary condition isFormVisible ?
+-add conditional rendering isFormVisible &&
+-in function handleSubmit() invoke function setIsFormVisible(false)
+-open route: http://localhost:5173
