@@ -1,0 +1,31 @@
+Quiz 03: Section Quiz
+
+
+1. Which of the following is a controlled input?
+
+Answer: <input value={value} onChange={handleChange} />
+
+
+2. What is the purpose of the `onChange` event handler in a controlled component?
+
+Answer: To update the state when the input value changes
+
+
+3. What does the term 'Prop Drilling' refer to?
+
+Answer: Passing props through many levels of components
+
+
+4. Which of the following is valid conditional rendering in JSX?
+
+Answer: { isLoggedIn ? <Dashboard /> : <Login /> }
+
+
+5. What happens if you forget the onChange handler on a controlled input?
+
+Answer: The input becomes read-only
+
+
+6. Why do we use square brackets around e.target.name when updating the formData object in React?
+
+Answer: To dynamically use the value of name as the key in the object

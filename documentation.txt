@@ -242,3 +242,5 @@ Section 04: Forms, input & controlled components - Notes app project
 -in folder components create component Note.jsx
 -in component NoteList.jsx import component Note from component Note.jsx
 -in function notes.map() add component Note with props
+
+Quiz 3: Section quiz
