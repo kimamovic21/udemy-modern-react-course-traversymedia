@@ -153,6 +153,7 @@ open link: https://react.dev/learn/passing-props-to-a-component
 Quiz 2: Section quiz
 
 
+
 Section 04: Forms, input & controlled components - Notes app project
 
 37. Section intro
@@ -244,3 +245,9 @@ Section 04: Forms, input & controlled components - Notes app project
 -in function notes.map() add component Note with props
 
 Quiz 3: Section quiz
+
+
+
+Section 05: Component lifecycle & useEffect hook
+
+48. Section intro
