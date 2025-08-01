@@ -212,3 +212,15 @@ Section 04: Forms, input & controlled components - Notes app project
 -add conditional rendering isFormVisible &&
 -in function handleSubmit() invoke function setIsFormVisible(false)
 -open route: http://localhost:5173
+
+44. Reusable input components
+-in folder components create folder inputs and component TextInput.jsx
+-add to function TextInput() destructed parameter props
+-in component NoteForm.jsx import component TextInput from component TextInput.jsx
+-in jsx add component TextInput with props
+-create component SelectInput.jsx
+-in component NoteForm.jsx import component SelectInput from component SelectInput.jsx
+-repeat the same procedure with components SelectInput.jsx and NoteForm.jsx
+-create component TextareaInput.jsx
+-in component NoteForm.jsx import component TextareaInput from component TextareaInput.jsx
+-repeat the same procedure with components TextareaInput.jsx and NoteForm.jsx

@@ -1,4 +1,7 @@
 import { useState } from 'react';
+import TextInput from './inputs/TextInput';
+import SelectInput from './inputs/SelectInput';
+import TextareaInput from './inputs/TextAreaInput';
 
 const NoteForm = ({ notes, setNotes }) => {
   const [formData, setFormData] = useState({
@@ -47,56 +50,45 @@ const NoteForm = ({ notes, setNotes }) => {
 
       {isFormVisible && (
         <form className='mb-6' onSubmit={handleSubmit}>
-          <div className='mb-4'>
-            <label className='block font-semibold'>Title:</label>
-            <input
-              type='text'
-              name='title'
-              value={formData.title}
-              onChange={handleChange}
-              className='w-full p-2 border rounded-lg'
-              required
-            />
-          </div>
+          <TextInput
+            label='Title'
+            name='title'
+            value={formData.title}
+            onChange={handleChange}
+            required
+          />
 
-          <div className='mb-4'>
-            <label className='block font-semibold'>Priority:</label>
-            <select
-              name='priority'
-              value={formData.priority}
-              onChange={handleChange}
-              className='w-full p-2 border rounded-lg'
-            >
-              <option value='High'>🔴 High</option>
-              <option value='Medium'>🟠 Medium</option>
-              <option value='Low'>🟢 Low</option>
-            </select>
-          </div>
+          <SelectInput
+            label='Category'
+            name='category'
+            value={formData.category}
+            onChange={handleChange}
+            options={[
+              { value: 'Work', label: '📂 Work' },
+              { value: 'Personal', label: '🏠 Personal' },
+              { value: 'Ideas', label: '💡 Ideas' },
+            ]}
+          />
 
-          <div className='mb-4'>
-            <label className='block font-semibold'>Category:</label>
-            <select
-              name='category'
-              value={formData.category}
-              onChange={handleChange}
-              className='w-full p-2 border rounded-lg'
-            >
-              <option value='Work'>📂 Work</option>
-              <option value='Personal'>🏠 Personal</option>
-              <option value='Ideas'>💡 Ideas</option>
-            </select>
-          </div>
+          <SelectInput
+            label='Priority'
+            name='priority'
+            value={formData.priority}
+            onChange={handleChange}
+            options={[
+              { value: 'High', label: '🔴 High' },
+              { value: 'Medium', label: '🟠 Medium' },
+              { value: 'Low', label: '🟢 Low' },
+            ]}
+          />
 
-          <div className='mb-4'>
-            <label className='block font-semibold'>Description:</label>
-            <textarea
-              name='description'
-              value={formData.description}
-              onChange={handleChange}
-              className='w-full p-2 border rounded-lg'
-              required
-            ></textarea>
-          </div>
+          <TextareaInput
+            label='Description'
+            name='description'
+            value={formData.description}
+            onChange={handleChange}
+            required
+          />
 
           <button
             type='submit'
