@@ -236,3 +236,9 @@ Section 04: Forms, input & controlled components - Notes app project
 46. Conditional rendering challenge
 -in component NoteList.jsx, in function notes.map() add to div element dynamic classes based on note priority
 -open route: http://localhost:5173
+
+47. Prop drilling
+-open link: https://react.dev/learn/passing-data-deeply-with-context
+-in folder components create component Note.jsx
+-in component NoteList.jsx import component Note from component Note.jsx
+-in function notes.map() add component Note with props
