@@ -243,6 +243,7 @@ Section 04: Forms, input & controlled components - Notes app project
 -in folder components create component Note.jsx
 -in component NoteList.jsx import component Note from component Note.jsx
 -in function notes.map() add component Note with props
+-open route: http://localhost:5173
 
 Quiz 3: Section quiz
 
@@ -255,3 +256,19 @@ Section 05: Component lifecycle & useEffect hook
 49. Component lifecycle explained
 
 50. Classes & lifecycle methods
+
+51. Lifecycle & useEffect hook
+-open link: https://react.dev/reference/react/useEffect
+-create new Vite React.js project lifecycle-playground
+-in index.css file add CSS classes
+-in component App.jsx create state variable const showLogger and set function setShowLogger
+-in jsx create HTML elements with CSS classes
+-in button element add ternary condition showLogger ? 
+-add conditional rendering showLogger && 
+-create folder components and component LifecycleLogger.jsx
+-in component LifecycleLogger.jsx import functions useState and useEffect from package react
+-create state variable const count and set function setCount
+-invoke two functions useEffect()
+-create function incrementCount()
+-in component App.jsx import component LifecycleLogger from component LifecycleLogger.jsx
+-open route: http://localhost:5173
