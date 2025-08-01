@@ -251,3 +251,5 @@ Quiz 3: Section quiz
 Section 05: Component lifecycle & useEffect hook
 
 48. Section intro
+
+49. Component lifecycle explained
