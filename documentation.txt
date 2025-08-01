@@ -168,6 +168,7 @@ Section 04: Forms, input & controlled components - Notes app project
 -in index.css file add directive @import 'tailwindcss'
 -in component App.jsx create HTML elements with Tailwind CSS classes
 -type command: npm run dev
+-open route: http://localhost:5173
 
 39. Controlled inputs
 -open link: https://react.dev/reference/react-dom/components/input
@@ -176,12 +177,14 @@ Section 04: Forms, input & controlled components - Notes app project
 -create state variables and set functions
 -in jsx create HTML elements with Tailwind CSS classes
 -in component App.jsx import component NoteForm from component NoteForm.jsx
+-open route: http://localhost:5173
 
 40. Form data objects
 -in component NoteForm.jsx create state variable const formData and set function setFormData
 -create function handleChange()
 -in prop value replace state variables with state variable formData
 -in events onChange replace set functions with set function handleChange 
+-open route: http://localhost:5173
 
 41. Form submission & global state
 -in component App.jsx import and invoke function useState()
@@ -191,3 +194,13 @@ Section 04: Forms, input & controlled components - Notes app project
 -create function handleSubmit()
 -in jsx add to form element event onSubmit and pass function handleSubmit
 -create button element with Tailwind CSS classes
+-open route: http://localhost:5173
+
+42. Show notes
+-in folder components create component NoteList.jsx
+-in jsx create HTML elements with Tailwind CSS classes
+-add to function NoteList() destructed parameter prop notes
+-in parent div element invoke function notes.map()
+-in component App.jsx import component NoteList from component NoteList.jsx
+-in jsx add component NoteList with prop notes
+-open route: http://localhost:5173
