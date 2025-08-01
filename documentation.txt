@@ -231,3 +231,8 @@ Section 04: Forms, input & controlled components - Notes app project
 -in component App.jsx create function deleteNote()
 -in jsx add to component NoteList prop deleteNote
 -in component NoteList.jsx add to function NoteList() destructed parameter prop deleteNote
+-open route: http://localhost:5173
+
+46. Conditional rendering challenge
+-in component NoteList.jsx, in function notes.map() add to div element dynamic classes based on note priority
+-open route: http://localhost:5173
