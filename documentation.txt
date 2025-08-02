@@ -290,3 +290,11 @@ Section 06: useRef hook - Simple timer project
 -open link: https://react.dev/reference/react/useRef
 -create new Vite React.js project simple-timer
 -type command: npm i tailwindcss @tailwindcss/vite
+
+55. Hook useRef in action & uncontrolled inputs
+-in component App.jsx import function useRef from package react
+-in jsx create HTML elements with Tailwind CSS classes
+-create variable const inputRef
+-create function submit()
+-in jsx add to input element prop ref
+-add to button element onClick event
