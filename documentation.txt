@@ -360,3 +360,13 @@ Section 07: Working with APIs - Crypto dash project
 -in function useEffect() create async function fetchCoins()
 -in function fetchCoins() add try/catch/finally blocks
 -open route: http://localhost:5173
+
+64. Display coin data
+-in component App.jsx, in jsx add conditional rendering for loading and error
+-add conditional rendering !loading && !error &&
+-in conditional rendering add main element
+-in main element invoke function coins.map()
+-create folder components and component CoinCard.jsx
+-in component App.jsx import component CoinCard from CoinCard.jsx
+-in function coins.map() add component CoinCard with props key and coin
+-open route: http://localhost:5173
