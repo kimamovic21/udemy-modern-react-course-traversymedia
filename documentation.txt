@@ -272,3 +272,8 @@ Section 05: Component lifecycle & useEffect hook
 -create function incrementCount()
 -in component App.jsx import component LifecycleLogger from component LifecycleLogger.jsx
 -open route: http://localhost:5173
+
+52. LocalStorage side effects
+-in project notes-app, in component App.jsx import function useEffect from package react
+-invoke function useEffect()
+-in function useState() create variable const notes
