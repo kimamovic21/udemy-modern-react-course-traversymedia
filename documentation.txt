@@ -277,3 +277,5 @@ Section 05: Component lifecycle & useEffect hook
 -in project notes-app, in component App.jsx import function useEffect from package react
 -invoke function useEffect()
 -in function useState() create variable const notes
+
+Quiz 4: Section quiz

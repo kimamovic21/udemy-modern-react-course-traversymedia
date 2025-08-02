@@ -1,0 +1,26 @@
+Quiz 04: Section quiz
+
+
+1. What are the three main phases of a React component's lifecycle?
+
+Answer: Mounting, Updating, Unmounting
+
+
+2. Which class lifecycle method is most closely equivalent to using useEffect(() => { ... }, []) in a functional component?
+
+Answer: componentDidMount
+
+
+3. What does passing an empty dependency array [] to useEffect do?
+
+Answer: It runs the effect only on the first render
+
+
+4. How can you detect when a component is unmounted using useEffect?
+
+Answer: Return a cleanup function inside useEffect
+
+
+5.  In the LifecycleLogger component, why do we use a separate useEffect with [count] as the dependency?
+
+Answer: To log every time the count changes (i.e., on updates)
