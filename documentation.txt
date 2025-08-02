@@ -318,3 +318,9 @@ Section 06: useRef hook - Simple timer project
 -create variable const startButtonRef
 -invoke function useEffect
 -in jsx add to button element prop ref
+
+59. Save timer to local storage
+-in component Timer.jsx import function useEffect from package react
+-in function useState for time pass anonymous function
+-invoke function useEffect()
+-in function resetTimer() invoke function localStorage.removeItem('time')

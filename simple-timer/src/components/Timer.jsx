@@ -1,12 +1,18 @@
-import { useState, useRef } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import TimerDisplay from './TimerDisplay';
 import TimerControls from './TimerControls';
 
 const Timer = () => {
   const timerRef = useRef(null);
 
-  const [time, setTime] = useState(0);
+  const [time, setTime] = useState(() => {
+    return Number(localStorage.getItem('time')) || 0;
+  });
   const [isRunning, setIsRunning] = useState(false);
+
+  useEffect(() => {
+    localStorage.setItem('time', time);
+  }, [time]);
 
   const toggleTimer = () => {
     if (isRunning) {
@@ -26,6 +32,7 @@ const Timer = () => {
     setIsRunning(false);
     setTime(0);
     timerRef.current = null;
+    localStorage.removeItem('time');
   };
 
   return (
