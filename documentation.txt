@@ -279,3 +279,9 @@ Section 05: Component lifecycle & useEffect hook
 -in function useState() create variable const notes
 
 Quiz 4: Section quiz
+
+
+
+Section 06: useRef hook - Simple timer project
+
+53. Section intro
