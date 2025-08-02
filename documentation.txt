@@ -304,3 +304,11 @@ Section 06: useRef hook - Simple timer project
 -in jsx create HTML elements with Tailwind CSS classes
 -create two state variables and two set functions
 -create functions toggleTimer() and resetTimer()
+
+57. Component composition challenge
+-create folder components and component Timer.jsx
+-in component App.jsx import component Timer from component Timer.jsx
+-create component TimerDisplay.jsx
+-in component Timer.jsx import component TimerDisplay from component TimerDisplay.jsx
+-create component TimerControls.jsx
+-in component Timer.jsx import component TimerControls from component TimerControls.jsx
