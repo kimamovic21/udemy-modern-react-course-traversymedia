@@ -277,6 +277,7 @@ Section 05: Component lifecycle & useEffect hook
 -in project notes-app, in component App.jsx import function useEffect from package react
 -invoke function useEffect()
 -in function useState() create variable const notes
+-open route: http://localhost:5173
 
 Quiz 4: Section quiz
 
@@ -290,6 +291,7 @@ Section 06: useRef hook - Simple timer project
 -open link: https://react.dev/reference/react/useRef
 -create new Vite React.js project simple-timer
 -type command: npm i tailwindcss @tailwindcss/vite
+-open route: http://localhost:5173
 
 55. Hook useRef in action & uncontrolled inputs
 -in component App.jsx import function useRef from package react
@@ -298,12 +300,14 @@ Section 06: useRef hook - Simple timer project
 -create function submit()
 -in jsx add to input element prop ref
 -add to button element onClick event
+-open route: http://localhost:5173
 
 56. Persist timer across re-renders
 -in component App.jsx create variable const timerRef
 -in jsx create HTML elements with Tailwind CSS classes
 -create two state variables and two set functions
 -create functions toggleTimer() and resetTimer()
+-open route: http://localhost:5173
 
 57. Component composition challenge
 -create folder components and component Timer.jsx
@@ -312,18 +316,21 @@ Section 06: useRef hook - Simple timer project
 -in component Timer.jsx import component TimerDisplay from component TimerDisplay.jsx
 -create component TimerControls.jsx
 -in component Timer.jsx import component TimerControls from component TimerControls.jsx
+-open route: http://localhost:5173
 
 58. Auto-focus start button
 -in component TimerControls.jsx import functions useRef and useEffect from package react
 -create variable const startButtonRef
 -invoke function useEffect
 -in jsx add to button element prop ref
+-open route: http://localhost:5173
 
 59. Save timer to local storage
 -in component Timer.jsx import function useEffect from package react
 -in function useState for time pass anonymous function
 -invoke function useEffect()
 -in function resetTimer() invoke function localStorage.removeItem('time')
+-open route: http://localhost:5173
 
 Quiz 5: Section quiz
 
@@ -339,6 +346,7 @@ Section 07: Working with APIs - Crypto dash project
 -create new Vite React.js project crypto-dash
 -in index.css file add CSS classes
 -in folder public add favicon icon
+-open route: http://localhost:5173
 
 62. Making HTTP requests
 -open link: https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=10&page=1&sparkline=false
@@ -346,3 +354,9 @@ Section 07: Working with APIs - Crypto dash project
 -in component App.jsx create three state variables and three set functions
 -create variable API_URL
 -invoke function useEffect()
+-open route: http://localhost:5173
+
+63. Async/await in useEffect
+-in function useEffect() create async function fetchCoins()
+-in function fetchCoins() add try/catch/finally blocks
+-open route: http://localhost:5173
