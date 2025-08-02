@@ -312,3 +312,9 @@ Section 06: useRef hook - Simple timer project
 -in component Timer.jsx import component TimerDisplay from component TimerDisplay.jsx
 -create component TimerControls.jsx
 -in component Timer.jsx import component TimerControls from component TimerControls.jsx
+
+58. Auto-focus start button
+-in component TimerControls.jsx import functions useRef and useEffect from package react
+-create variable const startButtonRef
+-invoke function useEffect
+-in jsx add to button element prop ref
