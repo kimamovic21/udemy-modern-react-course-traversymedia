@@ -332,3 +332,10 @@ Quiz 5: Section quiz
 Section 07: Working with APIs - Crypto dash project
 
 60. Section & project intro
+
+61. API info & project setup
+-open link: https://www.coingecko.com
+-open link: https://docs.coingecko.com/reference/coins-markets
+-create new Vite React.js project crypto-dash
+-in index.css file add CSS classes
+-in folder public add favicon icon
