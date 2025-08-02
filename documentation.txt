@@ -326,3 +326,9 @@ Section 06: useRef hook - Simple timer project
 -in function resetTimer() invoke function localStorage.removeItem('time')
 
 Quiz 5: Section quiz
+
+
+
+Section 07: Working with APIs - Crypto dash project
+
+60. Section & project intro
