@@ -376,3 +376,10 @@ Section 07: Working with APIs - Crypto dash project
 -create files .env.local and example.env 
 -in .env.local file create variable VITE_COINS_API_URL
 -in component App.jsx create variable const API_URL
+-open route: http://localhost:5173
+
+66. Limit selector
+-in component App.jsx create state variable const limit and set function setLimit
+-in folder components create component LimitSelector.jsx
+-in component App.jsx import component LimitSelector from LimitSelector.jsx
+-open route: http://localhost:5173
