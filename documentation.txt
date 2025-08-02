@@ -370,3 +370,9 @@ Section 07: Working with APIs - Crypto dash project
 -in component App.jsx import component CoinCard from CoinCard.jsx
 -in function coins.map() add component CoinCard with props key and coin
 -open route: http://localhost:5173
+
+65. Environment variables
+-open link: https://vite.dev/guide/env-and-mode
+-create files .env.local and example.env 
+-in .env.local file create variable VITE_COINS_API_URL
+-in component App.jsx create variable const API_URL
