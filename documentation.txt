@@ -285,3 +285,8 @@ Quiz 4: Section quiz
 Section 06: useRef hook - Simple timer project
 
 53. Section intro
+
+54. What is useRef & project setup
+-open link: https://react.dev/reference/react/useRef
+-create new Vite React.js project simple-timer
+-type command: npm i tailwindcss @tailwindcss/vite
