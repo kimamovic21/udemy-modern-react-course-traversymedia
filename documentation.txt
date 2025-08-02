@@ -324,3 +324,5 @@ Section 06: useRef hook - Simple timer project
 -in function useState for time pass anonymous function
 -invoke function useEffect()
 -in function resetTimer() invoke function localStorage.removeItem('time')
+
+Quiz 5: Section quiz

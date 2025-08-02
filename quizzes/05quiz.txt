@@ -1,0 +1,31 @@
+Quiz 05: Section quiz
+
+
+1. What is the primary difference between useRef and useState in React?
+
+Answer: useRef does not trigger a re-render when its value changes, while useState does.
+
+
+2. What does inputRef.current represent after assigning a ref to an input field?
+
+Answer: The DOM element of the input field
+
+
+3. Why do we use useRef to store the timer ID in the timer app?
+
+Answer: So that the interval ID can persist without triggering a re-render
+
+
+4. What does calling clearInterval(timerRef.current) do in the timer app?
+
+Answer: Stops the timer from updating the time
+
+
+5. Why is it useful to move both display and control logic into the Timer component rather than leaving everything in App.jsx?
+
+Answer: To isolate logic and reduce clutter in the root component
+
+
+6. What will calling startButtonRef.current.focus() inside useEffect do?
+
+Answer: Highlight the button so it can be activated with Enter
