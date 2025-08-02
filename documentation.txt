@@ -298,3 +298,9 @@ Section 06: useRef hook - Simple timer project
 -create function submit()
 -in jsx add to input element prop ref
 -add to button element onClick event
+
+56. Persist timer across re-renders
+-in component App.jsx create variable const timerRef
+-in jsx create HTML elements with Tailwind CSS classes
+-create two state variables and two set functions
+-create functions toggleTimer() and resetTimer()
