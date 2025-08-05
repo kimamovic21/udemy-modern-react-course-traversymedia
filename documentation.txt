@@ -440,3 +440,9 @@ Section 08: React router in declarative mode - extend Crypto dash project
 -in component App.jsx import component Header from folder components/Header.jsx
 -open route: http://localhost:5173
 -open route: http://localhost:5173/about
+
+73. Not found page
+-open route: http://localhost:5173/test
+-in folder pages create component not-found.jsx
+-in component App.jsx import component NotFoundPage from folder pages/not-found.jsx
+-in jsx add component Route for component NotFoundPage
