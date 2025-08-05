@@ -446,3 +446,18 @@ Section 08: React router in declarative mode - extend Crypto dash project
 -in folder pages create component not-found.jsx
 -in component App.jsx import component NotFoundPage from folder pages/not-found.jsx
 -in jsx add component Route for component NotFoundPage
+
+74. Fetch coin details
+-open link: https://reactrouter.com/api/hooks/useParams
+-in folder pages create component coin-details.jsx
+-in component App.jsx import component CoinDetailsPage from folder pages/coin-details.jsx
+-in component coin-details.jsx import function useParams from package react-router
+-in function CoinDetailsPage() destructure variable const { id } from function useParams()
+-in component CoinCard.jsx import component Link from package react-router
+-in jsx wrap all HTML elements with component Link
+-in component coin-details.jsx import functions useState and useEffect from package react
+-create three state variables and three set function
+-invoke function useEffect()
+-in function useEffect() create and invoke function fetchCoin()
+-in .env.local file create env variable VITE_COIN_API_URL
+-open route: http://localhost:5173/coin/bitcoin
