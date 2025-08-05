@@ -394,3 +394,11 @@ Section 07: Working with APIs - Crypto dash project
 -in conditional rendering invoke function filteredCoins.map()
 -add ternary condition for filteredCoins.length > 0 
 -open route: http://localhost:5173
+
+68. Sort order selector
+-in component App.jsx create state variable const sortBy and set function setSortBy
+-in folder components create component SortSelector.jsx
+-in component App.jsx import component SortSelector from SortSelector.jsx
+-in div element top-controls add component SortSelector
+-update variable const filteredCoins with sorting logic
+-open route: http://localhost:5173
