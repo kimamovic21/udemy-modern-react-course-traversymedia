@@ -429,3 +429,14 @@ Section 08: React router in declarative mode - extend Crypto dash project
 -in component Routes add component Route with props path and element
 -in prop element add component HomePage with props
 -open route: http://localhost:5173
+
+72. About page & link component
+-in folder pages create component about.jsx
+-in component App.jsx import component AboutPage from folder pages/about.jsx
+-in jsx add component Route for component AboutPage
+-in folder components create component Header.jsx
+-open link: https://reactrouter.com/api/components/Link
+-in component Header.jsx import component Link from package react-router
+-in component App.jsx import component Header from folder components/Header.jsx
+-open route: http://localhost:5173
+-open route: http://localhost:5173/about
