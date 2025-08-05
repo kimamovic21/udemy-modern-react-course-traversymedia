@@ -383,3 +383,14 @@ Section 07: Working with APIs - Crypto dash project
 -in folder components create component LimitSelector.jsx
 -in component App.jsx import component LimitSelector from LimitSelector.jsx
 -open route: http://localhost:5173
+
+67. Filter coins
+-in component App.jsx create state variable const filter and set function setFilter
+-in folder components create component FilterInput.jsx
+-in component App.jsx import component FilterInput from FilterInput.jsx
+-in jsx create div element with class top-controls
+-in div element add components FilterInput and LimitSelector
+-create variable const filteredCoins
+-in conditional rendering invoke function filteredCoins.map()
+-add ternary condition for filteredCoins.length > 0 
+-open route: http://localhost:5173
