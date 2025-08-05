@@ -402,3 +402,5 @@ Section 07: Working with APIs - Crypto dash project
 -in div element top-controls add component SortSelector
 -update variable const filteredCoins with sorting logic
 -open route: http://localhost:5173
+
+Quiz 6: Section quiz

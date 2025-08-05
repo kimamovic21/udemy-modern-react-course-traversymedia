@@ -1,0 +1,56 @@
+Quiz 06: Section quiz
+
+
+1. This is the correct way to make an HTTP request in a `useEffect`:
+
+useEffect(async () => {
+  const res = await fetch(API_URL);
+  const data = await res.json();
+  setCoins(data);
+}, []);
+
+Answer: False: You can not make the `useEffect` callback asynchronous
+
+
+2. What must environment variables in Vite be prefixed with?
+
+Answer: VITE_
+
+
+3. What is the purpose of adding limit to the dependency array of the useEffect hook?
+
+useEffect(() => {
+  const fetchCoins = async () => {
+    try {
+      const res = await fetch(
+        `${API_URL}&order=market_cap_desc&per_page=${limit}&page=1&sparkline=false`
+      );
+      if (!res.ok) throw new Error('Failed to fetch data');
+      const data = await res.json();
+      setCoins(data);
+    } catch (err) {
+      setError(err.message);
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  fetchCoins();
+}, [limit]);
+
+Answer: To refetch the data whenever the selected limit changes
+
+
+4. Why might the useEffect code appear to run twice in development mode?
+
+Answer: React’s Strict Mode intentionally mounts and unmounts the component to catch bugs
+
+
+5. Why did we use .slice() before calling .sort() on the coins array?
+
+Answer: To avoid mutating the original coins state array
+
+
+6. What is a shallow copy of an array in JavaScript?
+
+Answer: A new array that contains references to the same items as the original
