@@ -404,3 +404,9 @@ Section 07: Working with APIs - Crypto dash project
 -open route: http://localhost:5173
 
 Quiz 6: Section quiz
+
+
+
+Section 08: React router in declarative mode - extend Crypto dash project
+
+69. Intro to routing
