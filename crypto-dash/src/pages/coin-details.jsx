@@ -1,7 +1,9 @@
-import { useEffect, useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Link, useParams } from 'react-router';
 import Spinner from '../components/Spinner';
 import CoinChart from '../components/CoinChart';
+
+const API_URL = import.meta.env.VITE_COIN_API_URL;
 
 const CoinDetailsPage = () => {
   const { id } = useParams();
@@ -10,26 +12,19 @@ const CoinDetailsPage = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
-  const API_URL = import.meta.env.VITE_COIN_API_URL;
-
   useEffect(() => {
     const fetchCoin = async () => {
       try {
         const res = await fetch(`${API_URL}/${id}`);
-        if (!res.ok) throw new Error('Failed to fetch coin data');
+        if (!res.ok) throw new Error('Failed to fetch data');
         const data = await res.json();
-        console.log(data);
-
-        setTimeout(() => {
-          setCoin(data);
-        }, 500);
+        setCoin(data);
       } catch (err) {
+        console.log(err);
         setError(err.message);
       } finally {
-        setTimeout(() => {
-          setLoading(false);
-        }, 500);
-      };
+        setLoading(false);
+      }
     };
 
     fetchCoin();
@@ -37,17 +32,16 @@ const CoinDetailsPage = () => {
 
   return (
     <div className='coin-details-container'>
-      <Link to='/'>← Back to Home</Link>
+      <Link to='/'>← Back To Home</Link>
 
       <h1 className='coin-details-title'>
         {coin ? `${coin.name} (${coin.symbol.toUpperCase()})` : 'Coin Details'}
       </h1>
 
-      {loading && <Spinner color='blue' size='150' />}
+      {loading && <Spinner />}
+      {error && <div className='error'>❌ {error}</div>}
 
-      {error && <p className='error'>❌ {error}</p>}
-
-      {!loading && !error && coin && (
+      {!loading && !error && (
         <>
           <img
             src={coin.image.large}
@@ -59,21 +53,27 @@ const CoinDetailsPage = () => {
 
           <div className='coin-details-info'>
             <h3>Rank: #{coin.market_cap_rank}</h3>
-            <h3>Current Price: ${coin.market_data.current_price.usd.toLocaleString()}</h3>
-            <h4>Market Cap: ${coin.market_data.market_cap.usd.toLocaleString()}</h4>
+            <h3>
+              Current Price: $
+              {coin.market_data.current_price.usd.toLocaleString()}
+            </h3>
+            <h4>
+              Market Cap: ${coin.market_data.market_cap.usd.toLocaleString()}
+            </h4>
             <h4>24h High: ${coin.market_data.high_24h.usd.toLocaleString()}</h4>
             <h4>24h Low: ${coin.market_data.low_24h.usd.toLocaleString()}</h4>
             <h4>
-              24h Price Change: ${coin.market_data.price_change_24h.toFixed(2)} (
-              {coin.market_data.price_change_percentage_24h.toFixed(2)}%)
+              24h Price Change: ${coin.market_data.price_change_24h.toFixed(2)}{' '}
+              ({coin.market_data.price_change_percentage_24h.toFixed(2)}%)
             </h4>
             <h4>
-              Circulating Supply: {coin.market_data.circulating_supply.toLocaleString()}
+              Circulating Supply:{' '}
+              {coin.market_data.circulating_supply.toLocaleString()}
             </h4>
             <h4>
-              Total Supply: {coin.market_data.total_supply?.toLocaleString() || 'N/A'}
+              Total Supply:{' '}
+              {coin.market_data.total_supply?.toLocaleString() || 'N/A'}
             </h4>
-            <h4>Max Supply: {coin.market_data.max_supply?.toLocaleString() || 'N/A'}</h4>
             <h4>
               All-Time High: ${coin.market_data.ath.usd.toLocaleString()} on{' '}
               {new Date(coin.market_data.ath_date.usd).toLocaleDateString()}
@@ -82,7 +82,9 @@ const CoinDetailsPage = () => {
               All-Time Low: ${coin.market_data.atl.usd.toLocaleString()} on{' '}
               {new Date(coin.market_data.atl_date.usd).toLocaleDateString()}
             </h4>
-            <h4>Last Updated: {new Date(coin.last_updated).toLocaleString()}</h4>
+            <h4>
+              Last Updated: {new Date(coin.last_updated).toLocaleDateString()}
+            </h4>
           </div>
 
           <CoinChart coinId={coin.id} />
@@ -119,7 +121,7 @@ const CoinDetailsPage = () => {
         </>
       )}
 
-      {!loading && !error && !coin && <p>No data found.</p>}
+      {!loading && !error && !coin && <p>No Data Found!</p>}
     </div>
   );
 };

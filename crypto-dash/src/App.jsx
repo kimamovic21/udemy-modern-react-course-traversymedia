@@ -32,7 +32,7 @@ const App = () => {
         setTimeout(() => {
           setLoading(false);
         }, 500);
-      }
+      };
     };
 
     fetchCoins();

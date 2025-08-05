@@ -486,9 +486,15 @@ Section 08: React router in declarative mode - extend Crypto dash project
 -in folder components create component CoinChart.jsx
 -open link: https://api.coingecko.com/api/v3/coins/bitcoin/market_chart?vs_currency=usd&days=7
 -in component CoinChart.jsx import components from package chart.js
+-import component Line from package react-chartjs-2
 -import functions useEffect and useState from package react
 -create two state variables and two set functions
 -invoke function useEffect()
 -in function useEffect() create and invoke function fetchChartData()
 -in component coin-details.jsx import component CoinChart from folder components/CoinChart.jsx
+-open route: http://localhost:5173/coin/bitcoin
+
+78. Show chart data
+-in component CoinChart.jsx, in parent div element add component Line with props data and options 
+-add condition if (loading)
 -open route: http://localhost:5173/coin/bitcoin

@@ -22,13 +22,16 @@ ChartJS.register(
   TimeScale
 );
 
+const API_URL = import.meta.env.VITE_COIN_API_URL;
+
 const CoinChart = ({ coinId }) => {
   const [chartData, setChartData] = useState(null);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const fetchChartData = async () => {
-      const res = await fetch(`https://api.coingecko.com/api/v3/coins/${coinId}/market_chart?vs_currency=usd&days=7`);
+    const fetchPrices = async () => {
+      const res = await fetch(`${API_URL}/${coinId}/market_chart?vs_currency=usd&days=7`);
+
       const data = await res.json();
 
       const prices = data.prices.map((price) => ({
@@ -52,11 +55,42 @@ const CoinChart = ({ coinId }) => {
       setLoading(false);
     };
 
-    fetchChartData();
+    fetchPrices();
   }, [coinId]);
-  console.log(chartData);
 
-  return <>Chart</>;
+  if (loading) return <p>Loading Chart...</p>;
+
+  return (
+    <div style={{ marginTop: '30px' }}>
+      <Line
+        data={chartData}
+        options={{
+          responsive: true,
+          plugins: {
+            legend: { display: false },
+            tooltip: { mode: 'index', intersect: false },
+          },
+          scales: {
+            x: {
+              type: 'time',
+              time: {
+                unit: 'day',
+              },
+              ticks: {
+                autoSkip: true,
+                maxTicksLimit: 7,
+              },
+            },
+            y: {
+              ticks: {
+                callback: (value) => `$${value.toLocaleString()}`,
+              },
+            },
+          },
+        }}
+      />
+    </div>
+  );
 };
 
 export default CoinChart;
