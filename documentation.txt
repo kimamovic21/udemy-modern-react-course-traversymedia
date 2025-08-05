@@ -412,3 +412,20 @@ Section 08: React router in declarative mode - extend Crypto dash project
 69. Intro to routing
 
 70. React router syntax
+
+71. Homepage route
+-open link: https://reactrouter.com
+-open link: https://www.npmjs.com/package/react-router
+-type command: npm i react-router
+-in component main.jsx import component BrowserRouter from package react-router
+-in jsx wrap component App with component BrowserRouter
+-in folder src create folder pages
+-in folder pages create component home.jsx
+-in component home.jsx create and export function HomePage() as default
+-add to function HomePage() parameters destructed props
+-in component App.jsx import components Routes and Route from package react-router
+-import component HomePage from folder pages/home.jsx
+-in jsx add component Routes as parent component
+-in component Routes add component Route with props path and element
+-in prop element add component HomePage with props
+-open route: http://localhost:5173
