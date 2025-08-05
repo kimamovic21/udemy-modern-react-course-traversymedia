@@ -461,3 +461,7 @@ Section 08: React router in declarative mode - extend Crypto dash project
 -in function useEffect() create and invoke function fetchCoin()
 -in .env.local file create env variable VITE_COIN_API_URL
 -open route: http://localhost:5173/coin/bitcoin
+
+75. Display coin details
+-in component coin-details.jsx import component Link from package react-router
+-in jsx display information about coin
