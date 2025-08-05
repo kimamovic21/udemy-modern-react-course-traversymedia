@@ -465,3 +465,13 @@ Section 08: React router in declarative mode - extend Crypto dash project
 75. Display coin details
 -in component coin-details.jsx import component Link from package react-router
 -in jsx display information about coin
+-open route: http://localhost:5173/coin/bitcoin
+
+76. Add loading spinner
+-open link: https://www.npmjs.com/package/react-spinners
+-type command: npm i react-spinners
+-in folder components create component Spinner.jsx
+-in component coin-details.jsx import component Spinner from folder components/Spinner.jsx
+-in component home.jsx import component Spinner from folder components/Spinner.jsx
+-open route: http://localhost:5173
+-open route: http://localhost:5173/coin/bitcoin

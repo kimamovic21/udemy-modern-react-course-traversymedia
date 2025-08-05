@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router';
+import Spinner from '../components/Spinner';
 
 const CoinDetailsPage = () => {
   const { id } = useParams();
@@ -17,11 +18,16 @@ const CoinDetailsPage = () => {
         if (!res.ok) throw new Error('Failed to fetch coin data');
         const data = await res.json();
         console.log(data);
-        setCoin(data);
+
+        setTimeout(() => {
+          setCoin(data);
+        }, 500);
       } catch (err) {
         setError(err.message);
       } finally {
-        setLoading(false);
+        setTimeout(() => {
+          setLoading(false);
+        }, 500);
       };
     };
 
@@ -36,7 +42,7 @@ const CoinDetailsPage = () => {
         {coin ? `${coin.name} (${coin.symbol.toUpperCase()})` : 'Coin Details'}
       </h1>
 
-      {loading && <p>Loading...</p>}
+      {loading && <Spinner color='blue' size='150' />}
 
       {error && <p className='error'>❌ {error}</p>}
 

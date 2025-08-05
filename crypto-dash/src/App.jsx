@@ -22,12 +22,17 @@ const App = () => {
         const res = await fetch(`${API_URL}&order=market_cap_desc&per_page=${limit}&page=1&sparkline=false`);
         if (!res.ok) throw new Error('Failed to fetch data');
         const data = await res.json();
-        setCoins(data);
+
+        setTimeout(() => {
+          setCoins(data);
+        }, 500);
       } catch (err) {
         setError(err.message);
       } finally {
-        setLoading(false);
-      };
+        setTimeout(() => {
+          setLoading(false);
+        }, 500);
+      }
     };
 
     fetchCoins();
