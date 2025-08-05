@@ -410,3 +410,5 @@ Quiz 6: Section quiz
 Section 08: React router in declarative mode - extend Crypto dash project
 
 69. Intro to routing
+
+70. React router syntax
