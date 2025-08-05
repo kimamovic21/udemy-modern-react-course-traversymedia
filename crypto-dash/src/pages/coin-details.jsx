@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router';
 import Spinner from '../components/Spinner';
+import CoinChart from '../components/CoinChart';
 
 const CoinDetailsPage = () => {
   const { id } = useParams();
@@ -83,6 +84,8 @@ const CoinDetailsPage = () => {
             </h4>
             <h4>Last Updated: {new Date(coin.last_updated).toLocaleString()}</h4>
           </div>
+
+          <CoinChart coinId={coin.id} />
 
           <div className='coin-details-links'>
             {coin.links.homepage[0] && (
