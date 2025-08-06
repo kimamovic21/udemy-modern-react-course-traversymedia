@@ -510,10 +510,11 @@ Section 09: Build & deploy
 80. Understanding the build process
 
 81. The build command
+-open link: https://vite.dev/guide/build
 -type command: npm run build
 -type command: npm run preview
 -open link: http://localhost:4173
--on vite.config.js file add object build
+-in vite.config.js file add object build
 
 82. Deploy to Vercel
 -open link: https://vercel.com
@@ -521,3 +522,5 @@ Section 09: Build & deploy
 -add env variables
 -click deploy button
 -open link: https://udemy-crypto-dash-traversy-media.vercel.app
+
+Quiz 8: Section quiz

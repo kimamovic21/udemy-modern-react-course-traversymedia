@@ -18,6 +18,10 @@
 
 ## Additional folders
 
-### Folder quizzes
+### javascript-refresher
 
-### Folder .vscode
+### react-test
+
+### quizzes
+
+### .vscode
