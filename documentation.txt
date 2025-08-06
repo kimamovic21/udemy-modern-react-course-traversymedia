@@ -584,5 +584,13 @@ Section 10: Context API - Shopping cart UI
 -in function ProductList() invoke function useContext()
 -in component ProductList.jsx import function useProducts from folder context/ProductContext.jsx
 -in component ProductList() invoke function useProducts()
+-in component main.jsx import component ProductContext from folder context/ProductContext.jsx
+-open route: http://localhost:5173
+-open route: http://localhost:5000/products
+
+90. Cart Context
+-in folder context create component CartContext.jsx
+-in component CartContext.jsx add logic for React Context
+-in component main.jsx import component CartContext from folder context/CartContext.jsx
 -open route: http://localhost:5173
 -open route: http://localhost:5000/products
