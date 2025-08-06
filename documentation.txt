@@ -554,3 +554,17 @@ Section 10: Context API - Shopping cart UI
 -open route: http://localhost:5000
 -open route: http://localhost:5000/products
 -open route: http://localhost:5173
+
+87. Display product data
+-in component App.jsx import functions useState and useEffect from package react
+-create three state variables and three set functions
+-invoke function useEffect()
+-in function useEffect() create and invoke function fetchProducts()
+-in jsx add conditional rendering for loading and error state
+-create HTML elements with Tailwind CSS classes
+-create folder components and component ProductList.jsx
+-in component App.jsx import component ProductList from folder components/ProductList.jsx
+-create component ProductCard.jsx
+-in component ProductList.jsx import component ProductCard from folder components/ProductCard.jsx
+-open route: http://localhost:5173
+-open route: http://localhost:5000/products
