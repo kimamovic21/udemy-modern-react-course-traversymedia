@@ -498,3 +498,5 @@ Section 08: React router in declarative mode - extend Crypto dash project
 -in component CoinChart.jsx, in parent div element add component Line with props data and options 
 -add condition if (loading)
 -open route: http://localhost:5173/coin/bitcoin
+
+Quiz 7: Section quiz
