@@ -568,3 +568,8 @@ Section 10: Context API - Shopping cart UI
 -in component ProductList.jsx import component ProductCard from folder components/ProductCard.jsx
 -open route: http://localhost:5173
 -open route: http://localhost:5000/products
+
+88. Setup Proxy
+-open link: https://vite.dev/config/server-options
+-in vite.config.js file add object server
+-in component App.jsx invoke function await fetch('/api/products')
