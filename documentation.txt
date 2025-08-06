@@ -514,3 +514,10 @@ Section 09: Build & deploy
 -type command: npm run preview
 -open link: http://localhost:4173
 -on vite.config.js file add object build
+
+82. Deploy to Vercel
+-open link: https://vercel.com
+-click add new project button
+-add env variables
+-click deploy button
+-open link: https://udemy-crypto-dash-traversy-media.vercel.app
