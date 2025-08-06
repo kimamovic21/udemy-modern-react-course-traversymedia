@@ -500,3 +500,9 @@ Section 08: React router in declarative mode - extend Crypto dash project
 -open route: http://localhost:5173/coin/bitcoin
 
 Quiz 7: Section quiz
+
+
+
+Section 09: Build & deploy
+
+79. Section intro
