@@ -573,3 +573,16 @@ Section 10: Context API - Shopping cart UI
 -open link: https://vite.dev/config/server-options
 -in vite.config.js file add object server
 -in component App.jsx invoke function await fetch('/api/products')
+-open route: http://localhost:5173
+-open route: http://localhost:5000/products
+
+89. Product Context
+-create folder context and component ProductContext.jsx
+-in component ProductContext.jsx add logic for React Context
+-in component ProductList.jsx import function useContext from package react
+-import component ProductContext from folder context/ProductContext.jsx
+-in function ProductList() invoke function useContext()
+-in component ProductList.jsx import function useProducts from folder context/ProductContext.jsx
+-in component ProductList() invoke function useProducts()
+-open route: http://localhost:5173
+-open route: http://localhost:5000/products
