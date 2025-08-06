@@ -533,3 +533,13 @@ Section 10: Context API - Shopping cart UI
 
 84. What is the Context API
 -open link: https://react.dev/reference/react/createContext
+
+85. Project setup
+-create new Vite React.js project
+-type command: npm install tailwindcss @tailwindcss/vite
+-open link: https://react-icons.github.io/react-icons
+-type command: npm i react-icons
+-in vite.config.js file import function tailwindcss from package tailwindcss/vite
+-in index.css file add directive @import 'tailwindcss'
+-in folder public add folder images
+-in folder src create folder data and db.json file
