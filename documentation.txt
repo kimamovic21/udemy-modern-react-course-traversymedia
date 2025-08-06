@@ -543,3 +543,14 @@ Section 10: Context API - Shopping cart UI
 -in index.css file add directive @import 'tailwindcss'
 -in folder public add folder images
 -in folder src create folder data and db.json file
+-open route: http://localhost:5173
+
+86. JSON Server setup
+-open link: https://jsonplaceholder.typicode.com
+-open link: https://www.npmjs.com/package/json-server
+-type command: npm install -D json-server
+-in package.json file add command json-server
+-type command: npm run json-server
+-open route: http://localhost:5000
+-open route: http://localhost:5000/products
+-open route: http://localhost:5173
