@@ -508,3 +508,9 @@ Section 09: Build & deploy
 79. Section intro
 
 80. Understanding the build process
+
+81. The build command
+-type command: npm run build
+-type command: npm run preview
+-open link: http://localhost:4173
+-on vite.config.js file add object build
