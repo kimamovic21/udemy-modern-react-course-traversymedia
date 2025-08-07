@@ -1,0 +1,21 @@
+import type { Route } from './+types/index';
+
+export function meta({ }: Route.MetaArgs) {
+  return [
+    { title: 'The Friendly Dev | Welcome' },
+    {
+      name: 'description',
+      content: 'Custom website development'
+    },
+  ];
+};
+
+const HomePage = () => {
+  return (
+    <>
+      My App
+    </>
+  );
+};
+
+export default HomePage;

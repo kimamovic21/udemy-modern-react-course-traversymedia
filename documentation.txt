@@ -655,3 +655,22 @@ Section 11: React router framework mode - friendly dev project
 -open link: https://reactrouter.com
 -create new Vite React Router project
 -type command: npm run dev
+-open route: http://localhost:5173
+
+98. Creating routes
+-in routes.ts file import function route from package react router
+-in array add function route() for each route
+-in folder routes create component about.tsx
+-create folders about and home
+-in folders about and home create components index.tsx
+-create folder contact and component index.tsx
+-in routes.ts file add function route for contact component
+-create folder projects and component index.tsx
+-in routes.ts file add function route for projects component
+-create folder blog and component index.tsx
+-in routes.ts file add function route for blog component
+-open route: http://localhost:5173
+-open route: http://localhost:5173/about
+-open route: http://localhost:5173/contact
+-open route: http://localhost:5173/projects
+-open route: http://localhost:5173/blog
