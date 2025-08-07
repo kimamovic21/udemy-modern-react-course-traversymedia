@@ -613,3 +613,11 @@ Section 10: Context API - Shopping cart UI
 -in component App.jsx import component Header from folder components/Header.jsx
 -open route: http://localhost:5173
 -open route: http://localhost:5000/products
+
+93. Cart items dropdown
+-in component Header.jsx import function useState from package react
+-create state variable showDropdown and set function setShowDropdown
+-create variable const total
+-in jsx add logic for displaying cart items dropdown
+-open route: http://localhost:5173
+-open route: http://localhost:5000/products
