@@ -621,3 +621,15 @@ Section 10: Context API - Shopping cart UI
 -in jsx add logic for displaying cart items dropdown
 -open route: http://localhost:5173
 -open route: http://localhost:5000/products
+
+94. Remove items & clear cart
+-in component CartContext.jsx create function removeFromCart()
+-in prop value add function removeFromCart
+-in component Header.jsx, destructure function removeFromCart from function useCart()
+-in jsx create button element for deleting item from cart
+-in component CartContext.jsx create function clearCart
+-in prop value add function clearCart
+-in component Header.jsx destructed function clearCart from function useCart()
+-in jsx create button element for clearing cart
+-open route: http://localhost:5173
+-open route: http://localhost:5000/products
