@@ -4,6 +4,7 @@ import {
   useEffect,
   useState
 } from 'react';
+import dbData from '../data/db.json'; 
 
 export const ProductContext = createContext();
 
@@ -15,15 +16,19 @@ export const ProductProvider = ({ children }) => {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const res = await fetch('/api/products');
-        if (!res.ok) throw new Error('Failed to fetch products');
-        const data = await res.json();
-        setProducts(data);
+        if (import.meta.env.VITE_NODE_ENV === 'production') {
+          setProducts(dbData.products || []);
+        } else {
+          const res = await fetch('/api/products');
+          if (!res.ok) throw new Error('Failed to fetch products');
+          const data = await res.json();
+          setProducts(data);
+        };
       } catch (err) {
         setError(err.message);
       } finally {
         setLoading(false);
-      }
+      };
     };
 
     fetchProducts();
