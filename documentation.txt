@@ -606,3 +606,10 @@ Section 10: Context API - Shopping cart UI
 -in anonymous function invoke function addToCart()
 -open route: http://localhost:5173
 -open route: http://localhost:5000/products
+
+92. Header & cart count
+-in folder components create component Header.jsx 
+-in component Header.jsx add logic for displaying cart count
+-in component App.jsx import component Header from folder components/Header.jsx
+-open route: http://localhost:5173
+-open route: http://localhost:5000/products
