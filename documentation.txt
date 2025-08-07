@@ -698,3 +698,8 @@ Section 11: React router framework mode - friendly dev project
 -in HTML elements add NavLink components
 -in component root.tsx import component Navbar from components/Navbar
 -open route: http://localhost:5173
+
+102. Active link styling
+-in component Navbar.tsx create variables const base and const active
+-in jsx add to components NavLink props className
+-open route: http://localhost:5173
