@@ -12,20 +12,6 @@ export function meta({ }: Route.MetaArgs) {
 };
 
 const HomePage = () => {
-  const now = new Date().toISOString();
-
-  if (typeof window === 'undefined') {
-    console.log('🖥️ Server Render at:', now);
-  } else {
-    console.log('🧠 Client Hydration at:', now);
-  };
-
-  // console.log(window.scrollX);
-
-  useEffect(() => {
-    console.log(window.scrollX);
-  }, []);
-
   return (
     <>
       My App

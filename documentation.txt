@@ -687,3 +687,14 @@ Section 11: React router framework mode - friendly dev project
 -in home/index.tsx component create variable const now
 -import and invoke function useEffect()
 -open route: http://localhost:5173
+
+101. Links & navigation
+-type command: npm i react-icons
+-open link: https://reactrouter.com/api/components/NavLink
+-create folder components and component Navbar.tsx
+-in component Navbar.tsx import component NavLink from package react-router
+-import React icon FaLaptopCode
+-in jsx create HTML elements with Tailwind CSS classes
+-in HTML elements add NavLink components
+-in component root.tsx import component Navbar from components/Navbar
+-open route: http://localhost:5173
