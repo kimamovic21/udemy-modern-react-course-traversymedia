@@ -633,3 +633,12 @@ Section 10: Context API - Shopping cart UI
 -in jsx create button element for clearing cart
 -open route: http://localhost:5173
 -open route: http://localhost:5000/products
+
+95. Store cart items to local storage
+-in component CartContext.jsx import function useEffect from package react
+-in function useState() invoke anonymous function
+-in anonymous function create variable const stored
+-invoke function useEffect()
+-in function useEffect() invoke function localStorage.setItem()
+-open route: http://localhost:5173
+-open route: http://localhost:5000/products

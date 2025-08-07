@@ -16,6 +16,8 @@
 
 ### Project 5: *Crypto Dash* [https://udemy-crypto-dash-traversy-media.vercel.app]
 
+### Project 6: *Shopping Cart UI* [https://udemy-shopping-cart-ui-traversy-media.vercel.app]
+
 ## Additional folders
 
 ### javascript-refresher
