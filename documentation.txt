@@ -650,3 +650,8 @@ Quiz 9: Section quiz
 Section 11: React router framework mode - friendly dev project
 
 96. Section & project intro
+
+97. Project setup & file structure
+-open link: https://reactrouter.com
+-create new Vite React Router project
+-type command: npm run dev
