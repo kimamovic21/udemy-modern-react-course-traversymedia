@@ -594,3 +594,15 @@ Section 10: Context API - Shopping cart UI
 -in component main.jsx import component CartContext from folder context/CartContext.jsx
 -open route: http://localhost:5173
 -open route: http://localhost:5000/products
+
+91. Add to cart button
+-in component ProductCard.jsx, in jsx create button element with Tailwind CSS classes and event onClick
+-in component CartContext.jsx create function addToCart()
+-in prop value add variable cart and function addToCart
+-in component ProductCard.jsx import function useCart from folder context/CartContext.jsx
+-in function ProductCard() invoke function useCart()
+-destructure function addToCart from function useCart()
+-in event onClick pass anonymous function
+-in anonymous function invoke function addToCart()
+-open route: http://localhost:5173
+-open route: http://localhost:5000/products
