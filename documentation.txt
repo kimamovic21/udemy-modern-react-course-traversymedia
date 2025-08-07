@@ -682,3 +682,8 @@ Section 11: React router framework mode - friendly dev project
 -in array plugins invoke function devtoolsJson()
 -type command npm run dev
 -open route: http://localhost:5173
+
+100. SSR & client hydration
+-in home/index.tsx component create variable const now
+-import and invoke function useEffect()
+-open route: http://localhost:5173
