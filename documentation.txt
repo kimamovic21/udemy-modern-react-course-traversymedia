@@ -642,3 +642,5 @@ Section 10: Context API - Shopping cart UI
 -in function useEffect() invoke function localStorage.setItem()
 -open route: http://localhost:5173
 -open route: http://localhost:5000/products
+
+Quiz 9: Section quiz

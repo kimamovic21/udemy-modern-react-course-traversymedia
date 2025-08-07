@@ -1,0 +1,31 @@
+Quiz 09: Section quiz
+
+
+1. What is prop drilling?
+
+Answer: Passing data through multiple layers of components just to reach a deeply nested one
+
+
+2. What problem does the Context API primarily solve in a React app?
+
+Answer: It allows global state to be accessed without prop drilling
+
+
+3.  What are the three basic steps to using the Context API?
+
+Answer: Create a context, use a provider to share value, consume with useContext()
+
+
+4. Which of the following is NOT a good use case for the Context API?
+
+Answer: Passing frequently typed input text from one component to another
+
+
+5.  Why is a custom hook like useProducts() used in this context implementation?
+
+Answer: It simplifies consuming the context in other components
+
+
+6. Which prop is required on the context provider to pass down data?
+
+Answer: value

@@ -4,7 +4,7 @@ import {
   useEffect,
   useState
 } from 'react';
-import dbData from '../data/db.json'; 
+import dbData from '../data/db.json';
 
 export const ProductContext = createContext();
 
