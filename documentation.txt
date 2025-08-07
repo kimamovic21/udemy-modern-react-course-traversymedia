@@ -674,3 +674,11 @@ Section 11: React router framework mode - friendly dev project
 -open route: http://localhost:5173/contact
 -open route: http://localhost:5173/projects
 -open route: http://localhost:5173/blog
+
+99. Devtools console error fix
+-open link: https://www.npmjs.com/package/@improvements/vite-plugin-devtools-json
+-type command: npm install -D vite-plugin-devtools-json
+-in vite.config.ts file import function devtoolsJson form package improvements/vite-plugin-devtools-json
+-in array plugins invoke function devtoolsJson()
+-type command npm run dev
+-open route: http://localhost:5173
