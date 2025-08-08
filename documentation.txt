@@ -734,3 +734,10 @@ Section 11: React router framework mode - friendly dev project
 -open route: http://localhost:5173
 
 Quiz 10: Section quiz
+
+
+
+Section 12: Loaders, filtering, pagination & more
+
+107. Loaders overview
+-open link: https://reactrouter.com/start/framework/data-loading
