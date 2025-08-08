@@ -761,3 +761,10 @@ Section 12: Loaders, filtering, pagination & more
 -in folder app create types.ts file
 -in types.ts file create and export type Project
 -in component projects/index.tsx import type Project from types.ts file
+
+110. Display loader data
+-in component projects/index.tsx, in jsx create div element with Tailwind CSS classes
+-in div element invoke function projects.map()
+-in folder components create component ProjectCard.tsx
+-in component projects/index.tsx import component ProjectCard from components/ProjectCard.tsx
+-open route: http://localhost:5173/projects

@@ -31,16 +31,6 @@
     "featured": true
   },
   {
-    "id": 4,
-    "title": "FitTrack",
-    "description": "A fitness tracker that logs workouts and progress visually.",
-    "image": "/images/project-4.png",
-    "url": "https://example.com",
-    "date": "2024-11-05",
-    "category": "Fullstack",
-    "featured": false
-  },
-  {
     "id": 5,
     "title": "CodeCritic",
     "description": "A code snippet review tool with comments and upvotes.",
