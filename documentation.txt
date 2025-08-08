@@ -756,3 +756,8 @@ Section 12: Loaders, filtering, pagination & more
 -destructure variable const { products } from function loaderData()
 -open route: http://localhost:5173
 -open route: http://localhost:5173/projects
+
+109. Create project type
+-in folder app create types.ts file
+-in types.ts file create and export type Project
+-in component projects/index.tsx import type Project from types.ts file
