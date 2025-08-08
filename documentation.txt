@@ -703,3 +703,10 @@ Section 11: React router framework mode - friendly dev project
 -in component Navbar.tsx create variables const base and const active
 -in jsx add to components NavLink props className
 -open route: http://localhost:5173
+
+103. Responsive menu
+-in component Navbar.tsx import function useState and React icons
+-create state variable const menuOpen and set function setMenuOpen
+-in jsx create a div element for hamburger menu
+-add conditional rendering for variable menuOpen &&
+-open route: http://localhost:5173
