@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import type { Route } from './+types/index';
+import Hero from '~/components/Hero';
 
 export function meta({ }: Route.MetaArgs) {
   return [
@@ -13,9 +14,9 @@ export function meta({ }: Route.MetaArgs) {
 
 const HomePage = () => {
   return (
-    <>
-      My App
-    </>
+    <section>
+      <Hero name='Kerim' />
+    </section>
   );
 };
 

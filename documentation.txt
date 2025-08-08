@@ -710,3 +710,10 @@ Section 11: React router framework mode - friendly dev project
 -in jsx create a div element for hamburger menu
 -add conditional rendering for variable menuOpen &&
 -open route: http://localhost:5173
+
+104. Hero component
+-in folder components create component Hero.tsx
+-in component hero/index.tsx import component Hero from components/Hero.tsx
+-create interface HeroProps
+-add to function Hero type React.FC<HeroProps>
+-open route: http://localhost:5173
