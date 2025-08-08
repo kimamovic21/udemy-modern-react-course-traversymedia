@@ -717,3 +717,6 @@ Section 11: React router framework mode - friendly dev project
 -create interface HeroProps
 -add to function Hero type React.FC<HeroProps>
 -open route: http://localhost:5173
+
+105. Introduction to types (TypeScript)
+-open link: https://www.typescriptlang.org/play
