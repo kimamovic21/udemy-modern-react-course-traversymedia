@@ -658,6 +658,7 @@ Section 11: React router framework mode - friendly dev project
 -open route: http://localhost:5173
 
 98. Creating routes
+-open link: https://reactrouter.com/start/framework/routing
 -in routes.ts file import function route from package react router
 -in array add function route() for each route
 -in folder routes create component about.tsx
@@ -720,3 +721,14 @@ Section 11: React router framework mode - friendly dev project
 
 105. Introduction to types (TypeScript)
 -open link: https://www.typescriptlang.org/play
+
+106. Layout routes
+-in folder routes create folder layouts and component home.tsx
+-in routes.ts file import function layout from package react-router
+-in array for routes invoke function layout()
+-open link: https://reactrouter.com/api/components/Outlet
+-in component layouts/home.tsx import component Outlet from package react-router
+-in component layouts/home.tsx import component Hero from components/Hero.tsx
+-in folder layouts create component main.tsx
+-in routes.ts invoke function layout() for rest of the pages
+-open route: http://localhost:5173
