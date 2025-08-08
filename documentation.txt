@@ -741,3 +741,18 @@ Section 12: Loaders, filtering, pagination & more
 
 107. Loaders overview
 -open link: https://reactrouter.com/start/framework/data-loading
+
+108. Fetch projects with loader
+-type command: npm i -D json-server
+-add folder images to folder public
+-create folder data and db.json file
+-in package.json file add command json-server
+-type command: npm run json-server
+-open route: http://localhost:8000/projects
+-in component products/index.ts file import type Route
+-create and export async function loader()
+-add to function ProjectsPage() destructed parameter loaderData with type
+-in function ProjectsPage() invoke function loaderData()
+-destructure variable const { products } from function loaderData()
+-open route: http://localhost:5173
+-open route: http://localhost:5173/projects
