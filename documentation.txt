@@ -732,3 +732,5 @@ Section 11: React router framework mode - friendly dev project
 -in folder layouts create component main.tsx
 -in routes.ts invoke function layout() for rest of the pages
 -open route: http://localhost:5173
+
+Quiz 10: Section quiz

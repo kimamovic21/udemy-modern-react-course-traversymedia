@@ -1,0 +1,36 @@
+Quiz 10: Section quiz
+
+
+1. Which file is responsible for defining all the routes in framework mode?
+
+Answer: app/routes.ts
+
+
+2. What function is used to define a basic route in framework mode?
+
+Answer: route()
+
+
+3. What does the route() function require as its arguments?
+
+Answer: A name and the relative path to the component file
+
+
+4. What happens during client-side hydration?
+
+Answer: React runs JavaScript and attaches interactivity to the static HTML
+
+
+5. If window is undefined in a component, where is the code currently executing?
+
+Answer: On the server
+
+
+6. When is useEffect executed during SSR?
+
+Answer: Only on the client after hydration
+
+
+7. Which component is used to display the output for a specific route?
+
+Answer: <Outlet />
