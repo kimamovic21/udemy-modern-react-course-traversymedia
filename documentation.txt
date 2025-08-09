@@ -873,3 +873,10 @@ Section 13: Inner pages, actions, markdown blog
 -in function ContactPage() create variable const errors
 -in jsx, in component Form add conditional renderings for error message 
 -open route: http://localhost:5173/contact
+
+122. Not found page
+-in folder routes create folder errors and component not-found.tsx
+-in component not-found.tsx import component Link from package react-router
+-in jsx create HTML elements with Tailwind CSS classes
+-in routes.ts file invoke function route() for non-existing routes
+-open route: http://localhost:5173/test
