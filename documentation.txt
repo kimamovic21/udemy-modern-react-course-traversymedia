@@ -778,3 +778,8 @@ Section 12: Loaders, filtering, pagination & more
 -open route: http://localhost:5173/projects/1
 -open route: http://localhost:8000/projects
 -open route: http://localhost:8000/projects/1
+
+112. Details page output
+-in component details.tsx import component Link and React icon FaArrowLeft
+-in jsx create HTML elements with Tailwind CSS classes for displaying project details
+-open route: http://localhost:5173/projects/1
