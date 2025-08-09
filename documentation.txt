@@ -803,3 +803,10 @@ Section 12: Loaders, filtering, pagination & more
 -in component projects/index.tsx import component Pagination from components/Pagination.tsx
 -in jsx add component Pagination with three props
 -open route: http://localhost:5173/projects
+
+115. Project category filter
+-in component projects/index.tsx create state variable const selectedCategory and set function setSelectedCategory
+-create variables const categories and const filteredProjects 
+-in jsx create div element with Tailwind CSS flex classes
+-in div element invoke function categories.map()
+-open route: http://localhost:5173/projects
