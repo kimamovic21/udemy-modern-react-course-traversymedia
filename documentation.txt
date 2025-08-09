@@ -819,3 +819,20 @@ Section 12: Loaders, filtering, pagination & more
 -in component projects/index.tsx import component AnimatePresence and function motion from package framer-motion
 -in jsx add component AnimatePresence
 -open route: http://localhost:5173/projects
+
+117. Featured projects
+-create files .env and example.env
+-in .env file create variable VITE_API_URL
+-in component details.tsx and projects/index.tsx add import.meta.env.VITE_API_URL
+-in folder components create component FeaturedProjects.tsx
+-in component home/index.tsx import component FeaturedProjects from components/FeaturedProjects.tsx
+-import types Route and Project
+-create and export async function loader()
+-in function HomePage() destructure variable const { projects }
+-in jsx add component FeaturedProjects with two props
+-in component FeaturedProjects.tsx import type Project and component ProjectCard
+-add to function FeaturedProjects parameters destructured props with types
+-create variable const featured
+-in jsx create HTML elements with Tailwind CSS classes for displaying featured projects
+-in div element with Tailwind CSS classes invoke function featured.map()
+-open route: http://localhost:5173
