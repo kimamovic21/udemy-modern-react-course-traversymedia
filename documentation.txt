@@ -865,3 +865,11 @@ Section 13: Inner pages, actions, markdown blog
 -replace form element with component Form
 -add to component Form prop method
 -open route: http://localhost:5173/contact
+
+121. Form validation with actions
+-open link: https://reactrouter.com/how-to/form-validation
+-in component contact/index.tsx, in function action() create variable const errors
+-add if conditions for form validation
+-in function ContactPage() create variable const errors
+-in jsx, in component Form add conditional renderings for error message 
+-open route: http://localhost:5173/contact
