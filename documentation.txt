@@ -838,3 +838,14 @@ Section 12: Loaders, filtering, pagination & more
 -open route: http://localhost:5173
 
 Quiz 11: Section quiz
+
+
+ 
+Section 13: Inner pages, actions, markdown blog
+
+118. About page
+-in component about/index.tsx create HTML elements with Tailwind CSS classes
+-in folder components create component AboutPreview.tsx
+-in component home/index.tsx import component AboutPreview from components/AboutPreview.tsx
+-open route: http://localhost:5173
+-open route: http://localhost:5173/about
