@@ -854,3 +854,14 @@ Section 13: Inner pages, actions, markdown blog
 -in component contact/index.tsx create HTML elements with Tailwind CSS classes
 -open route: http://localhost:5173
 -open route: http://localhost:5173/contact
+
+120. React router actions example
+-open link: https://reactrouter.com/start/framework/actions
+-open link: https://reactrouter.com/api/components/Form
+-in component contact/index.tsx import component Form and type Route
+-create and export async function action()
+-add to function ContactPage() parameter destructured prop actionData with type
+-in jsx add ternary condition actionData?.message ?
+-replace form element with component Form
+-add to component Form prop method
+-open route: http://localhost:5173/contact
