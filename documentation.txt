@@ -880,3 +880,6 @@ Section 13: Inner pages, actions, markdown blog
 -in jsx create HTML elements with Tailwind CSS classes
 -in routes.ts file invoke function route() for non-existing routes
 -open route: http://localhost:5173/test
+
+123. What is Markdown ?
+-open link: https://www.markdownguide.org
