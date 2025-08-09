@@ -849,3 +849,8 @@ Section 13: Inner pages, actions, markdown blog
 -in component home/index.tsx import component AboutPreview from components/AboutPreview.tsx
 -open route: http://localhost:5173
 -open route: http://localhost:5173/about
+
+119. Contact page JSX
+-in component contact/index.tsx create HTML elements with Tailwind CSS classes
+-open route: http://localhost:5173
+-open route: http://localhost:5173/contact
