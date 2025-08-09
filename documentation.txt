@@ -783,3 +783,13 @@ Section 12: Loaders, filtering, pagination & more
 -in component details.tsx import component Link and React icon FaArrowLeft
 -in jsx create HTML elements with Tailwind CSS classes for displaying project details
 -open route: http://localhost:5173/projects/1
+
+113. Project pagination
+-in component projects/index.tsx import function useState from package react
+-create state variable const currentPage and set function setCurrentPage
+-create variables projectsPerPage and const totalPages
+-create variables const indexOfLast, const indexOfFirst and const currentProjects
+-in jsx invoke function currentProjects.map()
+-create function renderPagination()
+-in jsx add conditional rendering for variable totalPages > 1 &&
+-open route: http://localhost:5173/projects
