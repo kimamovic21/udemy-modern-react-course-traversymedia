@@ -836,3 +836,5 @@ Section 12: Loaders, filtering, pagination & more
 -in jsx create HTML elements with Tailwind CSS classes for displaying featured projects
 -in div element with Tailwind CSS classes invoke function featured.map()
 -open route: http://localhost:5173
+
+Quiz 11: Section quiz

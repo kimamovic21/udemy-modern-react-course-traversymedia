@@ -1,0 +1,36 @@
+Quiz 11: Section quiz
+
+
+1. How is data from a loader accessed?
+
+Answer: It is passed to the component as props
+
+
+2. What is the key difference between a server loader and a client loader?
+
+Answer: Server loaders fetch data before rendering, client loaders fetch after rendering
+
+
+3. What is the purpose of hydrateFallback when using client loaders?
+
+Answer: To render a fallback UI (like a spinner) while the loader runs
+
+
+4. What is the purpose of creating a Project type in TypeScript?
+
+Answer: To define the structure of the project data and enable type checking
+
+
+5. What is the correct JSX to render all projects using the ProjectCard component?
+
+Answer: {projects.map((project) => <ProjectCard key={project.id} project={project} />)}
+
+
+6. What is the purpose of the condition {totalPages > 1 && renderPagination()}?
+
+Answer: To prevent rendering pagination buttons if not needed
+
+
+7. What data structure is used to get unique categories from the project list?
+
+Answer: Set
