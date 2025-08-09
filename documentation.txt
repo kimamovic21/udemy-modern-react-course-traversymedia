@@ -793,3 +793,13 @@ Section 12: Loaders, filtering, pagination & more
 -create function renderPagination()
 -in jsx add conditional rendering for variable totalPages > 1 &&
 -open route: http://localhost:5173/projects
+
+114. Pagination component
+-in folder components create component Pagination.tsx
+-create type PaginationProps
+-add to function Pagination type
+-add condition if (totalPages <= 1) return null
+-move code for rendering pagination content to function Pagination
+-in component projects/index.tsx import component Pagination from components/Pagination.tsx
+-in jsx add component Pagination with three props
+-open route: http://localhost:5173/projects
