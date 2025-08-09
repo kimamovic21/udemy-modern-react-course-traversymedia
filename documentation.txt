@@ -810,3 +810,12 @@ Section 12: Loaders, filtering, pagination & more
 -in jsx create div element with Tailwind CSS flex classes
 -in div element invoke function categories.map()
 -open route: http://localhost:5173/projects
+
+116. Animate project filter
+-in component layout/main.tsx create and export function meta()
+-in component projects/index.tsx create and export function meta()
+-open link: https://motion.dev
+-type command: npm i framer-motion
+-in component projects/index.tsx import component AnimatePresence and function motion from package framer-motion
+-in jsx add component AnimatePresence
+-open route: http://localhost:5173/projects
