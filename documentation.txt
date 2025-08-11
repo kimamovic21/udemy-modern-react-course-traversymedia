@@ -917,3 +917,13 @@ Section 13: Inner pages, actions, markdown blog
 -in function BlogPostDetailsPage() destructure variables const { postMeta, markdown }
 -open route: http://localhost:5173/blog
 -open route: http://localhost:5173/blog/react-hooks-overview
+
+127. Display details page
+-in component details.tsx import component Link from package react-router
+-in jsx create HTML elements with Tailwind CSS classes
+-open link: https://www.npmjs.com/package/@tailwindcss/typography
+-type command: npm install -D @tailwindcss/typography
+-in app.css file add @plugin "@tailwindcss/typography"
+-open route: http://localhost:5173/blog
+-open route: http://localhost:5173/blog/react-hooks-overview
+-open route: http://localhost:5173/blog/test-post
