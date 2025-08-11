@@ -931,3 +931,11 @@ Section 13: Inner pages, actions, markdown blog
 128. Sort by date
 -in component blog/index.tsx create variable const sortedData
 -open route: http://localhost:5173/blog
+
+129. Re-use pagination component
+-in component blog/index.tsx import function useState and component Pagination
+-create state variable const currentPage and set function setCurrentPage
+-create five variables for pagination
+-in jsx replace function posts.map() with function currentPosts.map()
+-add conditional rendering totalPages > 1 && 
+-open route: http://localhost:5173/blog
