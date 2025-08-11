@@ -939,3 +939,12 @@ Section 13: Inner pages, actions, markdown blog
 -in jsx replace function posts.map() with function currentPosts.map()
 -add conditional rendering totalPages > 1 && 
 -open route: http://localhost:5173/blog
+
+130. Blog post filter
+-in folder components create component PostFilter.tsx
+-in component blog/index.tsx import component PostFilter from folder components/PostCard.tsx
+-create state variable const searchQuery and set function setSearchQuery
+-in jsx add component PostFilter with props searchQuery and onSearchChange
+-create variable const filteredPosts
+-in jsx add ternary condition for variable currentPosts.length === 0 ?
+-open route: http://localhost:5173/blog
