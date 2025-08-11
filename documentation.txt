@@ -895,3 +895,11 @@ Section 13: Inner pages, actions, markdown blog
 -add to function BlogPage() parameter destructured prop loaderData with type
 -in function BlogPage() destructure variable const { posts } from loaderData
 -open route: http://localhost:5173/blog
+
+125. Display post meta
+-in component blog/index.tsx, in jsx add HTML elements with Tailwind CSS classes
+-invoke function posts.map()
+-in folder components create component PostCard.tsx
+-in component blog/index.tsx import component PostCard from folder components/PostCard.tsx
+-in function posts.map() add component PostCard with two props 
+-open route: http://localhost:5173/blog
