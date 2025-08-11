@@ -15,7 +15,11 @@ export async function loader({
 
   const data = await res.json();
 
-  return { posts: data };
+  const sortedData = data.sort((a: any, b: any) => {
+    return new Date(b.date).getTime() - new Date(a.date).getTime();
+  });
+
+  return { posts: sortedData };
 };
 
 const BlogPage = ({ loaderData }: Route.ComponentProps) => {

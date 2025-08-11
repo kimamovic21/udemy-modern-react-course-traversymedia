@@ -927,3 +927,7 @@ Section 13: Inner pages, actions, markdown blog
 -open route: http://localhost:5173/blog
 -open route: http://localhost:5173/blog/react-hooks-overview
 -open route: http://localhost:5173/blog/test-post
+
+128. Sort by date
+-in component blog/index.tsx create variable const sortedData
+-open route: http://localhost:5173/blog
