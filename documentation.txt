@@ -883,3 +883,15 @@ Section 13: Inner pages, actions, markdown blog
 
 123. What is Markdown ?
 -open link: https://www.markdownguide.org
+
+124. Fetch post meta
+-in folder public create posts-meta.json file
+-open route: http://localhost:5173/posts-meta.json
+-in folder app add folder posts with md files
+-in component blog/index.tsx import type Route and component Link
+-create and export async function loader()
+-in types.ts file create and export type PostMeta
+-in component blog/index.tsx import type PostMeta
+-add to function BlogPage() parameter destructured prop loaderData with type
+-in function BlogPage() destructure variable const { posts } from loaderData
+-open route: http://localhost:5173/blog
