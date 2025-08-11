@@ -948,3 +948,17 @@ Section 13: Inner pages, actions, markdown blog
 -create variable const filteredPosts
 -in jsx add ternary condition for variable currentPosts.length === 0 ?
 -open route: http://localhost:5173/blog
+
+131. Latest blog posts
+-in component home/index.tsx, in function loader() create variable const url
+-invoke function await Promise.all()
+-destructure variables const [projectRes, postRes]
+-add condition if (!projectRes.ok || !postRes.ok)
+-invoke function await Promise.all()
+-destructure variables const [projects, posts]
+-add statement return { projects, posts }
+-in function HomePage() destructure variables const { projects, posts } from function loaderData()
+-in folder components create component LatestPosts.tsx
+-in component home/index.tsx import component LatestPosts from folder components/LatestPosts.tsx
+-in jsx add component LatestPosts with prop posts
+-open route: http://localhost:5173
