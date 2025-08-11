@@ -903,3 +903,17 @@ Section 13: Inner pages, actions, markdown blog
 -in component blog/index.tsx import component PostCard from folder components/PostCard.tsx
 -in function posts.map() add component PostCard with two props 
 -open route: http://localhost:5173/blog
+
+126. Single post & markdown
+-in routes.ts file invoke function route for route blog/:slug
+-in folder blog create component details.tsx
+-open link: https://www.npmjs.com/package/react-markdown
+-type command: npm i react-markdown
+-in component details.tsx import component ReactMarkdown from package react-markdown
+-import types Route and PostMeta
+-create and export async function loader()
+-create type type BlogPostDetailsPageProps
+-add to function BlogPostDetailsPage() parameter destructured prop loaderData with type BlogPostDetailsPageProps
+-in function BlogPostDetailsPage() destructure variables const { postMeta, markdown }
+-open route: http://localhost:5173/blog
+-open route: http://localhost:5173/blog/react-hooks-overview
