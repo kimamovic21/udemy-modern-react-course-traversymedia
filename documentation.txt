@@ -995,3 +995,10 @@ Section 14: Strapi headless CMS for content - extending Friendly Dev project
 -type command: npm i pg
 -type command: npm run develop
 -open route: http://localhost:1337/admin/auth/register-admin
+
+136. Project content type
+-open route: http://localhost:1337/admin/plugins/content-type-builder/content-types/create-content-type
+-create collection type Project
+-in collection type Project create fields
+-open Content Manager option and select collection type Project
+-create new entries with projects data
