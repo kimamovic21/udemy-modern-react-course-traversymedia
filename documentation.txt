@@ -1020,3 +1020,12 @@ Section 14: Strapi headless CMS for content - extending Friendly Dev project
 -type command: npm run dev
 -open route: http://localhost:5173/projects
 -open route: http://localhost:1337/uploads/[imageUrl].png
+
+139. Strapi project type
+-open route: http://localhost:5173/projects
+-open route: http://localhost:5173/projects/1
+-in types.ts file create and export types StrapiResponse and StrapiProject
+-in component projects/index.tsx import types StrapiResponse and StrapiProject
+-add to variable const json type StrapiResponse<StrapiProject>
+-open route: http://localhost:5173/projects
+-open route: http://localhost:5173/projects/1

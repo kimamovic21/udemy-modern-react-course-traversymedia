@@ -1,7 +1,11 @@
 import { useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion'
 import type { Route } from './+types/index';
-import type { Project } from '~/types';
+import type {
+  Project,
+  StrapiProject,
+  StrapiResponse
+} from '~/types';
 import ProjectCard from '~/components/ProjectCard';
 import Pagination from '~/components/Pagination';
 
@@ -22,7 +26,7 @@ export async function loader({
 
   if (!res.ok) throw new Error('Failed to fetch projects');
 
-  const json = await res.json();
+  const json: StrapiResponse<StrapiProject> = await res.json();
 
   const projects = json.data.map((project: any) => ({
     id: project.id,
