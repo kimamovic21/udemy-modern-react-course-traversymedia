@@ -984,3 +984,14 @@ Section 14: Strapi headless CMS for content - extending Friendly Dev project
 -type command: cd friendly-dev
 -type command: npx create-strapi-app@latest friendly-dev-backend
 -type command: cd friendly-dev-backend
+
+135. Database & Strapi Admin setup
+-type command: cd friendly-dev 
+-type command: cd friendly-dev-backend
+-open Neon website and create new project
+-in project dashboard create new db friendly-dev-db
+-in .env file create variable DATABASE_URL
+-open link: https://www.npmjs.com/package/pg
+-type command: npm i pg
+-type command: npm run develop
+-open route: http://localhost:1337/admin/auth/register-admin
