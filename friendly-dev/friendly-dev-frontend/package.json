@@ -1,5 +1,5 @@
 {
-  "name": "friendly-dev",
+  "name": "friendly-dev-frontend",
   "private": true,
   "type": "module",
   "scripts": {

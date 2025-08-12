@@ -973,3 +973,8 @@ Section 14: Strapi headless CMS for content - extending Friendly Dev project
 -open link: https://strapi.io
 -open link: https://neon.com
 -open link: https://render.com
+
+133. Full stack folder structure
+-create folder friendly-dev-frontend
+-move friendly-dev project inside folder friendly-dev-frontend
+-create folder friendly-dev
