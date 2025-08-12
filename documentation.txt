@@ -964,3 +964,12 @@ Section 13: Inner pages, actions, markdown blog
 -open route: http://localhost:5173
 
 Quiz 12: Section quiz
+
+
+
+Section 14: Strapi headless CMS for content - extending Friendly Dev project
+
+132. Headless CMS explained
+-open link: https://strapi.io
+-open link: https://neon.com
+-open link: https://render.com
