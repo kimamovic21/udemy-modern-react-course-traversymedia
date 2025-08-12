@@ -986,8 +986,7 @@ Section 14: Strapi headless CMS for content - extending Friendly Dev project
 -type command: cd friendly-dev-backend
 
 135. Database & Strapi Admin setup
--type command: cd friendly-dev 
--type command: cd friendly-dev-backend
+-type command: cd friendly-dev/friendly-dev-backend
 -open Neon website and create new project
 -in project dashboard create new db friendly-dev-db
 -in .env file create variable DATABASE_URL
@@ -1002,3 +1001,13 @@ Section 14: Strapi headless CMS for content - extending Friendly Dev project
 -in collection type Project create fields
 -open Content Manager option and select collection type Project
 -create new entries with projects data
+
+137. Accessing The API
+-open route: http://localhost:1337/api/projects
+-open Strapi admin dashboard and choose option Roles
+-open route: http://localhost:1337/api/projects
+-open route: http://localhost:1337/api/projects/projectId
+-in folder friendly-dev-frontend, in .env file add to variable VITE_API_URL value http://localhost:1337/api
+-type command: cd friendly-dev/friendly-dev-frontend
+-type command: npm run dev
+-open route: http://localhost:5173/projects
