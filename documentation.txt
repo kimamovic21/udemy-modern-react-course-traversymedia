@@ -978,3 +978,9 @@ Section 14: Strapi headless CMS for content - extending Friendly Dev project
 -create folder friendly-dev-frontend
 -move friendly-dev project inside folder friendly-dev-frontend
 -create folder friendly-dev
+
+134. Create Strapi project
+-open link: https://www.npmjs.com/package/create-strapi-app
+-type command: cd friendly-dev
+-type command: npx create-strapi-app@latest friendly-dev-backend
+-type command: cd friendly-dev-backend
