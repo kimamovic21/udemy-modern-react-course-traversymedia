@@ -1,29 +1,40 @@
 import { FaArrowLeft } from 'react-icons/fa';
 import { Link } from 'react-router';
 import type { Route } from './+types/details';
-import type { Project } from '~/types';
+import type {
+  Project,
+  StrapiProject,
+  StrapiResponse
+} from '~/types';
 
-export async function clientLoader({
-  request,
-  params,
-}: Route.ClientLoaderArgs): Promise<Project> {
-  const res = await fetch(`${import.meta.env.VITE_API_URL}/projects/${params.id}`);
+export async function loader({ request, params }: Route.LoaderArgs) {
+  const { id } = params;
 
-  if (!res.ok) {
-    throw new Response('Project not found', { status: 404 });
+  const res = await fetch(`${import.meta.env.VITE_API_URL}/projects?filters[documentId][$eq]=${id}&populate=*`);
+
+  if (!res.ok) throw new Response('Project not found', { status: 404 });
+
+  const json: StrapiResponse<StrapiProject> = await res.json();
+
+  const item = json.data[0];
+
+  const project: Project = {
+    id: item.id,
+    documentId: item.documentId,
+    title: item.title,
+    description: item.description,
+    image: item.image?.url ? `${import.meta.env.VITE_STRAPI_URL}${item.image.url}` : '/images/no-image.png',
+    url: item.url,
+    date: item.date,
+    category: item.category,
+    featured: item.featured,
   };
 
-  const project: Project = await res.json();
-
-  return project;
-};
-
-export function HydrateFallback() {
-  return <div>Loading...</div>;
+  return { project };
 };
 
 const ProjectDetailsPage = ({ loaderData }: Route.ComponentProps) => {
-  const project = loaderData as Project;
+  const { project } = loaderData;
 
   return (
     <>
@@ -48,10 +59,14 @@ const ProjectDetailsPage = ({ loaderData }: Route.ComponentProps) => {
           <h1 className='text-3xl font-bold text-blue-400 mb-4'>
             {project.title}
           </h1>
+
           <p className='text-gray-300 text-sm mb-4'>
             {new Date(project.date).toLocaleDateString()} • {project.category}
           </p>
-          <p className='text-gray-200 mb-6'>{project.description}</p>
+
+          <p className='text-gray-200 mb-6'>
+            {project.description}
+          </p>
 
           <a
             href={project.url}

@@ -1,5 +1,6 @@
 export type Project = {
   id: number;
+  documentId: string;
   title: string;
   description: string;
   image: string;

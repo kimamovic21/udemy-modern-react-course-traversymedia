@@ -1029,3 +1029,16 @@ Section 14: Strapi headless CMS for content - extending Friendly Dev project
 -add to variable const json type StrapiResponse<StrapiProject>
 -open route: http://localhost:5173/projects
 -open route: http://localhost:5173/projects/1
+
+140. Fetch individual project from Strapi
+-in component ProjectCard.tsx change prop to
+-in component details.tsx import types StrapiProject and StrapiResponse
+-create and export async function loader()
+-create variable const json with type StrapiResponse<StrapiProject>
+-add condition if (!json.data.length)
+-create variable const item
+-create variable const project with type Project
+-in function ProjectDetailsPage() destructure variable const { products }
+-open route: http://localhost:5173/projects
+-open route: http://localhost:5173/projects/[projectId]
+-open route: http://localhost:1337/uploads/[projectImage].png
