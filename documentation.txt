@@ -1011,3 +1011,12 @@ Section 14: Strapi headless CMS for content - extending Friendly Dev project
 -type command: cd friendly-dev/friendly-dev-frontend
 -type command: npm run dev
 -open route: http://localhost:5173/projects
+
+138. Fetch projects from Strapi
+-open route: http://localhost:1337/api/projects?populate=*
+-in folder friendly-dev-frontend, in .env file create variable VITE_STRAPI_URL
+-in component projects/index.tsx, in function loader() create variable const json
+-create variable const projects
+-type command: npm run dev
+-open route: http://localhost:5173/projects
+-open route: http://localhost:1337/uploads/[imageUrl].png
