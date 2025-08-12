@@ -962,3 +962,5 @@ Section 13: Inner pages, actions, markdown blog
 -in component home/index.tsx import component LatestPosts from folder components/LatestPosts.tsx
 -in jsx add component LatestPosts with prop posts
 -open route: http://localhost:5173
+
+Quiz 12: Section quiz

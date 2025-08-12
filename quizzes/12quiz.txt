@@ -1,0 +1,31 @@
+Quiz 12: Section quiz
+
+
+1. What is the main purpose of an action in React Router?
+
+Answer: To mutate data like submitting, updating, or deleting
+
+
+2. Which component must you use in place of a regular HTML <form> to trigger an action in React Router?
+
+Answer: <Form>
+
+
+3. What prop allows a React Router component to access the returned value from an action?
+
+Answer: actionData
+
+
+4. What is the primary purpose of Markdown in this course's blog setup?
+
+Answer: To write blog post content in a simple, readable format
+
+
+5.  In Markdown, which syntax is used to create bold text?
+
+Answer: **Bold**
+
+
+6.  Using the React Markdown package, how do we use it within our component?
+
+Answer: <ReactMarkdown>{post.body}</ReactMarkdown>
