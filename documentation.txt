@@ -978,6 +978,9 @@ Section 14: Strapi headless CMS for content - extending Friendly Dev project
 -create folder friendly-dev-frontend
 -move friendly-dev project inside folder friendly-dev-frontend
 -create folder friendly-dev
+-type command: cd friendly-dev/friendly-dev-frontend
+-type command: npm run dev
+-open route: http://localhost:5173
 
 134. Create Strapi project
 -open link: https://www.npmjs.com/package/create-strapi-app
@@ -1042,3 +1045,12 @@ Section 14: Strapi headless CMS for content - extending Friendly Dev project
 -open route: http://localhost:5173/projects
 -open route: http://localhost:5173/projects/[projectId]
 -open route: http://localhost:1337/uploads/[projectImage].png
+
+141. Home featured projects
+-in component home/index.tsx import types StrapiResponse and StrapiProject
+-make a change in function fetch()
+-add condition if (!projectsRes.ok || !postsRes.ok)
+-create variable const projectsJson with type StrapiResponse<StrapiProject>
+-create variable const postsJson
+-create variable const projects
+-open route: http://localhost:5173

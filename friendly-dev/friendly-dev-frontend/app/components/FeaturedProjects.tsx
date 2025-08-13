@@ -8,7 +8,7 @@ const FeaturedProjects = ({
   projects: Project[];
   count: number;
 }) => {
-  const featured = projects.filter((project) => project.featured).slice(0, count);
+  if (projects.length === 0) return null;
 
   return (
     <section>
@@ -16,7 +16,7 @@ const FeaturedProjects = ({
         🌟 Featured Projects
       </h2>
       <div className='grid gap-6 sm:grid-cols-2'>
-        {featured.map((project) => (
+        {projects.map((project) => (
           <ProjectCard key={project.id} project={project} />
         ))}
       </div>
