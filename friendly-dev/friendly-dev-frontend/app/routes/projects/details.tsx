@@ -10,7 +10,9 @@ import type {
 export async function loader({ request, params }: Route.LoaderArgs) {
   const { id } = params;
 
-  const res = await fetch(`${import.meta.env.VITE_API_URL}/projects?filters[documentId][$eq]=${id}&populate=*`);
+  const res = await fetch(
+    `${import.meta.env.VITE_API_URL}/projects?filters[documentId][$eq]=${id}&populate=*`
+  );
 
   if (!res.ok) throw new Response('Project not found', { status: 404 });
 
@@ -23,7 +25,9 @@ export async function loader({ request, params }: Route.LoaderArgs) {
     documentId: item.documentId,
     title: item.title,
     description: item.description,
-    image: item.image?.url ? `${import.meta.env.VITE_STRAPI_URL}${item.image.url}` : '/images/no-image.png',
+    image: item.image?.url
+      ? `${import.meta.env.VITE_STRAPI_URL}${item.image.url}`
+      : '/images/no-image.png',
     url: item.url,
     date: item.date,
     category: item.category,

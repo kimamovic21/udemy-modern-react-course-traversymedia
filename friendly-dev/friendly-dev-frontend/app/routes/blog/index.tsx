@@ -1,14 +1,20 @@
 import { useState } from 'react';
 import type { Route } from './+types/index';
-import type { PostMeta, StrapiPost, StrapiResponse } from '~/types';
+import type {
+  Post,
+  StrapiPost,
+  StrapiResponse
+} from '~/types';
 import PostCard from '~/components/PostCard';
 import Pagination from '~/components/Pagination';
 import PostFilter from '~/components/PostFilter';
 
 export async function loader({
   request,
-}: Route.LoaderArgs): Promise<{ posts: PostMeta[] }> {
-  const res = await fetch(`${import.meta.env.VITE_API_URL}/posts?populate=image&sort=date:desc`);
+}: Route.LoaderArgs): Promise<{ posts: Post[] }> {
+  const res = await fetch(
+    `${import.meta.env.VITE_API_URL}/posts?populate=image&sort=date:desc`
+  );
 
   if (!res.ok) {
     throw new Error('Failed to fetch posts');
@@ -23,7 +29,9 @@ export async function loader({
     slug: post.slug,
     date: post.date,
     body: post.body,
-    image: post.image?.url ? `${import.meta.env.VITE_STRAPI_URL}${post.image.url}` : '/images/no-image.png',
+    image: post.image?.url
+      ? `${import.meta.env.VITE_STRAPI_URL}${post.image.url}`
+      : '/images/no-image.png',
   }));
 
   return { posts };
@@ -33,7 +41,7 @@ const BlogPage = ({ loaderData }: Route.ComponentProps) => {
   const [searchQuery, setSearchQuery] = useState('');
   const [currentPage, setCurrentPage] = useState(1);
 
-  const { posts } = loaderData as { posts: PostMeta[] };
+  const { posts } = loaderData as { posts: Post[] };
 
   const filteredPosts = posts.filter((post) => {
     const query = searchQuery.toLowerCase();

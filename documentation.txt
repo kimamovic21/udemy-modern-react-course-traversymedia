@@ -1078,3 +1078,18 @@ Section 14: Strapi headless CMS for content - extending Friendly Dev project
 -in component PostCard.tsx add conditional rendering for variable post.image &&
 -open route: http://localhost:1337/api/posts
 -open route: http://localhost:5173/blog
+
+144. Fetch post details from Strapi
+-in component blog/details.tsx update function fetch() to fetch post details from Strapi
+-import types StrapiPost and StrapiResponse from types.ts file
+-create variable const jsonPosts with type StrapiResponse<StrapiPost> 
+-add condition if (!jsonPosts.data.length)
+-create variable const item 
+-create variable const post with type PostMeta
+-add statement return { post }
+-in function BlogPostDetailsPage() destructure variable const { post } from prop loaderData
+-update type BlogPostDetailsPageProps
+-rename type PostMeta to Post in types.ts file and all components
+-open route: http://localhost:1337/api/posts/[documentId]
+-open route: http://localhost:5173/blog
+-open route: http://localhost:5173/blog/[projectSlug]

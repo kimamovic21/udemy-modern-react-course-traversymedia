@@ -1,6 +1,6 @@
 import type { Route } from './+types/index';
 import type {
-  PostMeta,
+  Post,
   Project,
   StrapiProject,
   StrapiResponse
@@ -11,11 +11,13 @@ import LatestPosts from '~/components/LatestPosts';
 
 export async function loader({
   request,
-}: Route.LoaderArgs): Promise<{ projects: Project[]; posts: PostMeta[] }> {
+}: Route.LoaderArgs): Promise<{ projects: Project[]; posts: Post[] }> {
   const url = new URL(request.url);
 
   const [projectsRes, postsRes] = await Promise.all([
-    fetch(`${import.meta.env.VITE_API_URL}/projects?filters[featured][$eq]=true&populate=*`),
+    fetch(
+      `${import.meta.env.VITE_API_URL}/projects?filters[featured][$eq]=true&populate=*`
+    ),
     fetch(new URL('public/posts-meta.json', url)),
   ]);
 
