@@ -1054,3 +1054,16 @@ Section 14: Strapi headless CMS for content - extending Friendly Dev project
 -create variable const postsJson
 -create variable const projects
 -open route: http://localhost:5173
+
+142. Post content type
+-open Stripe window and choose an option Content type builder
+-create collection type Post
+-in collection type Post create fields
+-choose option Content manager
+-select collection type Post
+-choose option create new entry
+-create more entries
+-open option Users & permission plugin
+-choose an option Roles
+-in option Permission allow actions find and findOne
+-open route: http://localhost:1337/api/posts
