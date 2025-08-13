@@ -1093,3 +1093,11 @@ Section 14: Strapi headless CMS for content - extending Friendly Dev project
 -open route: http://localhost:1337/api/posts/[documentId]
 -open route: http://localhost:5173/blog
 -open route: http://localhost:5173/blog/[projectSlug]
+
+145. Homepage posts from Strapi
+-in component home/index.tsx update function fetch() to fetch posts from Strapi
+-import type StrapiPost from types.ts file
+-add to variable const postsJson type StrapiResponse<StrapiPost>
+-create variable const posts
+-add statement return { projects, posts }
+-open route: http://localhost:5173
