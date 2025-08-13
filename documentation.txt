@@ -1067,3 +1067,14 @@ Section 14: Strapi headless CMS for content - extending Friendly Dev project
 -choose an option Roles
 -in option Permission allow actions find and findOne
 -open route: http://localhost:1337/api/posts
+
+143. Fetch posts from Strapi
+-in types.ts file create and export type StrapiPost
+-in component blog/index.tsx import types StrapiResponse and StrapiPost
+-in component blog/index.tsx update function fetch() to fetch posts from Strapi
+-create variable const postsJson with type StrapiResponse<StrapiPost>
+-create variable const posts 
+-add return statement return { posts }
+-in component PostCard.tsx add conditional rendering for variable post.image &&
+-open route: http://localhost:1337/api/posts
+-open route: http://localhost:5173/blog
