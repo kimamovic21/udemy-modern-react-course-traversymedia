@@ -1,0 +1,31 @@
+Quiz 13: Section quiz
+
+
+1. What is the primary characteristic of a headless CMS?
+
+Answer: It allows managing content separately from its presentation
+
+
+2. Why might someone choose a headless CMS over a traditional CMS like WordPress?
+
+Answer: They offer flexibility with frontend technologies
+
+
+3. In Strapi, what is the purpose of creating Content Types?
+
+Answer: To define structured data models like blog posts or products
+
+
+4. What is Neon?
+
+Answer: A serverless Postgres database platform
+
+
+5. What package must you install in the backend to connect Strapi with a Postgres database?
+
+Answer: pg
+
+
+6. Why is a generic type (<T>) used in StrapiResponse<T>?
+
+Answer: To allow reuse for different data types returned from Strapi

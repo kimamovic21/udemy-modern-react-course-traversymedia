@@ -1101,3 +1101,5 @@ Section 14: Strapi headless CMS for content - extending Friendly Dev project
 -create variable const posts
 -add statement return { projects, posts }
 -open route: http://localhost:5173
+
+Quiz 13: Section quiz
