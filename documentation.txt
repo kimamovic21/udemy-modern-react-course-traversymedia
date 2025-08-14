@@ -1167,3 +1167,5 @@ Section 16: TanStack Query - GitHub Finder project
 
 150. Section intro & project intro
 -open link: https://tanstack.com
+
+151. What is TanStack query ?
