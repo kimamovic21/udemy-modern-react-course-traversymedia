@@ -1180,3 +1180,9 @@ Section 16: TanStack Query - GitHub Finder project
 -create variable const queryClient
 -in function render() add component QueryClientProvider with prop client
 -open route: http://localhost:5173
+
+153. GitHub API integration
+-open route: https://api.github.com/users/kimamovic21
+-create .env file and env variable VITE_GITHUB_API_URL
+-create example.env file
+-open route: http://localhost:5173
