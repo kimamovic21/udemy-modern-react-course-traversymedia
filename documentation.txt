@@ -1128,3 +1128,12 @@ Section 15: Cloudinary images, contact form & full stack deployment
 -in tsx components change image source to Cloudinary
 -open route: http://localhost:5173/projects/[documentId]
 -in Strapi dashboard add more images for projects
+
+147. Formspree.io contact form
+-open link: https://formspree.io
+-create new form
+-in component contact/index.tsx replace component Form with form element
+-in jsx add to form element prop action
+-remove conditional renderings for error message
+-open route: http://localhost:5173/contact and submit the form
+-open Formspree dashboard to see form submissions
