@@ -25,29 +25,29 @@ export async function loader({
   const projectsJson: StrapiResponse<StrapiProject> = await projectsRes.json();
   const postsJson: StrapiResponse<StrapiPost> = await postsRes.json();
 
-  const projects = projectsJson.data.map((item) => ({
-    id: item.id,
-    documentId: item.documentId,
-    title: item.title,
-    description: item.description,
-    url: item.url,
-    date: item.date,
-    category: item.category,
-    featured: item.featured,
-    image: item.image?.url
-      ? `${import.meta.env.VITE_STRAPI_URL}${item.image.url}`
+  const projects = projectsJson.data.map((project) => ({
+    id: project.id,
+    documentId: project.documentId,
+    title: project.title,
+    description: project.description,
+    url: project.url,
+    date: project.date,
+    category: project.category,
+    featured: project.featured,
+    image: project.image?.url
+      ? `${project.image.url}`
       : '/images/no-image.png',
   }));
 
-  const posts = postsJson.data.map((item) => ({
-    id: item.id,
-    slug: item.slug,
-    title: item.title,
-    excerpt: item.excerpt,
-    body: item.body,
-    date: item.date,
-    image: item.image?.url
-      ? `${import.meta.env.VITE_STRAPI_URL}${item.image.url}`
+  const posts = postsJson.data.map((post) => ({
+    id: post.id,
+    slug: post.slug,
+    title: post.title,
+    excerpt: post.excerpt,
+    body: post.body,
+    date: post.date,
+    image: post.image?.url
+      ? `${post.image.url}`
       : '/images/no-image.png',
   }));
 

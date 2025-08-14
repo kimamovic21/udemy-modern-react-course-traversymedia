@@ -30,7 +30,7 @@ export async function loader({
     date: post.date,
     body: post.body,
     image: post.image?.url
-      ? `${import.meta.env.VITE_STRAPI_URL}${post.image.url}`
+      ? `${post.image.url}`
       : '/images/no-image.png',
   }));
 

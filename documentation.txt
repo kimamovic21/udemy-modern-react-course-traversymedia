@@ -1103,3 +1103,28 @@ Section 14: Strapi headless CMS for content - extending Friendly Dev project
 -open route: http://localhost:5173
 
 Quiz 13: Section quiz
+
+
+
+Section 15: Cloudinary images, contact form & full stack deployment
+
+146. Upload images to Cloudinary
+-open link: https://cloudinary.com
+-in .env file create env variables CLOUDINARY_NAME, CLOUDINARY_KEY and CLOUDINARY_SECRET
+-open link: https://www.npmjs.com/package/@strapi/provider-upload-cloudinary
+-type command: cd friendly-dev/friendly-dev-backend
+-type command: npm i @strapi/provider-upload-cloudinary
+-type command: npm run develop
+-open Strapi dashboard and delete all images
+-in plugins.ts file copy code from documentation
+-in middleware.ts file add object for stripe security from documentation
+-type command: npm run develop
+-in content manager choose option Project
+-in existing project add new image from assets
+-open Strapi dashboard and add project image
+-open Cloudinary dashboard and choose option assets
+-open route: http://localhost:5173
+-open route: http://localhost:5173/projects
+-in tsx components change image source to Cloudinary
+-open route: http://localhost:5173/projects/[documentId]
+-in Strapi dashboard add more images for projects
