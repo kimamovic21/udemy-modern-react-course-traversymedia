@@ -1,0 +1,21 @@
+Quiz 14: Section quiz
+
+
+1. Why do images disappear after deployment on Render's free tier?
+
+Answer: The file system is read-only and ephemeral on free accounts
+
+
+2. What is the benefit of using Cloudinary with a React + Strapi setup?
+
+Answer: It offers persistent image storage independent of your server
+
+
+3. Where should Cloudinary credentials be placed in your project?
+
+Answer: In the backend .env file of your Strapi project
+
+
+4. Which of the following should you add to Render's Environment Variables section during deployment?
+
+Answer: The contents of your Strapi .env file (e.g., database URL, Cloudinary keys)

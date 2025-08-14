@@ -1158,3 +1158,5 @@ Section 15: Cloudinary images, contact form & full stack deployment
 -add new project
 -add env variables VITE_API_URL and VITE_STRAPI_URL
 -open link: https://udemy-friendly-dev-traversy-media.vercel.app
+
+Quiz 14: Section quiz
