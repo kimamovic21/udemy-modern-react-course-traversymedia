@@ -1160,3 +1160,10 @@ Section 15: Cloudinary images, contact form & full stack deployment
 -open link: https://udemy-friendly-dev-traversy-media.vercel.app
 
 Quiz 14: Section quiz
+
+
+
+Section 16: TanStack Query - GitHub Finder project
+
+150. Section intro & project intro
+-open link: https://tanstack.com
