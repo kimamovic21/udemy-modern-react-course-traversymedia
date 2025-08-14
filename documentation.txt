@@ -1169,3 +1169,14 @@ Section 16: TanStack Query - GitHub Finder project
 -open link: https://tanstack.com
 
 151. What is TanStack query ?
+
+152. Project setup & query client
+-type command: npm create vite@latest github-finder
+-add CSS styles in index.css file
+-open link: https://www.npmjs.com/package/@tanstack/react-query
+-type command: npm i @tanstack/react-query
+-type command: npm i react-icons
+-in component main.tsx import components QueryClient and QueryClientProvider from package tanstack
+-create variable const queryClient
+-in function render() add component QueryClientProvider with prop client
+-open route: http://localhost:5173
