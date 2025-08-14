@@ -1137,3 +1137,17 @@ Section 15: Cloudinary images, contact form & full stack deployment
 -remove conditional renderings for error message
 -open route: http://localhost:5173/contact and submit the form
 -open Formspree dashboard to see form submissions
+
+148. Deploy Strapi to Render.com
+-open link https://dashboard.render.com/web/new
+-create new project friendly-dev-backend
+-add env variables except HOST and PORT
+-click deploy button
+-open route: https://friendly-dev-backend-xesd.onrender.com/admin/auth/login
+-open route: https://friendly-dev-backend-xesd.onrender.com/admin
+-open link: https://friendly-dev-backend-xesd.onrender.com/api/projects
+-open Strapi dashboard on Render and create new project and post
+-open link: https://friendly-dev-backend-xesd.onrender.com/api/projects
+-open link: https://friendly-dev-backend-xesd.onrender.com/api/posts
+-in your .env file update env variables VITE_API_URL and VITE_STRAPI_URL
+-open route: http://localhost:5173
