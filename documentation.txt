@@ -1139,7 +1139,7 @@ Section 15: Cloudinary images, contact form & full stack deployment
 -open Formspree dashboard to see form submissions
 
 148. Deploy Strapi to Render.com
--open link https://dashboard.render.com/web/new
+-open link: https://dashboard.render.com/web/new
 -create new project friendly-dev-backend
 -add env variables except HOST and PORT
 -click deploy button
@@ -1151,3 +1151,10 @@ Section 15: Cloudinary images, contact form & full stack deployment
 -open link: https://friendly-dev-backend-xesd.onrender.com/api/posts
 -in your .env file update env variables VITE_API_URL and VITE_STRAPI_URL
 -open route: http://localhost:5173
+
+149. Frontend Vercel deployment
+-open link: https://vercel.com
+-open Vercel dashboard
+-add new project
+-add env variables VITE_API_URL and VITE_STRAPI_URL
+-open link: https://udemy-friendly-dev-traversy-media.vercel.app
