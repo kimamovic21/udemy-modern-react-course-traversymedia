@@ -1186,3 +1186,17 @@ Section 16: TanStack Query - GitHub Finder project
 -create .env file and env variable VITE_GITHUB_API_URL
 -create example.env file
 -open route: http://localhost:5173
+
+154. Making queries with useQuery hook
+-in folder src create component UserSearch.tsx
+-create two state variables and two set functions
+-in component App.tsx import component UserSearch from component UserSearch.tsx
+-in component UserSearch.tsx, in jsx create form elements
+-import and invoke function useQuery()
+-the values of function useQuery() store in destructured object
+-create function handleSubmit()
+-add to form element event onSubmit
+-in event onSubmit pass the function handleSubmit
+-in jsx add conditional renderings for variables isLoading and isError
+-add conditional rendering for variable data &&
+-open route: http://localhost:5173

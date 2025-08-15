@@ -1,6 +1,11 @@
+import UserSearch from './components/UserSearch';
+
 const App = () => {
   return (
-    <>App</>
+    <div className='container'>
+      <h1>GitHub User Search</h1>
+      <UserSearch />
+    </div>
   );
 };
 
