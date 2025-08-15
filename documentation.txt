@@ -1214,3 +1214,10 @@ Section 16: TanStack Query - GitHub Finder project
 -in component UserCard.tsx import type GitHubUser from types.ts file
 -add to parameter user type GitHubUser
 -open route: http://localhost:5173
+
+156. React query devtools install
+-open link: https://www.npmjs.com/package/@tanstack/react-query-devtools
+-type command: npm i @tanstack/react-query-devtools
+-in component main.tsx import component ReactQueryDevtools
+-in component QueryClientProvider add component ReactQueryDevtools with props
+-open route: http://localhost:5173
