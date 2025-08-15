@@ -1246,3 +1246,17 @@ Section 16: TanStack Query - GitHub Finder project
 -in component UserSearch.tsx, in function useState() for recent users invoke anonymous function for storing recent users to local storage
 -import and invoke function useEffect()
 -open route: http://localhost:5173
+
+161. Show user suggestion
+-open link: https://api.github.com/users?q=kerim
+-in github.ts file create and export async function searchGitHubUsers()
+-open link: https://www.npmjs.com/package/use-debounce
+-type command: npm i use-debounce
+-in component UserSearch.tsx import functions searchGitHubUsers and useDebounce
+-import type GitHubUser from types.ts file
+-invoke function useDebounce(username, 300)
+-destructure variable const [debouncedUsername] from function useDebounce()
+-create state variable const showSuggestions and set function setShowSuggestions
+-invoke function useQuery() to fetch suggestions for user search
+-in jsx add conditional rendering showSuggestions && suggestions?.length > 0 &&
+-open route: http://localhost:5173
