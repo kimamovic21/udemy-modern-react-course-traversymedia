@@ -1232,3 +1232,5 @@ Section 16: TanStack Query - GitHub Finder project
 -in component UserSearch.tsx import component RecentSearches from component RecentSearches.tsx
 -in jsx add conditional rendering for variable recentUsers.length > 0 &&
 -open route: http://localhost:5173
+
+158. Let's chat about state
