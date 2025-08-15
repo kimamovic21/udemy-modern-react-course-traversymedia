@@ -1200,3 +1200,17 @@ Section 16: TanStack Query - GitHub Finder project
 -in jsx add conditional renderings for variables isLoading and isError
 -add conditional rendering for variable data &&
 -open route: http://localhost:5173
+
+155. Clean up code
+-in folder src create folder api and github.ts file
+-in github.ts file create and export async function fetchGithubUser()
+-in component UserSearch.tsx import function fetchGithubUser from github.ts file
+-in key queryFn pass the anonymous function
+-in anonymous function invoke the function fetchGithubUser(submittedUsername)
+-in folder components create component UserCard.tsx
+-in component UserSearch.tsx import component UserCard from component UserCard.tsx
+-in folder src create types.ts file
+-in types.ts file create and export type GitHubUser
+-in component UserCard.tsx import type GitHubUser from types.ts file
+-add to parameter user type GitHubUser
+-open route: http://localhost:5173
