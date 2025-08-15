@@ -1221,3 +1221,14 @@ Section 16: TanStack Query - GitHub Finder project
 -in component main.tsx import component ReactQueryDevtools
 -in component QueryClientProvider add component ReactQueryDevtools with props
 -open route: http://localhost:5173
+
+157. Recent searches feature
+-in component UserSearch.tsx create state variable recentUsers and set function setRecentUsers
+-in function handleSubmit() create variable const trimmed
+-add condition if (!trimmed)
+-invoke function setSubmittedUsername(trimmed)
+-invoke function setRecentUsers()
+-create component RecentSearches.tsx
+-in component UserSearch.tsx import component RecentSearches from component RecentSearches.tsx
+-in jsx add conditional rendering for variable recentUsers.length > 0 &&
+-open route: http://localhost:5173
