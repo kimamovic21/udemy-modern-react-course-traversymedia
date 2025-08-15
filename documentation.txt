@@ -1234,3 +1234,10 @@ Section 16: TanStack Query - GitHub Finder project
 -open route: http://localhost:5173
 
 158. Let's chat about state
+
+159. Prefetching data with TanStack query
+-in component RecentSearches.tsx import function useQueryClient from package tanstack
+-create variable const queryClient
+-import function fetchGitHubUser from github.ts file
+-in jsx add to button element event onMouseEnter
+-open route: http://localhost:5173
