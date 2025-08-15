@@ -1241,3 +1241,8 @@ Section 16: TanStack Query - GitHub Finder project
 -import function fetchGitHubUser from github.ts file
 -in jsx add to button element event onMouseEnter
 -open route: http://localhost:5173
+
+160. Save recent users to local storage
+-in component UserSearch.tsx, in function useState() for recent users invoke anonymous function for storing recent users to local storage
+-import and invoke function useEffect()
+-open route: http://localhost:5173
