@@ -1272,3 +1272,17 @@ Section 16: TanStack Query - GitHub Finder project
 -open link: https://github.com/settings/personal-access-tokens/new
 -generate new fine-grained personal access token
 -in .env file create new variable VITE_GITHUB_API_TOKEN
+
+164. Check if user is following
+-open link: https://docs.github.com/en/rest/users/followers?apiVersion=2022-11-28#check-if-a-person-is-followed-by-the-authenticated-user
+-in github.ts file create and export async function checkIfFollowingGitHubUser()
+-create and export async function followGitHubUser()
+-in component UserCard.tsx import functions use useMutation and useQuery from package tanstack
+-import function checkIfFollowingGitHubUser from github.ts file
+-invoke function useQuery()
+-the value of function useQuery() store in destructured variables const { data: isFollowing, refetch }
+-import two React icons
+-in jsx create div element for user card buttons
+-in div element create button element
+-in button element add ternary condition for variable isFollowing
+-open route: http://localhost:5173
