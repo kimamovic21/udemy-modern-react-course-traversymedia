@@ -1324,3 +1324,6 @@ Quiz 15: Section quiz
 Section 17: TanStack Router - IdeaDrop project
 
 168. Section & project intro
+
+169. Intro to TanStack router
+-open link: https://tanstack.com/router/latest
