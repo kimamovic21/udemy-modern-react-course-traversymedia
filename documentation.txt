@@ -1318,3 +1318,9 @@ Section 16: TanStack Query - GitHub Finder project
 -open route: http://localhost:5173
 
 Quiz 15: Section quiz
+
+
+
+Section 17: TanStack Router - IdeaDrop project
+
+168. Section & project intro
