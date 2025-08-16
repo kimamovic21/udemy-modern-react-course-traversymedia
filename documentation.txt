@@ -1293,5 +1293,17 @@ Section 16: TanStack Query - GitHub Finder project
 -invoke function useMutation()
 -the value of function useMutation() store in variable const followMutation
 -create function const handleFollow()
+-in function handleFollow() add if - else condition
+-in condition else invoke function followMutation.mutate()
 -in jsx add to button element event onClick and prop disabled
+-in prop disabled add pending state for followMutation
+-open route: http://localhost:5173
+
+166. Mutations - Unfollow user
+-in github.ts file create and export async function unfollowGithubUser()
+-in component UserCard.tsx import function unfollowGithubUser from github.ts file
+-invoke function useMutation()
+-the value of function useMutation() store in variable const unfollowMutation
+-in function handleFollow(), in condition if invoke function unfollowMutation.mutate()
+-in prop disabled add pending state for unfollowMutation
 -open route: http://localhost:5173
