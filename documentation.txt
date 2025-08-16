@@ -1260,3 +1260,9 @@ Section 16: TanStack Query - GitHub Finder project
 -invoke function useQuery() to fetch suggestions for user search
 -in jsx add conditional rendering showSuggestions && suggestions?.length > 0 &&
 -open route: http://localhost:5173
+
+162. Suggestions dropdown component
+-in folder components create component SuggestionsDropdown.tsx
+-in component UserSearch.tsx import component SuggestionsDropdown from component SuggestionsDropdown.tsx
+-in conditional rendering showSuggestions && suggestions?.length > 0 && add component SuggestionsDropdown with props
+-open route: http://localhost:5173

@@ -2,9 +2,9 @@ import { useState, useEffect } from 'react';
 import { useQuery } from '@tanstack/react-query';
 import { useDebounce } from 'use-debounce';
 import { fetchGitHubUser, searchGitHubUsers } from '../api/github';
-import type { GitHubUser } from '../types';
 import UserCard from './UserCard';
 import RecentSearches from './RecentSearches';
+import SuggestionDropdown from './SuggestionDropdown';
 
 const UserSearch = () => {
   const [username, setUsername] = useState('');
@@ -63,40 +63,28 @@ const UserSearch = () => {
             placeholder='Enter GitHub username'
           />
           {showSuggestions && suggestions?.length > 0 && (
-            <ul className='suggestions'>
-              {suggestions.slice(0, 5).map((user: GitHubUser) => (
-                <li
-                  key={user.login}
-                  onClick={() => {
-                    setUsername(user.login);
-                    setShowSuggestions(false);
+            <SuggestionDropdown
+              suggestions={suggestions || []}
+              show={showSuggestions}
+              onSelect={(selectedUsername) => {
+                setUsername(selectedUsername);
+                setShowSuggestions(false);
 
-                    if (submittedUsername !== user.login) {
-                      setSubmittedUsername(user.login);
-                    } else {
-                      refetch();
-                    };
+                if (submittedUsername !== selectedUsername) {
+                  setSubmittedUsername(selectedUsername);
+                } else {
+                  refetch();
+                };
 
-                    setRecentUsers((prev) => {
-                      const updated = [
-                        user.login,
-                        ...prev.filter((prevUsername) => prevUsername !== user.login),
-                      ];
-                      return updated.slice(0, 5);
-                    });
-                  }}
-                >
-                  <img
-                    src={user.avatar_url}
-                    alt={user.login}
-                    className='avatar-xs'
-                  />
-                  <span>
-                    {user.login}
-                  </span>
-                </li>
-              ))}
-            </ul>
+                setRecentUsers((prev) => {
+                  const updatedUsernames = [
+                    selectedUsername,
+                    ...prev.filter((prevUsername) => prevUsername !== selectedUsername)
+                  ];
+                  return updatedUsernames.slice(0, 5);
+                });
+              }}
+            />
           )}
         </div>
 
