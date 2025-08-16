@@ -1286,3 +1286,12 @@ Section 16: TanStack Query - GitHub Finder project
 -in div element create button element
 -in button element add ternary condition for variable isFollowing
 -open route: http://localhost:5173
+
+165. Mutations - Follow user
+-in github.ts file create and export async function followGitHubUser()
+-in component UserCard.tsx import function followGitHubUser from github.ts file
+-invoke function useMutation()
+-the value of function useMutation() store in variable const followMutation
+-create function const handleFollow()
+-in jsx add to button element event onClick and prop disabled
+-open route: http://localhost:5173
