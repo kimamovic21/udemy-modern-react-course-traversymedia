@@ -1307,3 +1307,12 @@ Section 16: TanStack Query - GitHub Finder project
 -in function handleFollow(), in condition if invoke function unfollowMutation.mutate()
 -in prop disabled add pending state for unfollowMutation
 -open route: http://localhost:5173
+
+167. Toast notifications
+-open link: https://www.npmjs.com/package/sonner
+-type command: npm i sonner
+-in component App.tsx import component Toaster from package sonner
+-in component UserCard.tsx import function toast from package sonner
+-in functions onSuccess replace console.log() with function toast.success()
+-in functions onError replace console.error() with function toast.error()
+-open route: http://localhost:5173

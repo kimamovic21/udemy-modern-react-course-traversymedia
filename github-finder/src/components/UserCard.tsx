@@ -1,4 +1,5 @@
 import { useMutation, useQuery } from '@tanstack/react-query';
+import { toast } from 'sonner';
 import { FaGithub, FaUserMinus, FaUserPlus } from 'react-icons/fa';
 import type { GitHubUser } from '../types';
 import {
@@ -19,22 +20,23 @@ const UserCard = ({ user }: { user: GitHubUser }) => {
   const followMutation = useMutation({
     mutationFn: () => followGitHubUser(user.login),
     onSuccess: () => {
-      console.log(`You have followed ${user.login}`);
+      toast.success(`You have followed ${user.login}`);
       refetch();
     },
     onError: (err: any) => {
-      console.error(err?.message || 'Error following user');
+      toast.error(err?.message || 'Error following user');
     },
   });
 
+  // Mutation to unfollow the user
   const unfollowMutation = useMutation({
     mutationFn: () => unfollowGithubUser(user.login),
     onSuccess: () => {
-      console.log(`You are no longer following ${user.login}`);
+      toast.success(`You are no longer following ${user.login}`);
       refetch();
     },
     onError: (err) => {
-      console.error(err?.message || 'Error unfollowing user');
+      toast.error(err?.message || 'Error unfollowing user');
     },
   });
 

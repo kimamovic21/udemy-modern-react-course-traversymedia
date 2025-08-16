@@ -18,7 +18,9 @@
 
 ### Project 6: *Shopping Cart UI* [https://udemy-shopping-cart-ui-traversy-media.vercel.app]
 
-### Project 7: *Friendly dev* [https://friendlydev.vercel.app/]
+### Project 7: *Friendly dev* [https://friendlydev.vercel.app]
+
+### Project 8: *GitHub Finder* [https://udemy-github-finder.vercel.app]
 
 ## Additional folders
 
