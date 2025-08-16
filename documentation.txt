@@ -1327,3 +1327,11 @@ Section 17: TanStack Router - IdeaDrop project
 
 169. Intro to TanStack router
 -open link: https://tanstack.com/router/latest
+
+170. Project setup
+-type command: mkdir idea-drop
+-type command: cd-idea-drop
+-type command: npm create -- tsrouter-app@latest idea-drop-ui --framework React --interactive
+-type command: cd idea-drop-ui
+-type command: npm run dev
+-open route: http://localhost:3000
