@@ -1316,3 +1316,5 @@ Section 16: TanStack Query - GitHub Finder project
 -in functions onSuccess replace console.log() with function toast.success()
 -in functions onError replace console.error() with function toast.error()
 -open route: http://localhost:5173
+
+Quiz 15: Section quiz

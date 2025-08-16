@@ -1,0 +1,31 @@
+Quiz 15: Section quiz
+
+
+1. What is the primary purpose of TanStack Query in a React app?
+
+Answer: Fetching, caching, and syncing data
+
+
+2. In the useQuery hook, what does queryKey do?
+
+Answer: Identifies and caches each query uniquely
+
+
+3.  Which hook from TanStack Query is used to handle POST, PUT, or DELETE requests?
+
+Answer: useMutation
+
+
+4. What should you call to trigger a useMutation request in TanStack Query?
+
+Answer: mutate()
+
+
+5. Why is QueryClient needed?
+
+Answer: It manages the caching and background updates for queries
+
+
+6. Why is the username state kept inside the UserSearch component?
+
+Answer: Because it’s only used within UserSearch, making it local and self-contained
