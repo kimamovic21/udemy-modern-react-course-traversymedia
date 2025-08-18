@@ -1421,3 +1421,15 @@ Section 17: TanStack Router - IdeaDrop project
 -in component ideas/index.tsx add a logic for fetching and displaying ideas
 -open route: http://localhost:3000/ideas
 -open route: http://localhost:3000/ideas/1
+
+180. Head & main layout
+-in folder ideas create component route.tsx
+-open route: http://localhost:3000/ideas
+-open route: http://localhost:3000/ideas/1
+-in component __root.tsx create function RootLayout()
+-type command: npm i lucide-react
+-create folder components and component Header.tsx
+-in component __root.tsx import component Header from components/Header.tsx
+-in jsx create HTML elements with Tailwind CSS classes
+-open route: http://localhost:3000/ideas
+-open route: http://localhost:3000/ideas/1
