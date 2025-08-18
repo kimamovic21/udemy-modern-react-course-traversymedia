@@ -1404,3 +1404,15 @@ Section 17: TanStack Router - IdeaDrop project
 -add to function fetchIdea() type Promise<Idea>
 -open route: http://localhost:3000/ideas
 -open route: http://localhost:3000/ideas/1
+
+178. Install & use Axios
+-open link: https://axios-http.com/docs/intro
+-open link: https://www.npmjs.com/package/axios
+-type command: npm i axios
+-in folder src create folder lib and axios.ts file
+-in axios.ts file import object axios from package axios
+-create and export variable const api
+-in component $ideaId/index.tsx import variable api from axios.ts file
+-in function fetchIdea() invoke function api.get()
+-open route: http://localhost:3000/ideas
+-open route: http://localhost:3000/ideas/1
