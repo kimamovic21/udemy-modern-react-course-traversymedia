@@ -1335,3 +1335,12 @@ Section 17: TanStack Router - IdeaDrop project
 -type command: cd idea-drop-ui
 -type command: npm run dev
 -open route: http://localhost:3000
+
+171. Creating routes
+-in folder routes create folder ideas and component index.tsx
+-open route: http://localhost:3000/ideas
+-create folder new and component index.tsx
+-open route: http://localhost:3000/ideas/new
+-create folder $ideaId and component index.tsx
+-open route: http://localhost:3000/ideas/1
+-open routeTree.gen.ts file to see added routes
