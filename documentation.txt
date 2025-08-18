@@ -1416,3 +1416,8 @@ Section 17: TanStack Router - IdeaDrop project
 -in function fetchIdea() invoke function api.get()
 -open route: http://localhost:3000/ideas
 -open route: http://localhost:3000/ideas/1
+
+179. Fetch & display ideas
+-in component ideas/index.tsx add a logic for fetching and displaying ideas
+-open route: http://localhost:3000/ideas
+-open route: http://localhost:3000/ideas/1
