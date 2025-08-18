@@ -1344,3 +1344,11 @@ Section 17: TanStack Router - IdeaDrop project
 -create folder $ideaId and component index.tsx
 -open route: http://localhost:3000/ideas/1
 -open routeTree.gen.ts file to see added routes
+
+172. Head & Meta
+-add favicon images in folder public
+-in component __root.tsx import component HeadContent
+-in function createRootRoute() invoke function head()
+-in component ideas/index.tsx, in function createFileRoute() invoke function head()
+-open route: http://localhost:3000
+-open route: http://localhost:3000/ideas
