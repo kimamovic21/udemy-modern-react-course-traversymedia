@@ -1352,3 +1352,11 @@ Section 17: TanStack Router - IdeaDrop project
 -in component ideas/index.tsx, in function createFileRoute() invoke function head()
 -open route: http://localhost:3000
 -open route: http://localhost:3000/ideas
+
+173. Mock REST API
+-in folder src create folder data and db.json file
+-type command: npm install -d json-server
+-in package.json file add command json-server
+-type command: npm run json-server
+-open route: http://localhost:5000
+-open route: http://localhost:5000/ideas
