@@ -1360,3 +1360,12 @@ Section 17: TanStack Router - IdeaDrop project
 -type command: npm run json-server
 -open route: http://localhost:5000
 -open route: http://localhost:5000/ideas
+
+174. Fetch data with TanStack router loaders
+-in component $ideaId/index.tsx, in function createFileRoute() create async function loader()
+-in function IdeaDetailsPage() invoke function Route.useParams()
+-destructure variable const { ideaId } from function Route.useParams()
+-create function fetchIdea()
+-in function loader invoke function fetchIdea()
+-create variable const idea
+-open route: http://localhost:3000/ideas/1
