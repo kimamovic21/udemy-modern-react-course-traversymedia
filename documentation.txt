@@ -1388,4 +1388,19 @@ Section 17: TanStack Router - IdeaDrop project
 -create type RouterContext 
 -invoke function createRootRouteWithContext<RouterContext>()()
 -the value of function createRootRouteWithContext store in variable const Route
--open route: http://localhost:3000
+-open route: http://localhost:3000/ideas
+-open route: http://localhost:3000/ideas/1
+
+177. Use TanStack query to fetch ideas
+-in component $ideaId/index.tsx import component Link, functions queryOptions and useSuspenseQuery
+-create function ideaQueryOptions()
+-in function loader() invoke function queryClient.ensureQueryData()
+-in function IdeaDetailsPage() invoke function useSuspenseQuery(ideaQueryOptions(ideaId))
+-destructure variable const { data: idea } from function useSuspenseQuery()
+-in jsx create HTML elements with Tailwind CSS classes for displaying idea information
+-in folder src create types.ts file
+-in types.ts file create and export interface Idea
+-in component $ideaId/index.tsx import interface Idea from types.ts file
+-add to function fetchIdea() type Promise<Idea>
+-open route: http://localhost:3000/ideas
+-open route: http://localhost:3000/ideas/1
