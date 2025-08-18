@@ -1369,3 +1369,10 @@ Section 17: TanStack Router - IdeaDrop project
 -in function loader invoke function fetchIdea()
 -create variable const idea
 -open route: http://localhost:3000/ideas/1
+
+175. Vite Proxy & fix config errors
+-in vite.config.ts file add object server
+-replace function TanStackRouterVite() with tanstackRouter()
+-type command: npm install -D @types/node
+-in component $ideaId/index.tsx, change argument in function fetch()
+-open route: http://localhost:3000/ideas/1
