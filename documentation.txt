@@ -1433,3 +1433,8 @@ Section 17: TanStack Router - IdeaDrop project
 -in jsx create HTML elements with Tailwind CSS classes
 -open route: http://localhost:3000/ideas
 -open route: http://localhost:3000/ideas/1
+
+181. Not found page
+-in component __root.tsx create function NotFoundPage()
+-in function createRootRouteWithContext() add object with key-value pair: notFoundComponent: NotFoundPage
+-open route: http://localhost:3000/test
