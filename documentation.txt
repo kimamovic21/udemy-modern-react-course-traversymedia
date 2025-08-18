@@ -1376,3 +1376,16 @@ Section 17: TanStack Router - IdeaDrop project
 -type command: npm install -D @types/node
 -in component $ideaId/index.tsx, change argument in function fetch()
 -open route: http://localhost:3000/ideas/1
+
+176. TanStack query & QueryClient setup
+-type command: npm install @tanstack/react-query
+-in component main.tsx import components QueryClient and QueryClientProvider from package tanstack
+-create variable const queryClient
+-in object context add variable queryClient
+-in function render() add component QueryClientProvider with prop client
+-in component __root.tsx import function createRootRouteWithContext
+-import component QueryClient from package tanstack
+-create type RouterContext 
+-invoke function createRootRouteWithContext<RouterContext>()()
+-the value of function createRootRouteWithContext store in variable const Route
+-open route: http://localhost:3000
