@@ -1438,3 +1438,13 @@ Section 17: TanStack Router - IdeaDrop project
 -in component __root.tsx create function NotFoundPage()
 -in function createRootRouteWithContext() add object with key-value pair: notFoundComponent: NotFoundPage
 -open route: http://localhost:3000/test
+
+182. Homepage challenge
+-in folder src create folder api and ideas.ts file
+-in ideas.ts file create and export async functions fetchIdeas() and fetchIdea()
+-in component ideas/index.tsx import function fetchIdeas from ideas.ts file
+-in component $ideaId/index.tsx import function fetchIdea from ideas.ts file
+-in component routes/index.tsx add logic for fetching and displaying three ideas
+-open route: http://localhost:3000
+-open route: http://localhost:3000/ideas
+-open route: http://localhost:3000/ideas/1
