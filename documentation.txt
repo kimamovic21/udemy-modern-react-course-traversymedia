@@ -1490,5 +1490,14 @@ Section 17: TanStack Router - IdeaDrop project
 -in component $ideaId/index.tsx, in jsx add component Link
 -open route: http://localhost:3000/ideas/1
 -in component $ideaId/edit.tsx add logic for editing the idea
--open route: http://localhost:3000/ideas/1/edit and edit idea
--open db.json file to see edited idea
+-open route: http://localhost:3000/ideas/1/edit
+
+188. Update idea mutation
+-in ideas.ts file create and export async function updateIdea()
+-in component $ideaId/edit.tsx import function updateIdea from ideas.ts file
+-import and invoke functions useMutation() and useNavigate()
+-create async function handleSubmit()
+-in jsx add to form element event onSubmit
+-add to button element ternary operator for variable isPending ? 
+-open route: http://localhost:3000/ideas/1/edit and update idea
+-open db.json file to see updated idea
