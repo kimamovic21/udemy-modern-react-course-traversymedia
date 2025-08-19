@@ -1513,3 +1513,22 @@ Section 18: MERN Stack: Backend Express API & MongoDB database
 190. What is the MERN stack ?
 
 191. Monorepo vs separate repos
+
+192. Basic Express server setup
+-type command: mkdir idea-drop-api
+-type command: cd idea-drop-api
+-type command: npm init
+-open link: https://expressjs.com/
+-open link: https://www.npmjs.com/package/express
+-open link: https://www.npmjs.com/package/mongoose
+-open link: https://www.npmjs.com/package/cors
+-open link: https://www.npmjs.com/package/dotenv
+-type command: npm i express mongoose cors dotenv
+-create .gitignore file
+-create server.js file
+-in server.js file add basic Express setup
+-type command: node server
+-in package.json file add commands start and dev
+-create files .env and example.env 
+-in .env file create variable PORT
+-open route: http://localhost:8000
