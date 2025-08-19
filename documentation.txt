@@ -1511,3 +1511,5 @@ Section 18: MERN Stack: Backend Express API & MongoDB database
 189. Section intro
 
 190. What is the MERN stack ?
+
+191. Monorepo vs separate repos
