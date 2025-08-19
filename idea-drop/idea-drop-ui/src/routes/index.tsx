@@ -3,6 +3,7 @@ import { Lightbulb } from 'lucide-react';
 import { queryOptions, useSuspenseQuery } from '@tanstack/react-query';
 import { fetchIdeas } from '@/api/ideas';
 import type { Idea } from '@/types';
+import IdeaCard from '@/components/IdeaCard';
 
 export const Route = createFileRoute('/')({
   component: HomePage,
@@ -39,19 +40,8 @@ function HomePage() {
 
         <ul className='space-y-6'>
           {latestIdeas.map((idea: Idea) => (
-            <li
-              key={idea.id}
-              className='border border-gray-300 rounded-lg shadow p-4 bg-white'
-            >
-              <h3 className='text-lg font-bold text-gray-900'>{idea.title}</h3>
-              <p className='text-gray-600 mb-2'>{idea.summary}</p>
-              <Link
-                to='/ideas/$ideaId'
-                params={{ ideaId: idea.id.toString() }}
-                className='text-blue-600 hover:underline'
-              >
-                Read more →
-              </Link>
+            <li key={idea.id}>
+              <IdeaCard idea={idea} button={false} />
             </li>
           ))}
         </ul>

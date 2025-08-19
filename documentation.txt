@@ -1448,3 +1448,11 @@ Section 17: TanStack Router - IdeaDrop project
 -open route: http://localhost:3000
 -open route: http://localhost:3000/ideas
 -open route: http://localhost:3000/ideas/1
+
+183. IdeaCard component
+-in folder components create component IdeaCard.tsx
+-in component routes/index.tsx import component IdeaCard from component IdeaCard.tsx
+-in component ideas/index.tsx import component IdeaCard from component IdeaCard.tsx
+-open route: http://localhost:3000
+-open route: http://localhost:3000/ideas
+-open route: http://localhost:3000/ideas/1
