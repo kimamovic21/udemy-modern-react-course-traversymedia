@@ -1474,3 +1474,12 @@ Section 17: TanStack Router - IdeaDrop project
 -open route: http://localhost:3000/ideas/new and submit form
 -open route: http://localhost:3000/ideas
 -open db.json file to see created idea
+
+186. Delete ideas
+-in ideas.ts file create and export async function deleteIdea()
+-in component $ideaId/index.tsx import function deleteIdea from ideas.ts file
+-import and invoke functions useMutation() and useNavigate()
+-create async function handleDelete()
+-in jsx create button element with props
+-open route: http://localhost:3000/ideas/1 and delete idea
+-open db.json file to see existing ideas
