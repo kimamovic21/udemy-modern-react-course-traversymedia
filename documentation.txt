@@ -1483,3 +1483,12 @@ Section 17: TanStack Router - IdeaDrop project
 -in jsx create button element with props
 -open route: http://localhost:3000/ideas/1 and delete idea
 -open db.json file to see existing ideas
+
+187. Idea edit form
+-in folder ideas/$ideaId create component edit.tsx
+-open route: http://localhost:3000/ideas/1/edit
+-in component $ideaId/index.tsx, in jsx add component Link
+-open route: http://localhost:3000/ideas/1
+-in component $ideaId/edit.tsx add logic for editing the idea
+-open route: http://localhost:3000/ideas/1/edit and edit idea
+-open db.json file to see edited idea

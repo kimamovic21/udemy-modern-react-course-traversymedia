@@ -56,6 +56,14 @@ function IdeaDetailsPage() {
         {idea.description}
       </p>
 
+      <Link
+        to='/ideas/$ideaId/edit'
+        params={{ ideaId }}
+        className='inline-block text-sm bg-yellow-500 hover:bg-yellow-600 text-white mt-4 mr-2 px-4 py-2 rounded transition'
+      >
+        Edit
+      </Link>
+
       <button
         onClick={handleDelete}
         disabled={isPending}
