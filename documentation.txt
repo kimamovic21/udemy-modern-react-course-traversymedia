@@ -1456,3 +1456,8 @@ Section 17: TanStack Router - IdeaDrop project
 -open route: http://localhost:3000
 -open route: http://localhost:3000/ideas
 -open route: http://localhost:3000/ideas/1
+
+184. Create idea form
+-in component new/index.tsx create state variables and set functions
+-in jsx create HTML form elements with Tailwind CSS classes
+-open route: http://localhost:3000/ideas/new
