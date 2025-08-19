@@ -1461,3 +1461,16 @@ Section 17: TanStack Router - IdeaDrop project
 -in component new/index.tsx create state variables and set functions
 -in jsx create HTML form elements with Tailwind CSS classes
 -open route: http://localhost:3000/ideas/new
+
+185. Create idea mutation
+-in ideas.ts file create and export async function createIdea()
+-in component new/index.tsx import function createIdea from ideas.ts file
+-import and invoke function useNavigate()
+-import and invoke function useMutation()
+-create async function handleSubmit()
+-in jsx add to form element event onSubmit
+-in button element add ternary condition for variable isPending ?
+-in component ideas/index.tsx sort ideas by date
+-open route: http://localhost:3000/ideas/new and submit form
+-open route: http://localhost:3000/ideas
+-open db.json file to see created idea
