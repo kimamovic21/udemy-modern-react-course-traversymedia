@@ -1501,3 +1501,5 @@ Section 17: TanStack Router - IdeaDrop project
 -add to button element ternary operator for variable isPending ? 
 -open route: http://localhost:3000/ideas/1/edit and update idea
 -open db.json file to see updated idea
+
+Quiz 16: Section quiz

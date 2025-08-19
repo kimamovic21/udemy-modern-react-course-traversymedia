@@ -1,0 +1,41 @@
+Quiz 16: Section quiz
+
+
+1. Which of the following best describes TanStack Router?
+
+Answer: A client-based routing library with data-loading features
+
+
+2. What symbol is used in file-based routing to indicate a dynamic segment (like a route parameter)?
+
+Answer: $
+
+
+3.  Which of the following is NOT a way to configure route trees in TanStack Router?
+
+Answer: Hybrid Static Routes
+
+
+4. How do you define a dynamic route like /ideas/123?
+
+Answer: Use a file named $ideaId.tsx or $ideaId/index.tsx
+
+
+5. What is the purpose of the HeadContent component in TanStack Router?
+
+Answer: It renders <meta> and <title> tags into the HTML head
+
+
+6. What is the purpose of a route.tsx file in a route folder like ideas/?
+
+Answer: It serves as a layout for all routes within that folder
+
+
+7. In the RootLayout, what is the main purpose of the createRootRouteWithContext function?
+
+Answer: It provides global context to all routes (e.g. queryClient)
+
+
+8. What does the params prop in the <Link> component do?
+
+Answer: It allows dynamic values like ideaId to be injected into the route path
