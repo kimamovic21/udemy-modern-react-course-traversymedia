@@ -1585,3 +1585,9 @@ Section 18: MERN Stack: Backend Express API & MongoDB database
 -open Postman and test endpoint http://localhost:8000/api/ideas with GET method
 -in ideaRoutes.js file invoke function router.get() for route '/:id'
 -open Postman and test endpoint http://localhost:8000/api/ideas/:id with GET method
+
+200. Create new idea
+-in ideaRoutes.js file update function router.post()
+-open Postman and test endpoint http://localhost:8000/api/ideas with POST method
+-test endpoint http://localhost:8000/api/ideas with GET method
+-open your MongoDB project to see saved idea
