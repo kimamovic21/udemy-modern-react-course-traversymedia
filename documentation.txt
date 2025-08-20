@@ -1532,3 +1532,10 @@ Section 18: MERN Stack: Backend Express API & MongoDB database
 -create files .env and example.env 
 -in .env file create variable PORT
 -open route: http://localhost:8000
+
+193. Creating server endpoints
+-in server.js file invoke function app.get() for route api/ideas
+-open route: http://localhost:8000/api/ideas
+-in server.js file invoke function app.post() for route api/ideas
+-invoke functions app.use() for json and urlencoded
+-open Postman and test endpoint http://localhost:8000/api/ideas with POST method
