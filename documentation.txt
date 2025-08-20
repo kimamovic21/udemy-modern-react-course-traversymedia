@@ -1546,3 +1546,11 @@ Section 18: MERN Stack: Backend Express API & MongoDB database
 -in server.js file import variable ideaRouter from ideaRoutes.js file
 -invoke function app.use('/api/ideas', ideasRouter)
 -open Postman and test endpoint http://localhost:8000/api/ideas with GET and POST method
+
+195. Custom error handler
+-create folder middleware and errorHandler.js file
+-in errorHandler.js file create and export function errorHandler()
+-in server.js file import function errorHandler from errorHandler.js file
+-invoke function app.use(errorHandler)
+-in server.js file invoke function app.get() for error route
+-open Postman and test endpoint http://localhost:8000/error with GET method
