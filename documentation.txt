@@ -1566,3 +1566,13 @@ Section 18: MERN Stack: Backend Express API & MongoDB database
 -open MongoDB Compass App
 -follow instructions from video
 -create folder data-import and ideas.json file
+
+198. Connect to database using Mongoose
+-open link: https://mongoosejs.com
+-open link: https://www.npmjs.com/package/mongoose
+-open link: https://www.npmjs.com/package/colors
+-type command: npm i mongoose colors
+-create folder config and db.js file
+-in db.js file create and export async function connectDB()
+-in server.js file import function connectDB
+-invoke function connectDB()
