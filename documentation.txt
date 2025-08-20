@@ -1576,3 +1576,12 @@ Section 18: MERN Stack: Backend Express API & MongoDB database
 -in db.js file create and export async function connectDB()
 -in server.js file import function connectDB
 -invoke function connectDB()
+
+199. Model & fetch ideas
+-create folder models and Idea.js file
+-in Idea.js file create and export variable Idea
+-in ideaRoutes.js file import variable Idea from Idea.js file
+-update function router.get() for route '/'
+-open Postman and test endpoint http://localhost:8000/api/ideas with GET method
+-in ideaRoutes.js file invoke function router.get() for route '/:id'
+-open Postman and test endpoint http://localhost:8000/api/ideas/:id with GET method
