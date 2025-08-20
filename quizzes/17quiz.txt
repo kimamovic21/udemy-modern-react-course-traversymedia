@@ -1,0 +1,43 @@
+Quiz 17: Section quiz
+
+
+1. What is a key advantage of MongoDB in the MERN stack?
+
+Answer: It stores flexible, JSON-like documents
+
+
+2. Which of the following is an advantage of using a monorepo?
+
+Answer: Enables shared tooling and synchronized versioning
+
+
+3. Which is a common downside of using a monorepo?
+
+Answer: Services like Vercel or Heroku need extra config to deploy subdirectories
+
+
+4. What does this script do?
+
+"dev": "node --watch server.js"
+
+Answer: It watches for changes and restarts the server automatically
+
+
+5.  Why should the .env file be added to .gitignore?
+
+Answer: It can contain sensitive data like API keys and credentials
+
+
+6.  What is the purpose of using express.Router() in a route file?
+
+Answer: It allows organizing routes into separate modules
+
+
+7.  What status code is returned on successful creation of an idea?
+
+Answer: 201
+
+
+8.  What does Idea.find().sort({ createdAt: -1 }) do?
+
+Answer: Finds all ideas and sorts them by creation date in descending order

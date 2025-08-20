@@ -1617,3 +1617,5 @@ Section 18: MERN Stack: Backend Express API & MongoDB database
 -add condition if (!isNaN(limit))
 -open Postman and test endpoint http://localhost:8000/api/ideas?_limit=3 with GET method
 -open route: http://localhost:3000
+
+Quiz 17: Section quiz
