@@ -1538,4 +1538,11 @@ Section 18: MERN Stack: Backend Express API & MongoDB database
 -open route: http://localhost:8000/api/ideas
 -in server.js file invoke function app.post() for route api/ideas
 -invoke functions app.use() for json and urlencoded
--open Postman and test endpoint http://localhost:8000/api/ideas with POST method
+-open Postman and test endpoint http://localhost:8000/api/ideas with GET and POST method
+
+194. Route files
+-create folder routes and ideaRoutes.js file
+-move functions from server.js file to ideaRoutes.js file
+-in server.js file import variable ideaRouter from ideaRoutes.js file
+-invoke function app.use('/api/ideas', ideasRouter)
+-open Postman and test endpoint http://localhost:8000/api/ideas with GET and POST method
