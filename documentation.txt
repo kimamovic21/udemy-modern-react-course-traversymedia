@@ -1560,3 +1560,9 @@ Section 18: MERN Stack: Backend Express API & MongoDB database
 -create new Atlas database project
 -follow instructions from video
 -in .env file create env variable MONGO_URI
+
+197. MongoDB Compass Setup & data import
+-open link: https://www.mongodb.com/products/tools/compass
+-open MongoDB Compass App
+-follow instructions from video
+-create folder data-import and ideas.json file
