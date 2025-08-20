@@ -1591,3 +1591,13 @@ Section 18: MERN Stack: Backend Express API & MongoDB database
 -open Postman and test endpoint http://localhost:8000/api/ideas with POST method
 -test endpoint http://localhost:8000/api/ideas with GET method
 -open your MongoDB project to see saved idea
+
+201. Delete & update idea
+-in ideaRoutes.js file invoke function router.delete() for route '/:id'
+-open Postman and test endpoint http://localhost:8000/api/ideas/:id with DELETE method
+-open Postman and test endpoint http://localhost:8000/api/ideas with GET method
+-open your MongoDB project to see ideas
+-in ideaRoutes.js file invoke function router.put() for route '/:id'
+-open Postman and test endpoint http://localhost:8000/api/ideas/:id with PUT method
+-open Postman and test endpoint http://localhost:8000/api/ideas/:id with GET method
+-open your MongoDB project to see updated idea
