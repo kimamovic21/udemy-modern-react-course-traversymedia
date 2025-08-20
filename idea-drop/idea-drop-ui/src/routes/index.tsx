@@ -40,7 +40,7 @@ function HomePage() {
 
         <ul className='space-y-6'>
           {latestIdeas.map((idea: Idea) => (
-            <li key={idea.id}>
+            <li key={idea._id}>
               <IdeaCard idea={idea} button={false} />
             </li>
           ))}

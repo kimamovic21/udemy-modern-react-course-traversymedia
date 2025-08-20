@@ -1601,3 +1601,11 @@ Section 18: MERN Stack: Backend Express API & MongoDB database
 -open Postman and test endpoint http://localhost:8000/api/ideas/:id with PUT method
 -open Postman and test endpoint http://localhost:8000/api/ideas/:id with GET method
 -open your MongoDB project to see updated idea
+
+202. Integrating the frontend & backend
+-in folder idea-drop-ui, in vite.condition.ts file remove rewrite key
+-update localhost
+-in types.ts file change id property to _id
+-in tsx components change id to _id
+-open route: http://localhost:8000/api/ideas
+-open route: http://localhost:3000

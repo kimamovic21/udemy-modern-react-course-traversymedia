@@ -38,7 +38,7 @@ function IdeasPage() {
 
       <ul className='grid grid-cols-1 sm:grid-cols-2 gap-6'>
         {ideas.map((idea) => (
-          <li key={idea.id} className='flex flex-col'>
+          <li key={idea._id} className='flex flex-col'>
             <IdeaCard idea={idea} />
           </li>
         ))}
