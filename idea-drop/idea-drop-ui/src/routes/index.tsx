@@ -11,13 +11,11 @@ export const Route = createFileRoute('/')({
 
 const ideasQueryOptions = queryOptions({
   queryKey: ['ideas', { limit: 3 }],
-  queryFn: () => fetchIdeas(),
+  queryFn: () => fetchIdeas(3),
 });
 
 function HomePage() {
   const { data: ideas } = useSuspenseQuery(ideasQueryOptions);
-
-  const latestIdeas = ideas.slice(0, 3);
 
   return (
     <div className='flex flex-col md:flex-row items-start justify-between gap-10 p-6 text-blue-600'>
@@ -39,7 +37,7 @@ function HomePage() {
         </h2>
 
         <ul className='space-y-6'>
-          {latestIdeas.map((idea: Idea) => (
+          {ideas.map((idea: Idea) => (
             <li key={idea._id}>
               <IdeaCard idea={idea} button={false} />
             </li>

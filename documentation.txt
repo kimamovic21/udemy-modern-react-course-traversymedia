@@ -1609,3 +1609,11 @@ Section 18: MERN Stack: Backend Express API & MongoDB database
 -in tsx components change id to _id
 -open route: http://localhost:8000/api/ideas
 -open route: http://localhost:3000
+
+203. Limit & sort at API level
+-in ideas.ts file, add to function fetchIdeas() parameter limit with type
+-update logic for fetching three ideas in component routes/index.tsx
+-in ideaRoutes.js file, in function router.get() for route '/' create variables const limit and const query
+-add condition if (!isNaN(limit))
+-open Postman and test endpoint http://localhost:8000/api/ideas?_limit=3 with GET method
+-open route: http://localhost:3000
