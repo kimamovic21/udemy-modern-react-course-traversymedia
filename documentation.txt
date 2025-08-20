@@ -1554,3 +1554,9 @@ Section 18: MERN Stack: Backend Express API & MongoDB database
 -invoke function app.use(errorHandler)
 -in server.js file invoke function app.get() for error route
 -open Postman and test endpoint http://localhost:8000/error with GET method
+
+196. MongoDB Atlas Setup (Cloud database)
+-open link: https://www.mongodb.com/products/platform/atlas-database
+-create new Atlas database project
+-follow instructions from video
+-in .env file create env variable MONGO_URI
