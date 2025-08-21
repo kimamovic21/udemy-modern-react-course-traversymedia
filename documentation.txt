@@ -1625,3 +1625,5 @@ Quiz 17: Section quiz
 Section 19: API Authentication with JWT & refresh token
 
 204. What are JWTs ?
+
+205. Access & refresh token strategy explained
