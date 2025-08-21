@@ -1,6 +1,7 @@
 {
   "cSpell.words": [
     "Appwrite",
+    "bcryptjs",
     "dotenv",
     "Formspree",
     "ideadrop",

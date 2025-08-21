@@ -1627,3 +1627,12 @@ Section 19: API Authentication with JWT & refresh token
 204. What are JWTs ?
 
 205. Access & refresh token strategy explained
+
+206. User model & password hashing
+-open link: https://www.npmjs.com/package/bcrypt
+-open link: https://www.npmjs.com/package/jose
+-type command: npm install bcryptjs jose
+-in folder models create User.js file
+-in User.js file create and export variable User
+-invoke function userSchema.pre()
+-in Idea.js file, in function Schema() add object user
