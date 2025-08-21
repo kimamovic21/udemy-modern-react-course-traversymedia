@@ -1619,3 +1619,9 @@ Section 18: MERN Stack: Backend Express API & MongoDB database
 -open route: http://localhost:3000
 
 Quiz 17: Section quiz
+
+
+
+Section 19: API Authentication with JWT & refresh token
+
+204. What are JWTs ?
