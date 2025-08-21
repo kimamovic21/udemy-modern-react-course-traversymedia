@@ -1669,3 +1669,12 @@ Section 19: API Authentication with JWT & refresh token
 -in authRoutes.js file invoke function router.post() for route '/login'
 -in User.js file add method userSchema.methods.matchPassword
 -open Postman and test endpoint http://localhost:8000/api/auth/login with POST method
+
+211. Use refresh token
+-open link: https://www.npmjs.com/package/cookie-parser
+-type command: npm i cookie-parser
+-in server.js file import function cookieParser from package cookie-parser
+-invoke function app.use(cookieParser())
+-in authRouter.js file import function jwtVerify and variable JWT_SECRET
+-invoke function router.post() for route '/refresh'
+-open Postman and test endpoint http://localhost:8000/api/auth/refresh with POST method

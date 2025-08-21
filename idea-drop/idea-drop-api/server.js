@@ -2,6 +2,7 @@ import { errorHandler } from './middleware/errorHandler.js';
 import express from 'express';
 import cors from 'cors';
 import dotenv from 'dotenv';
+import cookieParser from 'cookie-parser';
 import authRouter from './routes/authRoutes.js';
 import ideasRouter from './routes/ideaRoutes.js';
 import connectDB from './config/db.js';
@@ -17,6 +18,7 @@ connectDB();
 app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+app.use(cookieParser());
 
 // Routes
 app.use('/api/auth', authRouter);

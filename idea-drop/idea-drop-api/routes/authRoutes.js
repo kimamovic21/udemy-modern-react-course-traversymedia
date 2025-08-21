@@ -1,3 +1,5 @@
+import { jwtVerify } from 'jose';
+import { JWT_SECRET } from '../utils/getJwtSecret.js';
 import { generateToken } from '../utils/generateToken.js';
 import express from 'express';
 import User from '../models/User.js';
@@ -100,6 +102,49 @@ router.post('/login', async (req, res, next) => {
       },
     });
   } catch (err) {
+    next(err);
+  };
+});
+
+// @route   POST /api/auth/refresh
+// @desc    Issue a new access token using refresh token
+// @access  Public (but requires valid refresh token in cookie)
+router.post('/refresh', async (req, res, next) => {
+  try {
+    const token = req.cookies?.refreshToken;
+    console.log('Refreshing token...');
+
+    if (!token) {
+      res.status(401);
+      throw new Error('Refresh token missing');
+    };
+
+    const { payload } = await jwtVerify(token, JWT_SECRET);
+
+    const user = await User.findById(payload.userId);
+
+    if (!user) {
+      res.status(401);
+      throw new Error('User no longer exists');
+    };
+
+    const newAccessToken = await generateToken(
+      { userId: user._id.toString() },
+      '1m'
+    );
+
+    res.json({
+      accessToken: newAccessToken,
+      user: {
+        id: user._id,
+        name: user.name,
+        email: user.email,
+      },
+    });
+  } catch (err) {
+    console.log(err);
+    err.message = 'Invalid or expired refresh token';
+    res.status(401);
     next(err);
   };
 });
