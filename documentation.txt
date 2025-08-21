@@ -1664,3 +1664,8 @@ Section 19: API Authentication with JWT & refresh token
 209. Logout endpoint & clear cookies
 -in authRoutes.js file invoke function router.post() for route '/logout'
 -open Postman and test endpoint http://localhost:8000/api/auth/logout with POST method
+
+210. Login endpoint
+-in authRoutes.js file invoke function router.post() for route '/login'
+-in User.js file add method userSchema.methods.matchPassword
+-open Postman and test endpoint http://localhost:8000/api/auth/login with POST method
