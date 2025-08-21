@@ -1660,3 +1660,7 @@ Section 19: API Authentication with JWT & refresh token
 -open Postman and test endpoint http://localhost:8000/api/auth/register with POST method
 -open your MongoDB project to see created user
 -you should see the access token in the response
+
+209. Logout endpoint & clear cookies
+-in authRoutes.js file invoke function router.post() for route '/logout'
+-open Postman and test endpoint http://localhost:8000/api/auth/logout with POST method
