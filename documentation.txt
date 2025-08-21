@@ -1644,3 +1644,19 @@ Section 19: API Authentication with JWT & refresh token
 -invoke function app.use('/api/auth', authRouter);
 -open Postman and test endpoint http://localhost:8000/api/auth/register with POST method
 -open your MongoDB project to see created user
+
+208. Generate access & refresh tokens
+-type command: node -e "console.log(require('crypto').randomBytes(64).toString('hex'))"
+-create folder utils and generateToken.js file
+-in generateToken.js file create and export async function generateToken()
+-create getJwtSecret.js file
+-in getJwtSecret.js file create and  variable const JWT_SECRET
+-in generateToken.js file import variable JWT_SECRET from getJwtSecret.js file
+-in authRoutes.js file import function generateToken from generateToken.js file
+-create variables const payload, const const accessToken and const refreshToken
+-invoke function res.cookie()
+-in function json(), add variable accessToken
+-delete existing users
+-open Postman and test endpoint http://localhost:8000/api/auth/register with POST method
+-open your MongoDB project to see created user
+-you should see the access token in the response
