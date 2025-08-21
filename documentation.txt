@@ -1678,3 +1678,11 @@ Section 19: API Authentication with JWT & refresh token
 -in authRouter.js file import function jwtVerify and variable JWT_SECRET
 -invoke function router.post() for route '/refresh'
 -open Postman and test endpoint http://localhost:8000/api/auth/refresh with POST method
+
+212. Protecting routes
+-in folder middleware create authMiddleware.js file
+-in authMiddleware.js file create and export async function protect()
+-in ideaRoutes.js file import function protect from authMiddleware.js file
+-in functions router for creating, editing and deleting an idea, add argument function protect
+-open Postman and test endpoints for creating, editing and deleting an idea
+-in Authorization option add Bearer token
