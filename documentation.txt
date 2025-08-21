@@ -1636,3 +1636,11 @@ Section 19: API Authentication with JWT & refresh token
 -in User.js file create and export variable User
 -invoke function userSchema.pre()
 -in Idea.js file, in function Schema() add object user
+
+207. User register endpoint
+-in folder routes create authRoutes.js file
+-in authRouter.js file invoke function router.post() for route '/register'
+-in server.js file import variable authRouter
+-invoke function app.use('/api/auth', authRouter);
+-open Postman and test endpoint http://localhost:8000/api/auth/register with POST method
+-open your MongoDB project to see created user
