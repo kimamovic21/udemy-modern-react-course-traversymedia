@@ -1,0 +1,41 @@
+Quiz 18: Section quiz
+
+
+1. What are the three parts of a JWT?
+
+Answer: Header, Payload, Signature
+
+
+2. Why should you avoid putting sensitive data like passwords in the JWT payload?
+
+Answer: Because the payload is Base64Url-encoded, not encrypted
+
+
+3.  What is the role of the signature in a JWT?
+
+Answer: To verify the token hasn’t been tampered with
+
+
+4. What is the primary purpose of an access token?
+
+Answer: To authenticate API requests for a short time
+
+
+5. Why is storing a long-lived token in localStorage a bad idea?
+
+Answer: It is vulnerable to XSS attacks
+
+
+6.  What type is used to relate an idea to a user in the Mongoose schema?
+
+Answer: ObjectId
+
+
+7.  Where should the JWT token be sent from the client?
+
+Answer: In the Authorization header using Bearer <token> format
+
+
+8.  What happens if no token is present in the request header?
+
+Answer: A 401 Unauthorized error is thrown

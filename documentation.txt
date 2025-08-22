@@ -1695,3 +1695,5 @@ Section 19: API Authentication with JWT & refresh token
 -add condition if (idea.user.toString() !== req.user._id.toString())
 -open Postman and test endpoint http://localhost:8000/api/ideas/:id with DELETE method
 -in ideaRoutes.js file update function router.put() for route '/:id'
+
+Quiz 18: Section quiz
