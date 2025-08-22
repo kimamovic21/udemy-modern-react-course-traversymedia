@@ -1686,3 +1686,12 @@ Section 19: API Authentication with JWT & refresh token
 -in functions router for creating, editing and deleting an idea, add argument function protect
 -open Postman and test endpoints for creating, editing and deleting an idea
 -in Authorization option add Bearer token
+
+213. User authorization & access control
+-in ideaRoutes.js file, in function new Idea() add new property user
+-open Postman and test endpoint http://localhost:8000/api/ideas with POST method
+-open MongoDB to see created idea with user id
+-in ideaRoutes.js file change function updateByIdAndDelete() with findById()
+-add condition if (idea.user.toString() !== req.user._id.toString())
+-open Postman and test endpoint http://localhost:8000/api/ideas/:id with DELETE method
+-in ideaRoutes.js file update function router.put() for route '/:id'
