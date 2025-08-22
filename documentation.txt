@@ -1697,3 +1697,9 @@ Section 19: API Authentication with JWT & refresh token
 -in ideaRoutes.js file update function router.put() for route '/:id'
 
 Quiz 18: Section quiz
+
+
+
+Section 20: Full stack authentication
+
+214. Full stack auth flow explained
