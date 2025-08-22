@@ -1719,3 +1719,9 @@ Section 20: Full stack authentication
 -in jsx create HTML elements with Tailwind CSS classes
 -open route: http://localhost:3000/register
 -open route: http://localhost:3000/login
+
+216. Auth context
+-in folder src create folder context and component AuthContext.tsx
+-in component AuthContext.tsx add logic for auth state
+-in component main.tsx import component AuthProvider from component AuthContext.tsx
+-open route: http://localhost:3000
