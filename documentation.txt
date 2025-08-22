@@ -1725,3 +1725,19 @@ Section 20: Full stack authentication
 -in component AuthContext.tsx add logic for auth state
 -in component main.tsx import component AuthProvider from component AuthContext.tsx
 -open route: http://localhost:3000
+
+217. Register user
+-in .env file create env variable NODE_ENV
+-in authRoutes.js file update functions res.cookie()
+-in folder api create auth.ts file
+-in auth.ts file create and export async function registerUser()
+-in component register/index.tsx import functions useMutation, useNavigate, registerUser and useAuth
+-create new state variable const error and set function setError
+-in jsx add conditional rendering for variable error && ()
+-invoke function useAuth()
+-create variable const navigate
+-invoke function useMutation()
+-destructure function and variable const { mutateAsync, isPending } from function useMutation()
+-in jsx add to button element pending state
+-in function handleSubmit() invoke function mutateAsync()
+-open route: http://localhost:3000/register and register new user
