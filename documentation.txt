@@ -1703,3 +1703,19 @@ Quiz 18: Section quiz
 Section 20: Full stack authentication
 
 214. Full stack auth flow explained
+
+215. Auth pages & layout
+-in folder idea-drop-ui, in folder routes create folder (auth)
+-in folder (auth) create folders register, login and components index.tsx
+-in component Header.tsx create div element for auth buttons
+-open route: http://localhost:3000/register
+-open route: http://localhost:3000/login
+-in folder (auth) create component route.tsx
+-in component register/index.tsx create state variables and set functions
+-create function handleSubmit()
+-in jsx create HTML elements with Tailwind CSS classes
+-in component login/index.tsx create state variables and set functions
+-create function handleSubmit()
+-in jsx create HTML elements with Tailwind CSS classes
+-open route: http://localhost:3000/register
+-open route: http://localhost:3000/login

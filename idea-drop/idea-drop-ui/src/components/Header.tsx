@@ -5,6 +5,7 @@ const Header = () => {
   return (
     <header className='bg-white shadow'>
       <div className='container mx-auto px-6 py-4 flex justify-between items-center'>
+        {/* Logo with home link */}
         <div className='flex items-center space-x-2 text-gray-800'>
           <Link to='/' className='flex items-center space-x-2 text-gray-800'>
             <Lightbulb className='w-6 h-6 text-yellow-500' />
@@ -14,6 +15,7 @@ const Header = () => {
           </Link>
         </div>
 
+        {/* Navigation */}
         <nav className='flex items-center space-x-4'>
           <Link
             to='/ideas'
@@ -28,6 +30,22 @@ const Header = () => {
             + New Idea
           </Link>
         </nav>
+
+        {/* Auth buttons */}
+        <div className='flex items-center space-x-2'>
+          <Link
+            to='/login'
+            className='text-gray-600 hover:text-gray-900 font-medium transition px-3 py-2 leading-none'
+          >
+            Login
+          </Link>
+          <Link
+            to='/register'
+            className='bg-gray-100 hover:bg-gray-200 text-gray-800 font-medium transition px-4 py-2 rounded-md leading-none'
+          >
+            Register
+          </Link>
+        </div>
       </div>
     </header>
   );
