@@ -18,3 +18,16 @@ export const registerUser = async ({
     throw new Error(message);
   };
 };
+
+export const loginUser = async (credentials: {
+  email: string;
+  password: string;
+}) => {
+  try {
+    const res = await api.post('/auth/login', credentials);
+    return res.data;
+  } catch (error: any) {
+    const message = error.response?.data?.message || 'Login failed';
+    throw new Error(message);
+  };
+};

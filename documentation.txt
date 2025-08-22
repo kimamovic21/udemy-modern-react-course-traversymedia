@@ -1741,3 +1741,14 @@ Section 20: Full stack authentication
 -in jsx add to button element pending state
 -in function handleSubmit() invoke function mutateAsync()
 -open route: http://localhost:3000/register and register new user
+
+218. Login user
+-in api/auth.ts file create and export async function loginUser()
+-in component login/index.tsx import functions useNavigate, useMutation, loginUser and useAuth
+-create state variable const error and set function setError()
+-in jsx add conditional rendering for variable error &&
+-invoke functions useAuth(), useNavigate() and useMutation()
+-destructure function and variable const { mutateAsync, isPending } from function useMutation()
+-in function handleSubmit() invoke function mutateAsync()
+-in jsx add to button element pending state
+-open route: http://localhost:3000/register and login
