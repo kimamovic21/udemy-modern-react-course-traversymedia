@@ -1758,3 +1758,15 @@ Section 20: Full stack authentication
 -the value of function useAuth() store in destructured variable const { user }
 -in jsx add conditional rendering for variable user && ()
 -add ternary condition for variable !user ?
+-open route: http://localhost:3000
+
+220. Logout user
+-in auth.ts file create and export async function logoutUser()
+-in component Header.tsx import function useNavigate and logoutUser
+-create variable const navigate
+-destructure variables const { setUser, setAccessToken } from function useAuth()
+-open route: http://localhost:3000
+-create async function handleLogout()
+-in jsx add to button element event onClick
+-in event onClick pass the function handleLogout
+-open route: http://localhost:3000 and click logout button

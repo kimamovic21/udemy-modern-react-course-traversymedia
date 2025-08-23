@@ -31,3 +31,12 @@ export const loginUser = async (credentials: {
     throw new Error(message);
   };
 };
+
+export const logoutUser = async (): Promise<void> => {
+  try {
+    await api.post('/auth/logout');
+  } catch (error: any) {
+    const message = error.response?.data?.message || 'Logout failed';
+    throw new Error(message);
+  };
+};
