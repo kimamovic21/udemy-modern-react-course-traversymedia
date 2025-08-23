@@ -1,0 +1,26 @@
+Quiz 19: Section quiz
+
+
+1. What happens to the access token when the user does a hard refresh?
+
+Answer: It is lost from state
+
+
+2. How will the app get a new access token after a hard refresh?
+
+Answer: By sending the refresh token (via cookie) to the /refresh endpoint
+
+
+3.  What is the role of the Axios interceptor in this setup?
+
+Answer: It catches 401 responses and refreshes the token
+
+
+4. What is the main purpose of the Auth Context?
+
+Answer: To share access token and user across components
+
+
+5. Which values are stored in the AuthContext?
+
+Answer: Access token and user object

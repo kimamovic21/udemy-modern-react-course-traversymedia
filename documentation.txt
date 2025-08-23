@@ -1797,3 +1797,5 @@ Section 20: Full stack authentication
 -in jsx add conditional rendering user && user.id === idea.user && 
 -open route: http://localhost:3000/ideas 
 -open route: http://localhost:3000/ideas/:ideaId 
+
+Quiz 19: Section quiz
