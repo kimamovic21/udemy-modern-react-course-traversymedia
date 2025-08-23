@@ -1,9 +1,11 @@
 import {
+  useEffect,
   createContext,
   useContext,
   useState,
   type ReactNode
 } from 'react';
+import { refreshAccessToken } from '@/api/auth';
 
 type AuthContextType = {
   accessToken: string | null;
@@ -17,6 +19,21 @@ const AuthContext = createContext<AuthContextType | undefined>(undefined);
 export const AuthProvider = ({ children }: { children: ReactNode }) => {
   const [accessToken, setAccessToken] = useState<string | null>(null);
   const [user, setUser] = useState<AuthContextType['user']>(null);
+
+  // Get new token on mount
+  useEffect(() => {
+    const loadAuth = async () => {
+      try {
+        const { accessToken: newToken, user } = await refreshAccessToken();
+        setAccessToken(newToken);
+        setUser(user);
+      } catch (error) {
+        console.error('Failed to refresh access token:', error);
+      };
+    };
+
+    loadAuth();
+  }, []);
 
   return (
     <AuthContext.Provider

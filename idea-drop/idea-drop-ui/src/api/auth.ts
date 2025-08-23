@@ -32,6 +32,24 @@ export const loginUser = async (credentials: {
   };
 };
 
+export const refreshAccessToken = async (): Promise<{
+  accessToken: string;
+  user: {
+    id: string;
+    name: string;
+    email: string;
+  };
+}> => {
+  try {
+    const res = await api.post('/auth/refresh');
+    return res.data;
+  } catch (error: any) {
+    throw new Error(
+      error?.res?.data?.message || 'Failed to refresh access token'
+    );
+  };
+};
+
 export const logoutUser = async (): Promise<void> => {
   try {
     await api.post('/auth/logout');

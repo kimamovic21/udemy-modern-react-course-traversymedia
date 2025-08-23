@@ -1770,3 +1770,9 @@ Section 20: Full stack authentication
 -in jsx add to button element event onClick
 -in event onClick pass the function handleLogout
 -open route: http://localhost:3000 and click logout button
+
+221. Refresh token on page refresh
+-in auth.ts file create and export async function refreshAccessToken()
+-in component AuthContext.tsx import functions useEffect and refreshAccessToken
+-invoke function useEffect()
+-open route: http://localhost:3000 
