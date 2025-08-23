@@ -1776,3 +1776,13 @@ Section 20: Full stack authentication
 -in component AuthContext.tsx import functions useEffect and refreshAccessToken
 -invoke function useEffect()
 -open route: http://localhost:3000 
+
+222. Send token with request using Axios interceptor
+-in folder lib create authToken.ts file
+-in authToken.ts file create variable let accessToken
+-create and export functions setStoredAccessToken() and getStoredAccessToken()
+-in component AuthContext.tsx import function setStoredAccessToken from authToken.ts file
+-invoke new function useEffect()
+-in axios.ts file import function getStoredAccessToken from authToken.ts file
+-invoke function api.interceptors.request.use()
+-open route: http://localhost:3000 
