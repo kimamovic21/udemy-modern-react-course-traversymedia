@@ -1791,3 +1791,9 @@ Section 20: Full stack authentication
 -in axios.ts file import functions refreshAccessToken and setStoredAccessToken
 -invoke function api.interceptors.response.use() to refresh token after expires
 -open route: http://localhost:3000 
+
+224. Hide controls
+-in component $ideaId/index.tsx import and invoke function useAuth()
+-in jsx add conditional rendering user && user.id === idea.user && 
+-open route: http://localhost:3000/ideas 
+-open route: http://localhost:3000/ideas/:ideaId 

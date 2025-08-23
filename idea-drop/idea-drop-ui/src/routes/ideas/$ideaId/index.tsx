@@ -5,6 +5,7 @@ import {
   useSuspenseQuery
 } from '@tanstack/react-query';
 import { fetchIdea, deleteIdea } from '@/api/ideas';
+import { useAuth } from '@/context/AuthContext';
 
 const ideaQueryOptions = (ideaId: string) =>
   queryOptions({
@@ -23,6 +24,8 @@ function IdeaDetailsPage() {
   const { ideaId } = Route.useParams();
 
   const { data: idea } = useSuspenseQuery(ideaQueryOptions(ideaId));
+
+  const { user } = useAuth();
 
   const navigate = useNavigate();
 
@@ -56,21 +59,25 @@ function IdeaDetailsPage() {
         {idea.description}
       </p>
 
-      <Link
-        to='/ideas/$ideaId/edit'
-        params={{ ideaId }}
-        className='inline-block text-sm bg-yellow-500 hover:bg-yellow-600 text-white mt-4 mr-2 px-4 py-2 rounded transition'
-      >
-        Edit
-      </Link>
+      {user && user.id === idea.user && (
+        <>
+          <Link
+            to='/ideas/$ideaId/edit'
+            params={{ ideaId }}
+            className='inline-block text-sm bg-yellow-500 hover:bg-yellow-600 text-white mt-4 mr-2 px-4 py-2 rounded transition cursor-pointer'
+          >
+            Edit
+          </Link>
 
-      <button
-        onClick={handleDelete}
-        disabled={isPending}
-        className='text-sm bg-red-600 hover:bg-red-700 text-white mt-4 px-4 py-2 rounded transition disabled:opacity-50 cursor-pointer'
-      >
-        {isPending ? 'Deleting...' : 'Delete'}
-      </button>
+          <button
+            onClick={handleDelete}
+            disabled={isPending}
+            className='text-sm bg-red-600 hover:bg-red-700 text-white mt-4 px-4 py-2 rounded transition disabled:opacity-50 cursor-pointer'
+          >
+            {isPending ? 'Deleting...' : 'Delete'}
+          </button>
+        </>
+      )}
     </div>
   );
 };
