@@ -1784,5 +1784,10 @@ Section 20: Full stack authentication
 -in component AuthContext.tsx import function setStoredAccessToken from authToken.ts file
 -invoke new function useEffect()
 -in axios.ts file import function getStoredAccessToken from authToken.ts file
--invoke function api.interceptors.request.use()
+-invoke function api.interceptors.request.use() for attaching token to requests on refresh
+-open route: http://localhost:3000 
+
+223. Refresh token when it expires
+-in axios.ts file import functions refreshAccessToken and setStoredAccessToken
+-invoke function api.interceptors.response.use() to refresh token after expires
 -open route: http://localhost:3000 

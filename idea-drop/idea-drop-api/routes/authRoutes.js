@@ -112,7 +112,6 @@ router.post('/login', async (req, res, next) => {
 router.post('/refresh', async (req, res, next) => {
   try {
     const token = req.cookies?.refreshToken;
-    console.log('Refreshing token...');
 
     if (!token) {
       res.status(401);
