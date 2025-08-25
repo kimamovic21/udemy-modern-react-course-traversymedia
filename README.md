@@ -22,6 +22,8 @@
 
 ### Project 8: *GitHub Finder* [https://udemy-github-finder.vercel.app]
 
+### Project 9: *Idea Drop App* [https://ideadrop.vercel.app]
+
 ## Additional folders
 
 ### javascript-refresher

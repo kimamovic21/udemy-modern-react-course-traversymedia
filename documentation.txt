@@ -1820,3 +1820,11 @@ Section 21: MERN App deployment
 -open link: https://idea-drop-api-mmmt.onrender.com
 -open link: https://idea-drop-api-mmmt.onrender.com/api
 -open link: https://idea-drop-api-mmmt.onrender.com/api/ideas
+
+227. Frontend deployment
+-open folder idea-drop-ui and type command: npm run build
+-open link: https://vercel.com
+-click button Add new project
+-add env variables
+-choose folder idea-drop-ui and click Deploy
+-open link: https://ideadrop.vercel.app
