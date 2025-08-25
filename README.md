@@ -6,13 +6,13 @@
 
 ## Projects
 
-### Project 1: *Rating UI*
+### Project 1: *Rating UI* [https://udemy-rating-ui-traversy-media.vercel.app]
 
-### Project 2: *Notes App*
+### Project 2: *Notes App* [https://udemy-notes-app-traversy-media.vercel.app]
 
-### Project 3: *Lifecycle Playground*
+### Project 3: *Lifecycle Playground* [https://udemy-lifecycle-playground-traversy-media.vercel.app]
 
-### Project 4: *Simple Timer*
+### Project 4: *Simple Timer* [https://udemy-simple-timer-traversy-media.vercel.app]
 
 ### Project 5: *Crypto Dash* [https://udemy-crypto-dash-traversy-media.vercel.app]
 

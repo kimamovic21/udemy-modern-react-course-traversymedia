@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import TextInput from './inputs/TextInput';
 import SelectInput from './inputs/SelectInput';
-import TextareaInput from './inputs/TextAreaInput';
+import TextareaInput from './inputs/TextareaInput';
 
 const NoteForm = ({ notes, setNotes }) => {
   const [formData, setFormData] = useState({
