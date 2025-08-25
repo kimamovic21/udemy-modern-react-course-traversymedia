@@ -1828,3 +1828,5 @@ Section 21: MERN App deployment
 -add env variables
 -choose folder idea-drop-ui and click Deploy
 -open link: https://ideadrop.vercel.app
+
+Quiz 20: Section quiz
