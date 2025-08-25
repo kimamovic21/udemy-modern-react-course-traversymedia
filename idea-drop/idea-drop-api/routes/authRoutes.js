@@ -82,7 +82,7 @@ router.post('/login', async (req, res, next) => {
 
     // Create tokens
     const payload = { userId: user._id.toString() };
-    const accessToken = await generateToken(payload, '1m');
+    const accessToken = await generateToken(payload, '10m');
     const refreshToken = await generateToken(payload, '30d');
 
     // Set refresh token in HTTP-only cookie
@@ -129,7 +129,7 @@ router.post('/refresh', async (req, res, next) => {
 
     const newAccessToken = await generateToken(
       { userId: user._id.toString() },
-      '1m'
+      '10m'
     );
 
     res.json({
