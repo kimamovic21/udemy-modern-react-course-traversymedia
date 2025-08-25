@@ -1799,3 +1799,14 @@ Section 20: Full stack authentication
 -open route: http://localhost:3000/ideas/:ideaId 
 
 Quiz 19: Section quiz
+
+
+
+Section 21: MERN App deployment
+
+225. Prepare for deployment
+-in folder idea-drop-ui, in vite.config.ts file comment object server
+-in axios.ts file update value baseURL
+-create files .env and example.env
+-in folder idea-drop-ui, in .env file create variable VITE_API_URL
+-in folder idea-drop-api, in .env file create variable CLIENT_URL

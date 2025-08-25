@@ -13,9 +13,26 @@ const app = express();
 
 const PORT = process.env.PORT || 8000;
 
+// Connect to MongoDB
 connectDB();
 
-app.use(cors());
+// CORS configuration
+const allowedOrigins = [
+  'http://localhost:3000',
+  process.env.CLIENT_URL
+];
+
+app.use(cors({
+  origin: function (origin, callback) {
+    if (!origin || allowedOrigins.includes(origin)) {
+      callback(null, true);
+    } else {
+      callback(new Error('Not allowed by CORS'));
+    };
+  },
+  credentials: true,
+}));
+
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
