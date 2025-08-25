@@ -1810,3 +1810,13 @@ Section 21: MERN App deployment
 -create files .env and example.env
 -in folder idea-drop-ui, in .env file create variable VITE_API_URL
 -in folder idea-drop-api, in .env file create variable CLIENT_URL
+
+226. Backend API Deployment
+-in server.js file invoke function app.get() for route '/'
+-open link: https://render.com
+-click option add new service and choose folder idea-drop-api
+-add env variables
+-click button Deploy web service
+-open link: https://idea-drop-api-mmmt.onrender.com
+-open link: https://idea-drop-api-mmmt.onrender.com/api
+-open link: https://idea-drop-api-mmmt.onrender.com/api/ideas

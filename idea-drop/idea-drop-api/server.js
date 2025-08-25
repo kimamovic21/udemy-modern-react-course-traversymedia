@@ -41,6 +41,11 @@ app.use(cookieParser());
 app.use('/api/auth', authRouter);
 app.use('/api/ideas', ideasRouter);
 
+// API home route
+app.get('/api', (req, res) => {
+  res.json({ message: 'Idea Drop API Home Route' });
+});
+
 // 404 Fallback
 app.use((req, res, next) => {
   const error = new Error(`Not Found - ${req.originalUrl}`);
