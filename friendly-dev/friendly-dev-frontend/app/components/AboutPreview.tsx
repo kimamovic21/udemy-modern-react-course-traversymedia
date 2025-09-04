@@ -4,7 +4,7 @@ const AboutPreview = () => {
   return (
     <section className='mt-12 p-10 flex flex-col md:flex-row items-center gap-8 bg-gray-900'>
       <img
-        src='/images/profile.jpg'
+        src='/images/profile.png'
         alt='profile'
         className='w-32 h-32 md:w-40 md:h-40 rounded-full object-cover border-4 border-blue-500 shadow-md'
       />
@@ -13,9 +13,8 @@ const AboutPreview = () => {
           👋 About Me
         </h2>
         <p className='text-gray-300 mb-4 max-w-xl'>
-          I'm Kerim — a self-taught developer and educator passionate about
-          building friendly digital experiences and helping others grow into
-          confident modern devs.
+          Hi I'm Kerim. I'm passionate about learning and following the new technologies and trends in Web development.
+          As a web development enthusiast, I'm interested in MERN Stack, especially Frontend Web Development and React.js library.
         </p>
         <Link
           to='/about'
